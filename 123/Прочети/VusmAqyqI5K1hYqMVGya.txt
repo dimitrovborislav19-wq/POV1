@@ -1,0 +1,81 @@
+Imports System
+Imports System.Runtime.CompilerServices
+Imports Newtonsoft.Json
+
+Namespace tcluRCmJ2u79OhTbGG
+	' Token: 0x0200038B RID: 907
+	Friend Class VusmAqyqI5K1hYqMVGya
+		' Token: 0x17000492 RID: 1170
+		' (get) Token: 0x06001E7B RID: 7803 RVA: 0x001D2EC4 File Offset: 0x001D10C4
+		' (set) Token: 0x06001E7C RID: 7804 RVA: 0x001D2ED4 File Offset: 0x001D10D4
+		<JsonProperty("LicenseType", Required := Required.Always)>
+		Public Property LicenseType As VusmAqyqI5K1hYqMVGya.bDLqfPypUCpTE12PKe33
+
+		' Token: 0x17000493 RID: 1171
+		' (get) Token: 0x06001E7D RID: 7805 RVA: 0x001D2EE4 File Offset: 0x001D10E4
+		' (set) Token: 0x06001E7E RID: 7806 RVA: 0x001D2EF4 File Offset: 0x001D10F4
+		<JsonProperty("LicenseStatus", Required := Required.Always)>
+		Public Property LicenseStatus As VusmAqyqI5K1hYqMVGya.th7XeAypF3rZbOnvhU72
+
+		' Token: 0x17000494 RID: 1172
+		' (get) Token: 0x06001E7F RID: 7807 RVA: 0x001D2F04 File Offset: 0x001D1104
+		' (set) Token: 0x06001E80 RID: 7808 RVA: 0x001D2F14 File Offset: 0x001D1114
+		<JsonProperty("LicenseEndsAt", Required := Required.Always)>
+		Public Property LicenseEndsAt As DateTime
+
+		' Token: 0x17000495 RID: 1173
+		' (get) Token: 0x06001E81 RID: 7809 RVA: 0x001D2F24 File Offset: 0x001D1124
+		' (set) Token: 0x06001E82 RID: 7810 RVA: 0x001D2F34 File Offset: 0x001D1134
+		<JsonProperty("DeRegistrable", Required := Required.Always)>
+		Public Property DeRegistrable As Boolean
+
+		' Token: 0x17000496 RID: 1174
+		' (get) Token: 0x06001E83 RID: 7811 RVA: 0x001D2F44 File Offset: 0x001D1144
+		' (set) Token: 0x06001E84 RID: 7812 RVA: 0x001D2F54 File Offset: 0x001D1154
+		<JsonProperty("Hash", Required := Required.Always)>
+		Public Property Hash As String
+
+		' Token: 0x06001E85 RID: 7813 RVA: 0x001D2F64 File Offset: 0x001D1164
+		Public Sub New()
+			fXUU4jykVT4coaAMg9aB.O73ykGjbHBD()
+			zpXS6PyCgduBtel37AmL.awKZzBfLDKu()
+			MyBase..ctor()
+		End Sub
+
+		' Token: 0x06001E86 RID: 7814 RVA: 0x001D2F80 File Offset: 0x001D1180
+		' Note: this type is marked as 'beforefieldinit'.
+		Shared Sub New()
+			fXUU4jykVT4coaAMg9aB.gRpykFhmKaB()
+		End Sub
+
+		' Token: 0x04001931 RID: 6449
+		<CompilerGenerated()>
+		Private u95yqNs8oPm As VusmAqyqI5K1hYqMVGya.bDLqfPypUCpTE12PKe33
+
+		' Token: 0x04001932 RID: 6450
+		<CompilerGenerated()>
+		Private iv6yqAZjFIt As VusmAqyqI5K1hYqMVGya.th7XeAypF3rZbOnvhU72
+
+		' Token: 0x04001933 RID: 6451
+		<CompilerGenerated()>
+		Private B17yqjkYO3R As DateTime
+
+		' Token: 0x04001934 RID: 6452
+		<CompilerGenerated()>
+		Private X1Syq26nx38 As Boolean
+
+		' Token: 0x04001935 RID: 6453
+		<CompilerGenerated()>
+		Private WCOyqMYOUbU As String
+
+		' Token: 0x0200038C RID: 908
+		Friend Enum th7XeAypF3rZbOnvhU72
+			' Token: 0x04001937 RID: 6455
+			Ok = 1
+		End Enum
+
+		' Token: 0x0200038D RID: 909
+		Friend Enum bDLqfPypUCpTE12PKe33
+		End Enum
+	End Class
+End Namespace

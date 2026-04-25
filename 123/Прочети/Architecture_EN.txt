@@ -1,0 +1,351 @@
+1. What We Actually Analyzed
+
+We analyzed an obfuscated .NET application in which the licensing logic is not located in a single place, but is split across several layers:
+
+local licensing/state layer
+startup/orchestration layer
+remote HTTP licensing client
+request/response pipeline
+signature/integrity seam
+runtime state and UI consumers
+
+The main conclusion is that this is not a simple license check inside one method, but a multi-stage architecture.
+
+2. The Main Architectural Picture
+
+In short, the system looks like this:
+
+Local old license file/state
+        ↓
+OldCpLicense
+        ↓
+rUUTMOy6ivNnYRiNMr63   (local manager / startup coordinator)
+        ↓
+LkLyi7yBQ7XAcNujCQmj   (interface)
+        ↓
+uJjmZVyBNLEPehuR5EEL   (HTTP licensing client)
+        ↓
+GetLicenseInfo / Register / DeRegister
+        ↓
+Response DTO: VusmAqyqI5K1hYqMVGya
+        ↓
+hash/signature/integrity seam
+        ↓
+manager updates local state + runtime state
+        ↓
+UI / dialogs / feature-related state
+
+3. The Most Important Types Found and Their Roles
+
+A) rUUTMOy6ivNnYRiNMr63
+
+This is the most important class we found.
+
+Its role is:
+
+startup license coordinator
+local license manager
+runtime state manager
+bridge between the local old model and the newer remote model
+persistence orchestration
+file watcher / reactive state updater
+
+This is not just a UI class and not a DTO.
+It is a central operational/service layer.
+
+B) OldCpLicense
+
+This is the local legacy licensing model.
+
+Its role is:
+
+local operational license record
+deserialized from local storage
+validated
+updated
+written back
+
+Conclusion:
+this is the old local licensing state that the application still uses.
+
+C) VusmAqyqI5K1hYqMVGya
+
+This is the newer DTO / payload / licensing response model.
+
+Fields:
+
+LicenseType
+LicenseStatus
+LicenseEndsAt
+DeRegistrable
+Hash
+
+Role:
+
+comes from the remote/service flow
+serves as a newer license state snapshot
+is used to refresh/update the local model
+
+This is not an engine, but a transport/state object.
+
+D) LkLyi7yBQ7XAcNujCQmj
+
+This is an interface/facade contract, not a concrete implementation.
+
+Methods:
+
+Asmy84GEo1V(...)
+GYwy83wlECY(...)
+uHny856HnqY(...)
+
+Role:
+
+abstraction in front of the remote licensing client
+the manager does not work directly with the implementation, but through an interface
+
+E) uJjmZVyBNLEPehuR5EEL
+
+This is the actual concrete HTTP licensing client.
+
+Confirmed by:
+
+HttpClient
+base URL string
+JsonSerializerSettings
+timeout configuration
+request/response helpers
+
+This is a network/service layer, not just a helper.
+
+4. The Most Important Methods and What They Do
+
+Inside rUUTMOy6ivNnYRiNMr63
+
+OnProgramStart(bool = true)
+
+This is the startup entry point for the local licensing flow.
+
+What it does:
+
+prepares the file/service context
+resets runtime state
+loads the local old license
+validates it
+checks machine-related data
+writes it back if necessary
+calls the remote refresh path
+builds runtime state
+raises warning/maintenance/license UI
+sets up watchers
+
+Conclusion:
+this is the main startup coordinator.
+
+hfqy63dQEFu()
+
+This is the local loader/deserializer for OldCpLicense.
+
+What it does:
+
+reads local content
+JsonConvert.DeserializeObject<OldCpLicense>(...)
+checks basic serialization sanity
+returns OldCpLicense or throws a licensing exception
+
+Conclusion:
+this is the entry point into local licensing storage.
+
+e5Ay65ugb64(OldCpLicense)
+
+This is the local domain validator.
+
+What it checks:
+
+product/program compatibility
+registration/program consistency
+maintenance date validity
+internal validity check of the old model
+
+Conclusion:
+this is real validation logic over the local license object.
+
+duFy6WuqsYo(OldCpLicense, bool)
+
+This is one of the most important methods.
+
+What it does:
+
+builds a request object with:
+serial
+user
+email
+machine
+company
+program code
+calls the remote service through the interface/client
+receives VusmAqyqI5K1hYqMVGya
+depending on LicenseStatus, updates OldCpLicense
+performs an integrity check
+writes the old model back
+then validates the old model again
+
+Conclusion:
+this is the bridge / synchronization / refresh layer between:
+
+local OldCpLicense
+remote Vusm...
+
+eswy6YK0y7D(...)
+
+This is the local integrity check.
+
+What it does:
+
+takes the program code
+serial
+machine ID
+expiry / end date
+builds a derived value
+compares it with Hash
+
+Conclusion:
+there is a real local hash/integrity check; it is not a decorative field.
+
+j4My64COZn7(OldCpLicense, bool)
+
+This is the local persistence writer.
+
+What it does:
+
+touches ACL/permissions
+fixes file/folder access
+serializes and writes the local license state
+removes read-only/hidden attributes and other obstacles
+
+Conclusion:
+this is the local persistence layer for OldCpLicense.
+
+W22yByg1QN9(...) and iyqyBEEjc3Q(...)
+
+These are file watcher handlers.
+
+What this means:
+
+the local licensing artifact is monitored for create/change/delete events
+the application reacts when the local state changes
+
+Conclusion:
+the local artifact is a live runtime factor, not just a passive cache.
+
+Inside uJjmZVyBNLEPehuR5EEL
+
+Constructor
+
+From the constructor we saw:
+
+HttpClient
+base URL
+serializer settings
+timeout
+default headers
+
+Conclusion:
+this is a real HTTP client.
+
+Asmy84GEo1V(...)
+
+This is an async wrapper for:
+
+GetLicenseInfoAsync
+
+GYwy83wlECY(...)
+
+This is an async wrapper for:
+
+RegisterAsync
+
+uHny856HnqY(...)
+
+This is an async wrapper for:
+
+DeRegisterAsync
+
+QdhyBALkkve(...)
+
+This is:
+
+generic MakeRequestAsync
+
+HLeyB92ANUT(...)
+
+This is:
+
+generic MakeRequestAsync_unsafe
+
+urpyBRyGunV(...)
+
+This is:
+
+ProcessResponseAsync
+
+JMjyBO4Y9Pe(...)
+
+This is:
+
+IsSignatureValid
+
+DSayBpIRl9I(...)
+
+This is:
+
+ReadObjectFromResponseAsync
+
+cG8yBkb7U4i(...)
+
+This is:
+
+ReadContentAsStringAsync
+
+All of these methods turned out to be wrappers that only start compiler-generated async state machines.
+
+5. Why It Was Difficult to Reach the “Body”
+
+There were three reasons at the same time:
+
+1. Obfuscation
+
+The names are destroyed and you cannot naturally read the flow.
+
+2. Async state machine compilation
+
+The real logic is not in:
+
+Asmy84GEo1V
+urpyBRyGunV
+JMjyBO4Y9Pe
+
+but in generated types such as:
+
+<GetLicenseInfoAsync>d__7
+<ProcessResponseAsync>d__12
+<IsSignatureValid>d__13
+<ReadObjectFromResponseAsync>d__14
+
+3. dnSpy navigation quirks
+
+When you click MoveNext, dnSpy often sends you back to the wrapper method instead of opening the clean body of the state machine.
+
+6. What We Learned Anyway
+
+Even without conveniently opening every MoveNext, we already understood enough:
+
+Confirmed:
+there is a local legacy licensing model
+there is a local startup/orchestration manager
+there is a remote HTTP licensing client
+there is a request/response pipeline
+there is a signature validation seam
+there is a DTO for the remote licensing snapshot
+there is a bridge between the local old state and the remote new state
+there is a local integrity/hash check
+there are runtime state models and UI consumers

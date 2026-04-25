@@ -1,0 +1,9 @@
+0	0000	br.s	2 (0007) ldarg.0 
+1	0002	call	null
+2	0007	ldarg.0
+3	0008	ldarg.0
+4	0009	ldsfld	class V25w0V0UAYj9jupjkR2J V25w0V0UAYj9jupjkR2J::QFe0UjodxQG
+5	000E	call	class [mscorlib]System.Globalization.CultureInfo V25w0V0UAYj9jupjkR2J::U5k0glFpPpO(class V25w0V0UAYj9jupjkR2J)
+6	0013	call	string tcluRCmJ2u79OhTbGG.VeDjqbySRUdcYsSUvkCC::Uc6ySOVi98o(class ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense, class [mscorlib]System.Globalization.CultureInfo)
+7	0018	callvirt	instance void ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::set_Hash(string)
+8	001D	ret

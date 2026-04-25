@@ -1,0 +1,19 @@
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace tcluRCmJ2u79OhTbGG
+{
+	// Token: 0x0200035A RID: 858
+	internal interface LkLyi7yBQ7XAcNujCQmj
+	{
+		// Token: 0x06001DA8 RID: 7592
+		Task<OyGq20yq1cAwyDEOJo81<VusmAqyqI5K1hYqMVGya>> Asmy84GEo1V(Ohtcbeyq9vhowEvASqt7 \u0020, CancellationToken \u0020);
+
+		// Token: 0x06001DA9 RID: 7593
+		Task<OyGq20yq1cAwyDEOJo81<VusmAqyqI5K1hYqMVGya>> GYwy83wlECY(Ohtcbeyq9vhowEvASqt7 \u0020, CancellationToken \u0020);
+
+		// Token: 0x06001DAA RID: 7594
+		Task<OyGq20yq1cAwyDEOJo81<bool>> uHny856HnqY(Ohtcbeyq9vhowEvASqt7 \u0020, CancellationToken \u0020);
+	}
+}

@@ -1,0 +1,28 @@
+0	0000	br.s	2 (0007) ldarg.1 
+1	0002	call	null
+2	0007	ldarg.1
+3	0008	callvirt	instance string tcluRCmJ2u79OhTbGG.Ohtcbeyq9vhowEvASqt7::get_ProgramCode()
+4	000D	ldarg.1
+5	000E	callvirt	instance string tcluRCmJ2u79OhTbGG.Ohtcbeyq9vhowEvASqt7::get_SerialNumber()
+6	0013	stloc.0
+7	0014	ldarg.1
+8	0015	callvirt	instance string tcluRCmJ2u79OhTbGG.Ohtcbeyq9vhowEvASqt7::get_MachineId()
+9	001A	stloc.1
+10	001B	ldarg.2
+11	001C	callvirt	instance valuetype [mscorlib]System.DateTime tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya::get_LicenseEndsAt()
+12	0021	stloc.2
+13	0022	ldloc.0
+14	0023	ldloca.s	V_2 (2)
+15	0025	ldsfld	class zCeJDv0i8HnQcj12PGCw zCeJDv0i8HnQcj12PGCw::kGi0iWQDQH8
+16	002A	call	class [mscorlib]System.Globalization.CultureInfo zCeJDv0i8HnQcj12PGCw::U5k0glFpPpO(class zCeJDv0i8HnQcj12PGCw)
+17	002F	ldsfld	class ORM49aZuLRWe8FGDfw5c ORM49aZuLRWe8FGDfw5c::cyRZul3OkVX
+18	0034	call	string ORM49aZuLRWe8FGDfw5c::U5k0glFpPpO(valuetype [mscorlib]System.DateTime&, class [mscorlib]System.IFormatProvider, class ORM49aZuLRWe8FGDfw5c)
+19	0039	ldloc.1
+20	003A	ldsfld	class b9Rtht0vc06ml6TobP9K b9Rtht0vc06ml6TobP9K::EEu0v6vUj4x
+21	003F	call	string b9Rtht0vc06ml6TobP9K::U5k0glFpPpO(string, string, string, string, class b9Rtht0vc06ml6TobP9K)
+22	0044	call	string tcluRCmJ2u79OhTbGG.rUUTMOy6ivNnYRiNMr63::FgpyBna8yBj(string)
+23	0049	ldarg.2
+24	004A	callvirt	instance string tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya::get_Hash()
+25	004F	ldsfld	class xvZJbZ0PBsjMgfAk7XLA xvZJbZ0PBsjMgfAk7XLA::uNn0PSGOwtW
+26	0054	call	bool xvZJbZ0PBsjMgfAk7XLA::U5k0glFpPpO(object, string, class xvZJbZ0PBsjMgfAk7XLA)
+27	0059	ret

@@ -1,0 +1,193 @@
+0	0000	br.s	2 (0007) newobj instance void tcluRCmJ2u79OhTbGG.Ohtcbeyq9vhowEvASqt7::.ctor()
+1	0002	call	null
+2	0007	newobj	instance void tcluRCmJ2u79OhTbGG.Ohtcbeyq9vhowEvASqt7::.ctor()
+3	000C	dup
+4	000D	ldarg.1
+5	000E	callvirt	instance class ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense/UserData ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::get_Registration()
+6	0013	callvirt	instance string ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense/UserData::get_Serial()
+7	0018	callvirt	instance void tcluRCmJ2u79OhTbGG.Ohtcbeyq9vhowEvASqt7::set_SerialNumber(string)
+8	001D	dup
+9	001E	ldarg.1
+10	001F	callvirt	instance class ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense/UserData ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::get_Registration()
+11	0024	callvirt	instance string ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense/UserData::get_UserName()
+12	0029	callvirt	instance void tcluRCmJ2u79OhTbGG.Ohtcbeyq9vhowEvASqt7::set_UserName(string)
+13	002E	dup
+14	002F	ldarg.1
+15	0030	callvirt	instance class ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense/UserData ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::get_Registration()
+16	0035	callvirt	instance string ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense/UserData::get_Email()
+17	003A	callvirt	instance void tcluRCmJ2u79OhTbGG.Ohtcbeyq9vhowEvASqt7::set_EmailAddress(string)
+18	003F	dup
+19	0040	ldarg.1
+20	0041	callvirt	instance class ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense/UserData ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::get_Registration()
+21	0046	callvirt	instance string ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense/UserData::get_Machine()
+22	004B	callvirt	instance void tcluRCmJ2u79OhTbGG.Ohtcbeyq9vhowEvASqt7::set_MachineId(string)
+23	0050	dup
+24	0051	ldarg.1
+25	0052	callvirt	instance class ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense/UserData ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::get_Registration()
+26	0057	callvirt	instance string ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense/UserData::get_Company()
+27	005C	callvirt	instance void tcluRCmJ2u79OhTbGG.Ohtcbeyq9vhowEvASqt7::set_Company(string)
+28	0061	dup
+29	0062	ldarg.0
+30	0063	call	instance class tcluRCmJ2u79OhTbGG.l4PVadeCmjX4fpY7YOIB tcluRCmJ2u79OhTbGG.rUUTMOy6ivNnYRiNMr63::iGjyBdov5Os()
+31	0068	callvirt	instance string tcluRCmJ2u79OhTbGG.l4PVadeCmjX4fpY7YOIB::vd6y3QedFkP()
+32	006D	callvirt	instance void tcluRCmJ2u79OhTbGG.Ohtcbeyq9vhowEvASqt7::set_ProgramCode(string)
+33	0072	stloc.0
+34	0073	ldarg.0
+35	0074	call	instance class tcluRCmJ2u79OhTbGG.LkLyi7yBQ7XAcNujCQmj tcluRCmJ2u79OhTbGG.rUUTMOy6ivNnYRiNMr63::HUXyBmfRy3G()
+36	0079	ldloc.0
+37	007A	ldsfld	class h5ueGJ0CrSm1KekB0Ckk h5ueGJ0CrSm1KekB0Ckk::fR50CCSdjNb
+38	007F	call	valuetype [mscorlib]System.Threading.CancellationToken h5ueGJ0CrSm1KekB0Ckk::U5k0glFpPpO(class h5ueGJ0CrSm1KekB0Ckk)
+39	0084	callvirt	instance class [mscorlib]System.Threading.Tasks.Task`1<class tcluRCmJ2u79OhTbGG.OyGq20yq1cAwyDEOJo81`1<class tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya>> tcluRCmJ2u79OhTbGG.LkLyi7yBQ7XAcNujCQmj::Asmy84GEo1V(class tcluRCmJ2u79OhTbGG.Ohtcbeyq9vhowEvASqt7, valuetype [mscorlib]System.Threading.CancellationToken)
+40	0089	callvirt	instance !0 class [mscorlib]System.Threading.Tasks.Task`1<class tcluRCmJ2u79OhTbGG.OyGq20yq1cAwyDEOJo81`1<class tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya>>::get_Result()
+41	008E	stloc.1
+42	008F	ldloc.1
+43	0090	callvirt	instance bool class tcluRCmJ2u79OhTbGG.OyGq20yq1cAwyDEOJo81`1<class tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya>::HTOyqSTl5cb()
+44	0095	brfalse	192 (028C) ret 
+45	009A	ldloc.1
+46	009B	callvirt	instance !0 class tcluRCmJ2u79OhTbGG.OyGq20yq1cAwyDEOJo81`1<class tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya>::drayqqPYkbN()
+47	00A0	stloc.2
+48	00A1	ldloc.2
+49	00A2	callvirt	instance valuetype tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya/th7XeAypF3rZbOnvhU72 tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya::get_LicenseStatus()
+50	00A7	ldc.i4.2
+51	00A8	bne.un	71 (00F1) ldloc.2 
+52	00AD	ldarg.1
+53	00AE	ldc.i4	-0x797D2484
+54	00B3	ldc.i4	6
+55	00B8	shr
+56	00B9	ldc.i4	-0x56906DCE
+57	00BE	xor
+58	00BF	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+59	00C4	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_c24e8e559e0847898d9dbbb746d3a520
+60	00C9	xor
+61	00CA	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+62	00CF	callvirt	instance void ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::set_Programm(string)
+63	00D4	ldarg.1
+64	00D5	ldsfld	valuetype [mscorlib]System.DateTime [mscorlib]System.DateTime::MinValue
+65	00DA	stloc.3
+66	00DB	ldloca.s	V_3 (3)
+67	00DD	ldsfld	class VYw2UjZuR990KWIIgQde VYw2UjZuR990KWIIgQde::qfxZuuqM0Mk
+68	00E2	call	valuetype [mscorlib]System.DateTime VYw2UjZuR990KWIIgQde::U5k0glFpPpO(valuetype [mscorlib]System.DateTime&, class VYw2UjZuR990KWIIgQde)
+69	00E7	callvirt	instance void ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::set_Maintenance(valuetype [mscorlib]System.DateTime)
+70	00EC	br	139 (01C5) ldarg.1 
+71	00F1	ldloc.2
+72	00F2	callvirt	instance valuetype tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya/th7XeAypF3rZbOnvhU72 tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya::get_LicenseStatus()
+73	00F7	ldc.i4.4
+74	00F8	bne.un	93 (013C) ldarg.0 
+75	00FD	ldarg.1
+76	00FE	ldc.i4	0x28128746
+77	0103	not
+78	0104	ldc.i4	-0x38BF5820
+79	0109	xor
+80	010A	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+81	010F	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_e6bb67ba434b4144b4dddc76897e9cbb
+82	0114	xor
+83	0115	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+84	011A	callvirt	instance void ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::set_Programm(string)
+85	011F	ldarg.1
+86	0120	ldsfld	valuetype [mscorlib]System.DateTime [mscorlib]System.DateTime::MinValue
+87	0125	stloc.3
+88	0126	ldloca.s	V_3 (3)
+89	0128	ldsfld	class VYw2UjZuR990KWIIgQde VYw2UjZuR990KWIIgQde::qfxZuuqM0Mk
+90	012D	call	valuetype [mscorlib]System.DateTime VYw2UjZuR990KWIIgQde::U5k0glFpPpO(valuetype [mscorlib]System.DateTime&, class VYw2UjZuR990KWIIgQde)
+91	0132	callvirt	instance void ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::set_Maintenance(valuetype [mscorlib]System.DateTime)
+92	0137	br	139 (01C5) ldarg.1 
+93	013C	ldarg.0
+94	013D	ldloc.0
+95	013E	ldloc.2
+96	013F	call	instance bool tcluRCmJ2u79OhTbGG.rUUTMOy6ivNnYRiNMr63::eswy6YK0y7D(class tcluRCmJ2u79OhTbGG.Ohtcbeyq9vhowEvASqt7, class tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya)
+97	0144	brtrue	102 (0152) ldarg.1 
+98	0149	ldc.i4.s	16
+99	014B	ldnull
+100	014C	newobj	instance void tcluRCmJ2u79OhTbGG.yfCyNsySAEBSjtk0DaWg::.ctor(valuetype tcluRCmJ2u79OhTbGG.FeaC0wySN3vvqR9BVRqr, class ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense)
+101	0151	throw
+102	0152	ldarg.1
+103	0153	ldloc.2
+104	0154	callvirt	instance valuetype [mscorlib]System.DateTime tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya::get_LicenseEndsAt()
+105	0159	stloc.3
+106	015A	ldloca.s	V_3 (3)
+107	015C	ldsfld	class VYw2UjZuR990KWIIgQde VYw2UjZuR990KWIIgQde::qfxZuuqM0Mk
+108	0161	call	valuetype [mscorlib]System.DateTime VYw2UjZuR990KWIIgQde::U5k0glFpPpO(valuetype [mscorlib]System.DateTime&, class VYw2UjZuR990KWIIgQde)
+109	0166	callvirt	instance void ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::set_Maintenance(valuetype [mscorlib]System.DateTime)
+110	016B	ldloc.2
+111	016C	callvirt	instance valuetype tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya/th7XeAypF3rZbOnvhU72 tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya::get_LicenseStatus()
+112	0171	ldc.i4.6
+113	0172	bne.un	130 (01B0) ldloc.2 
+114	0177	ldarg.1
+115	0178	callvirt	instance valuetype [mscorlib]System.DateTime ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::get_Maintenance()
+116	017D	stloc.3
+117	017E	ldloca.s	V_3 (3)
+118	0180	ldsfld	class VYw2UjZuR990KWIIgQde VYw2UjZuR990KWIIgQde::qfxZuuqM0Mk
+119	0185	call	valuetype [mscorlib]System.DateTime VYw2UjZuR990KWIIgQde::U5k0glFpPpO(valuetype [mscorlib]System.DateTime&, class VYw2UjZuR990KWIIgQde)
+120	018A	ldarg.0
+121	018B	ldfld	valuetype [mscorlib]System.DateTime tcluRCmJ2u79OhTbGG.rUUTMOy6ivNnYRiNMr63::EBTyBKFYHLs
+122	0190	ldsfld	class IHa918E2R2RabmC2tdwj IHa918E2R2RabmC2tdwj::bRVE2uaA5Tq
+123	0195	call	bool IHa918E2R2RabmC2tdwj::U5k0glFpPpO(valuetype [mscorlib]System.DateTime, valuetype [mscorlib]System.DateTime, class IHa918E2R2RabmC2tdwj)
+124	019A	brfalse	135 (01B9) ldarg.1 
+125	019F	ldarg.1
+126	01A0	ldarg.0
+127	01A1	ldfld	valuetype [mscorlib]System.DateTime tcluRCmJ2u79OhTbGG.rUUTMOy6ivNnYRiNMr63::EBTyBKFYHLs
+128	01A6	callvirt	instance void ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::set_Maintenance(valuetype [mscorlib]System.DateTime)
+129	01AB	br	135 (01B9) ldarg.1 
+130	01B0	ldloc.2
+131	01B1	callvirt	instance valuetype tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya/th7XeAypF3rZbOnvhU72 tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya::get_LicenseStatus()
+132	01B6	ldc.i4.5
+133	01B7	pop
+134	01B8	pop
+135	01B9	ldarg.1
+136	01BA	ldloc.2
+137	01BB	callvirt	instance bool tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya::get_DeRegistrable()
+138	01C0	callvirt	instance void ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::set_UnRegisterable(bool)
+139	01C5	ldarg.1
+140	01C6	call	void tcluRCmJ2u79OhTbGG.VeDjqbySRUdcYsSUvkCC::Vs0ySpnpJQH(class ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense)
+141	01CB	ldarg.0
+142	01CC	ldarg.1
+143	01CD	ldarg.2
+144	01CE	call	instance void tcluRCmJ2u79OhTbGG.rUUTMOy6ivNnYRiNMr63::j4My64COZn7(class ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense, bool)
+145	01D3	ldloc.2
+146	01D4	callvirt	instance valuetype tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya/th7XeAypF3rZbOnvhU72 tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya::get_LicenseStatus()
+147	01D9	stloc.s	V_4 (4)
+148	01DB	ldloc.s	V_4 (4)
+149	01DD	switch	[176 (0258), 189 (0285), 189 (0285), 176 (0258), 189 (0285), 151 (0203), 189 (0285)]
+150	01FE	br	176 (0258) ldc.i4 0x1ED86527
+151	0203	ldarg.2
+152	0204	brfalse	189 (0285) ldarg.0 
+153	0209	ldarg.1
+154	020A	call	bool tcluRCmJ2u79OhTbGG.VeDjqbySRUdcYsSUvkCC::butySvSSQUw(class ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense)
+155	020F	ldarg.1
+156	0210	callvirt	instance class ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense/UserData ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::get_Registration()
+157	0215	callvirt	instance string ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense/UserData::get_Serial()
+158	021A	ldarg.1
+159	021B	callvirt	instance class ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense/UserData ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense::get_Registration()
+160	0220	callvirt	instance string ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense/UserData::get_Machine()
+161	0225	newobj	instance void tcluRCmJ2u79OhTbGG.KoR8jDyMnql5dNub9gnC::.ctor(bool, string, string)
+162	022A	stloc.s	V_5 (5)
+163	022C	ldarg.0
+164	022D	call	instance class tcluRCmJ2u79OhTbGG.xJVo2Gy2at4MKXd6Kx7c tcluRCmJ2u79OhTbGG.rUUTMOy6ivNnYRiNMr63::tBdyBtN9dFe()
+165	0232	callvirt	instance class tcluRCmJ2u79OhTbGG.EUOkupy2mStCBi8u2Uib tcluRCmJ2u79OhTbGG.xJVo2Gy2at4MKXd6Kx7c::OlVyW5v6HXP()
+166	0237	ldloc.s	V_5 (5)
+167	0239	callvirt	instance class tcluRCmJ2u79OhTbGG.JQHUvWyIoYPCtBhKEEqu tcluRCmJ2u79OhTbGG.EUOkupy2mStCBi8u2Uib::cHDyWCfHHfk(class tcluRCmJ2u79OhTbGG.KoR8jDyMnql5dNub9gnC)
+168	023E	stloc.s	V_6 (6)
+169	0240	ldarg.0
+170	0241	call	instance class tcluRCmJ2u79OhTbGG.AUKIehy2DQUy6QvHd0Aq tcluRCmJ2u79OhTbGG.rUUTMOy6ivNnYRiNMr63::ay9yBsPAiQJ()
+171	0246	ldloc.s	V_6 (6)
+172	0248	callvirt	instance class tcluRCmJ2u79OhTbGG.eVcD0Jyoh18xlrSnDBEZ tcluRCmJ2u79OhTbGG.AUKIehy2DQUy6QvHd0Aq::RkByWWyCFcH(class tcluRCmJ2u79OhTbGG.GynHBlyQbn3LsSHTGVkk)
+173	024D	ldc.i4.0
+174	024E	callvirt	instance void tcluRCmJ2u79OhTbGG.eVcD0Jyoh18xlrSnDBEZ::ShowDialog(bool)
+175	0253	br	189 (0285) ldarg.0 
+176	0258	ldc.i4	0x1ED86527
+177	025D	ldc.i4	0x3315D5C1
+178	0262	xor
+179	0263	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+180	0268	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_3d9d63fbcd8a4c4bb1d9f91be963cc48
+181	026D	xor
+182	026E	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+183	0273	ldloc.2
+184	0274	callvirt	instance valuetype tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya/th7XeAypF3rZbOnvhU72 tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya::get_LicenseStatus()
+185	0279	box	tcluRCmJ2u79OhTbGG.VusmAqyqI5K1hYqMVGya/th7XeAypF3rZbOnvhU72
+186	027E	ldnull
+187	027F	newobj	instance void [mscorlib]System.ArgumentOutOfRangeException::.ctor(string, object, string)
+188	0284	throw
+189	0285	ldarg.0
+190	0286	ldarg.1
+191	0287	call	instance void tcluRCmJ2u79OhTbGG.rUUTMOy6ivNnYRiNMr63::e5Ay65ugb64(class ValentinSoftware.Lm.Client.Lm3.Models.OldCpLicense)
+192	028C	ret

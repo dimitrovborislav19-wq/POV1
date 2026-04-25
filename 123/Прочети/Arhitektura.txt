@@ -1,0 +1,335 @@
+1. Какво всъщност анализирахме
+
+Анализирахме обфускирано .NET приложение, в което licensing логиката не стои на едно място, а е разделена на няколко слоя:
+
+локален licensing/state слой
+startup/orchestration слой
+remote HTTP licensing client
+request/response pipeline
+signature/integrity seam
+runtime state и UI consumers
+
+Основният извод е, че това не е проста лицензна проверка в един метод, а многостепенна архитектура.
+
+2. Главната картина на архитектурата
+
+Най-кратко, системата изглежда така:
+
+Local old license file/state
+        ↓
+OldCpLicense
+        ↓
+rUUTMOy6ivNnYRiNMr63   (local manager / startup coordinator)
+        ↓
+LkLyi7yBQ7XAcNujCQmj   (interface)
+        ↓
+uJjmZVyBNLEPehuR5EEL   (HTTP licensing client)
+        ↓
+GetLicenseInfo / Register / DeRegister
+        ↓
+Response DTO: VusmAqyqI5K1hYqMVGya
+        ↓
+hash/signature/integrity seam
+        ↓
+manager updates local state + runtime state
+        ↓
+UI / dialogs / feature-related state
+3. Най-важните открити типове и ролята им
+A) rUUTMOy6ivNnYRiNMr63
+
+Това е най-важният клас, който намерихме.
+
+Ролята му е:
+
+startup license coordinator
+local license manager
+runtime state manager
+bridge между local old model и newer remote model
+persistence orchestration
+file watcher / reactive state updater
+
+Това не е просто UI class и не е DTO.
+Това е централен operational/service слой.
+
+B) OldCpLicense
+
+Това е локалният legacy licensing model.
+
+Ролята му е:
+
+локален operational license record
+десериализира се от local storage
+валидира се
+обновява се
+записва се обратно
+
+Извод:
+това е старият локален licensing state, който приложението още използва.
+
+C) VusmAqyqI5K1hYqMVGya
+
+Това е newer DTO / payload / licensing response model.
+
+Полета:
+
+LicenseType
+LicenseStatus
+LicenseEndsAt
+DeRegistrable
+Hash
+
+Роля:
+
+идва от remote/service flow
+служи като newer лицензен state snapshot
+използва се за refresh/update на local model-а
+
+Това не е engine, а transport/state object.
+
+D) LkLyi7yBQ7XAcNujCQmj
+
+Това е interface/facade contract, не concrete implementation.
+
+Методи:
+
+Asmy84GEo1V(...)
+GYwy83wlECY(...)
+uHny856HnqY(...)
+
+Роля:
+
+абстракция пред remote licensing client-а
+manager-ът не работи директно с implementation, а през interface
+E) uJjmZVyBNLEPehuR5EEL
+
+Това е реалният concrete HTTP licensing client.
+
+Потвърдено е по:
+
+HttpClient
+base URL string
+JsonSerializerSettings
+timeout configuration
+request/response helpers
+
+Това е network/service layer, не просто helper.
+
+4. Най-важните методи и какво правят
+В rUUTMOy6ivNnYRiNMr63
+OnProgramStart(bool = true)
+
+Това е startup entry за local licensing flow.
+
+Какво прави:
+
+подготвя file/service контекст
+занулява runtime state
+зарежда local old license
+валидира го
+сверява machine-related данни
+при нужда записва обратно
+вика remote refresh path
+изгражда runtime state
+вдига warning/maintenance/license UI
+настройва watchers
+
+Извод:
+това е главният startup coordinator.
+
+hfqy63dQEFu()
+
+Това е local loader/deserializer за OldCpLicense.
+
+Какво прави:
+
+чете local content
+JsonConvert.DeserializeObject<OldCpLicense>(...)
+проверява basic serialization sanity
+връща OldCpLicense или хвърля licensing exception
+
+Извод:
+това е entry point към local licensing storage.
+
+e5Ay65ugb64(OldCpLicense)
+
+Това е local domain validator.
+
+Какво проверява:
+
+product/program compatibility
+registration/program consistency
+maintenance date validity
+вътрешен validity check на old model-а
+
+Извод:
+това е реална validation логика върху local license object.
+
+duFy6WuqsYo(OldCpLicense, bool)
+
+Това е един от най-важните методи.
+
+Какво прави:
+
+строи request object с:
+serial
+user
+email
+machine
+company
+program code
+вика remote service през interface/client
+получава VusmAqyqI5K1hYqMVGya
+според LicenseStatus обновява OldCpLicense
+прави integrity check
+записва old model-а обратно
+после пак валидира old model-а
+
+Извод:
+това е bridge / synchronization / refresh layer между:
+
+local OldCpLicense
+remote Vusm...
+eswy6YK0y7D(...)
+
+Това е local integrity check.
+
+Какво прави:
+
+взима program code
+serial
+machine id
+expiry / end date
+строи derived value
+сравнява го с Hash
+
+Извод:
+има реална локална hash/integrity проверка, не е декоративно поле.
+
+j4My64COZn7(OldCpLicense, bool)
+
+Това е local persistence writer.
+
+Какво прави:
+
+пипа ACL/permissions
+оправя file/folder access
+сериализира и записва local license state
+маха read-only/hidden и други пречки
+
+Извод:
+това е local persistence layer за OldCpLicense.
+
+W22yByg1QN9(...) и iyqyBEEjc3Q(...)
+
+Това са file watcher handlers.
+
+Какво значи:
+
+local licensing artifact се следи за create/change/delete
+app-ът реагира при промяна на local state
+
+Извод:
+local artifact-ът е жив runtime фактор, не просто пасивен cache.
+
+В uJjmZVyBNLEPehuR5EEL
+Constructor
+
+От constructor-а видяхме:
+
+HttpClient
+base URL
+serializer settings
+timeout
+default headers
+
+Извод:
+това е реален HTTP client.
+
+Asmy84GEo1V(...)
+
+Това е async wrapper за:
+
+GetLicenseInfoAsync
+GYwy83wlECY(...)
+
+Това е async wrapper за:
+
+RegisterAsync
+uHny856HnqY(...)
+
+Това е async wrapper за:
+
+DeRegisterAsync
+QdhyBALkkve(...)
+
+Това е:
+
+generic MakeRequestAsync
+HLeyB92ANUT(...)
+
+Това е:
+
+generic MakeRequestAsync_unsafe
+urpyBRyGunV(...)
+
+Това е:
+
+ProcessResponseAsync
+JMjyBO4Y9Pe(...)
+
+Това е:
+
+IsSignatureValid
+DSayBpIRl9I(...)
+
+Това е:
+
+ReadObjectFromResponseAsync
+cG8yBkb7U4i(...)
+
+Това е:
+
+ReadContentAsStringAsync
+
+Всички тези методи се оказаха wrapper-и, които само стартират compiler-generated async state machine-и.
+
+5. Защо ни беше трудно да стигнем до “тялото”
+
+Причините бяха 3 едновременно:
+
+1. Обфускация
+
+Имената са разрушени и не можеш да четеш естествено потока.
+
+2. Async state machine compilation
+
+Реалната логика не е в:
+
+Asmy84GEo1V
+urpyBRyGunV
+JMjyBO4Y9Pe
+
+а в generated типове като:
+
+<GetLicenseInfoAsync>d__7
+<ProcessResponseAsync>d__12
+<IsSignatureValid>d__13
+<ReadObjectFromResponseAsync>d__14
+3. dnSpy navigation quirks
+
+Когато натискаш MoveNext, dnSpy често те връща към wrapper метода, а не отваря красивото тяло на state machine-а.
+
+6. Какво научихме въпреки това
+
+Дори без да отворим удобно всеки MoveNext, вече разбрахме достатъчно:
+
+Потвърдено:
+има local legacy licensing model
+има local startup/orchestration manager
+има remote HTTP licensing client
+има request/response pipeline
+има signature validation seam
+има DTO за remote licensing snapshot
+има bridge между local old state и remote new state
+има local integrity/hash check
+има runtime state модели и UI consumers14

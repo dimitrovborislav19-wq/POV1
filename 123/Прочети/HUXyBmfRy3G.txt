@@ -1,0 +1,780 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Runtime.CompilerServices;
+using System.Runtime.Serialization;
+using System.Security.AccessControl;
+using System.Threading;
+using System.Threading.Tasks;
+using CommunityToolkit.Mvvm.Messaging;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
+using ValentinSoftware.Infrastructure.IO;
+using ValentinSoftware.Lm.Client.Lm3.Models;
+
+namespace tcluRCmJ2u79OhTbGG
+{
+	// Token: 0x02000355 RID: 853
+	internal class rUUTMOy6ivNnYRiNMr63 : YpG1YBy6bsyWLYvRTj41
+	{
+		// Token: 0x06001D7E RID: 7550 RVA: 0x001D0708 File Offset: 0x001CE908
+		private l4PVadeCmjX4fpY7YOIB iGjyBdov5Os()
+		{
+			return this.QtVyBUwWYdP.gAQy5Qv3btV();
+		}
+
+		// Token: 0x06001D7F RID: 7551 RVA: 0x001D071C File Offset: 0x001CE91C
+		private IFileService r7byBPylaOT()
+		{
+			return this.QtVyBUwWYdP.zlFy5jJwbBC().JfVy8nb0N2V().nUry55wLjia();
+		}
+
+		// Token: 0x06001D80 RID: 7552 RVA: 0x001D073C File Offset: 0x001CE93C
+		private LkLyi7yBQ7XAcNujCQmj HUXyBmfRy3G()
+		{
+			return this.QtVyBUwWYdP.zlFy5jJwbBC().eo1y8Yn5rJE();
+		}
+
+		// Token: 0x06001D81 RID: 7553 RVA: 0x001D0758 File Offset: 0x001CE958
+		private K5t3Y0eJv0IQ4WUQGNNt u2syB6R1IYD()
+		{
+			return this.QtVyBUwWYdP.U4my5NBKfv5();
+		}
+
+		// Token: 0x06001D82 RID: 7554 RVA: 0x001D076C File Offset: 0x001CE96C
+		private yowdaCyB4TWwI6lPMklO KBIyBShjTqP()
+		{
+			return this.QtVyBUwWYdP.zlFy5jJwbBC().sKAy8Wj0OAo();
+		}
+
+		// Token: 0x06001D83 RID: 7555 RVA: 0x001D0788 File Offset: 0x001CE988
+		private xJVo2Gy2at4MKXd6Kx7c tBdyBtN9dFe()
+		{
+			return this.QtVyBUwWYdP.kP5y5MsI1jZ();
+		}
+
+		// Token: 0x06001D84 RID: 7556 RVA: 0x001D079C File Offset: 0x001CE99C
+		private AUKIehy2DQUy6QvHd0Aq ay9yBsPAiQJ()
+		{
+			return this.tBdyBtN9dFe().MNZyW8xqZ29();
+		}
+
+		// Token: 0x06001D85 RID: 7557 RVA: 0x001D07B0 File Offset: 0x001CE9B0
+		private IMessenger tMayB774W9T()
+		{
+			return this.QtVyBUwWYdP.sxCy596tG2P();
+		}
+
+		// Token: 0x06001D86 RID: 7558 RVA: 0x001D07C4 File Offset: 0x001CE9C4
+		public rUUTMOy6ivNnYRiNMr63(n6l3C2efhca2k0Ai5oMo \u0020)
+		{
+			fXUU4jykVT4coaAMg9aB.O73ykGjbHBD();
+			zpXS6PyCgduBtel37AmL.awKZzBfLDKu();
+			this.EBTyBKFYHLs = new DateTime(1999, 9, 9);
+			base..ctor();
+			this.QtVyBUwWYdP = \u0020;
+			this.T7syBIKxmEJ = kPsF46efBQ680mpbTd73.rvceftePYfS(fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-2136563617 ^ -1000812450 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_126dafcf7837461d9d717c5f43ddec9b));
+		}
+
+		// Token: 0x06001D87 RID: 7559 RVA: 0x001D082C File Offset: 0x001CEA2C
+		public e41ePbySlt9aQ7aSjJxE OnProgramStart(bool \u0020 = true)
+		{
+			rUUTMOy6ivNnYRiNMr63.<>c__DisplayClass22_0 CS$<>8__locals1 = new rUUTMOy6ivNnYRiNMr63.<>c__DisplayClass22_0();
+			CS$<>8__locals1.gFpyObJigjg = this;
+			GLbjxtZObiXCEUqpG7W5.U5k0glFpPpO(this.r7byBPylaOT(), true, GLbjxtZObiXCEUqpG7W5.NK3ZOihWaHa);
+			bool flag = false;
+			this.lSUyBFexC23(null);
+			e41ePbySlt9aQ7aSjJxE result;
+			try
+			{
+				OldCpLicense oldCpLicense = this.hfqy63dQEFu();
+				if (oldCpLicense == null)
+				{
+					result = (e41ePbySlt9aQ7aSjJxE)0;
+				}
+				else
+				{
+					this.e5Ay65ugb64(oldCpLicense);
+					string text = this.KBIyBShjTqP().xjry88f4wBO();
+					if (ptMsso0PrkdrsWldI5bh.U5k0glFpPpO(text, oldCpLicense.Registration.Machine, ptMsso0PrkdrsWldI5bh.a0k0PC63SHs))
+					{
+						oldCpLicense.Registration.Machine = text;
+						oldCpLicense.Vs0ySpnpJQH();
+						this.j4My64COZn7(oldCpLicense, \u0020);
+					}
+					this.duFy6WuqsYo(oldCpLicense, \u0020);
+					if (oldCpLicense.butySvSSQUw())
+					{
+						BOoetdyqxLd3iStXXNo3 booetdyqxLd3iStXXNo = new BOoetdyqxLd3iStXXNo3(oldCpLicense, this.u2syB6R1IYD());
+						bool flag2 = booetdyqxLd3iStXXNo.RemainingDays == 0U;
+						if (booetdyqxLd3iStXXNo.RemainingDays <= 30U && \u0020)
+						{
+							CS$<>8__locals1.QXMyOisFNIe = false;
+							tkjkcOy2wdHEFHNn5d8x u = new tkjkcOy2wdHEFHNn5d8x(booetdyqxLd3iStXXNo.SerialNumber, flag2, booetdyqxLd3iStXXNo.RemainingDays, booetdyqxLd3iStXXNo.SYcy3SKCG9B(), booetdyqxLd3iStXXNo.lQoy8OmWtiT(), new Func<bool>(CS$<>8__locals1.L9SyOfAgARy));
+							jLS0AKyID5uIIOkNML79 u2 = this.tBdyBtN9dFe().OlVyW5v6HXP().kYSyWrBY0KM(u);
+							this.tBdyBtN9dFe().MNZyW8xqZ29().RkByWWyCFcH(u2).ShowDialog(false);
+							if (CS$<>8__locals1.QXMyOisFNIe)
+							{
+								return (e41ePbySlt9aQ7aSjJxE)0;
+							}
+						}
+						if (flag2)
+						{
+							result = (e41ePbySlt9aQ7aSjJxE)2;
+						}
+						else
+						{
+							this.lSUyBFexC23(booetdyqxLd3iStXXNo);
+							flag = true;
+							result = (e41ePbySlt9aQ7aSjJxE)1;
+						}
+					}
+					else
+					{
+						ApQwiXySr3St58Fv8AEg apQwiXySr3St58Fv8AEg = new ApQwiXySr3St58Fv8AEg(oldCpLicense, this.u2syB6R1IYD());
+						if (oldCpLicense.Registered && this.gxZy6waV5CG(oldCpLicense.Maintenance))
+						{
+							if (\u0020)
+							{
+								xH4di1y29akjTwWj8Wdb u3 = new xH4di1y29akjTwWj8Wdb(apQwiXySr3St58Fv8AEg.SerialNumber, apQwiXySr3St58Fv8AEg.oo5y8zBO9Yx(), apQwiXySr3St58Fv8AEg.zrqyWgfIVoE());
+								zBMuF1yUjex703ehLt4y u4 = this.tBdyBtN9dFe().OlVyW5v6HXP().BXnyWkKyLI5(u3);
+								this.tBdyBtN9dFe().MNZyW8xqZ29().RkByWWyCFcH(u4).ShowDialog(false);
+							}
+							result = (e41ePbySlt9aQ7aSjJxE)3;
+						}
+						else
+						{
+							this.lSUyBFexC23(apQwiXySr3St58Fv8AEg);
+							if (\u0020)
+							{
+								this.ShowUpdateEntitlementDeadlineIfAny(true);
+							}
+							flag = true;
+							result = (e41ePbySlt9aQ7aSjJxE)1;
+						}
+					}
+				}
+			}
+			catch (yfCyNsySAEBSjtk0DaWg yfCyNsySAEBSjtk0DaWg)
+			{
+				lHknL1ZuGxpbmVkLhtiC.U5k0glFpPpO(this.T7syBIKxmEJ, yfCyNsySAEBSjtk0DaWg, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(250292606 ^ 1473072480 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_44f989693c264220a939728b02483de2), Array.Empty<object>(), lHknL1ZuGxpbmVkLhtiC.Kg4ZuHteWc4);
+				if (yfCyNsySAEBSjtk0DaWg.mUdySMvfknn() == (FeaC0wySN3vvqR9BVRqr)17 || yfCyNsySAEBSjtk0DaWg.mUdySMvfknn() == (FeaC0wySN3vvqR9BVRqr)18 || yfCyNsySAEBSjtk0DaWg.mUdySMvfknn() == (FeaC0wySN3vvqR9BVRqr)19)
+				{
+					if (\u0020)
+					{
+						npXFNhyMBnRyTskObVLl u5 = new npXFNhyMBnRyTskObVLl(yfCyNsySAEBSjtk0DaWg);
+						OFvW7ayIJ44uPtbDWDqB u6 = this.tBdyBtN9dFe().OlVyW5v6HXP().ywCyWuhFv5m(u5);
+						this.ay9yBsPAiQJ().RkByWWyCFcH(u6).ShowDialog(false);
+					}
+					result = (e41ePbySlt9aQ7aSjJxE)2;
+				}
+				else
+				{
+					this.QtVyBUwWYdP.Ldqy52s451Q().TrialVersion.WFOy3n2LN3C();
+					result = (e41ePbySlt9aQ7aSjJxE)3;
+				}
+			}
+			catch (Exception ex)
+			{
+				lHknL1ZuGxpbmVkLhtiC.U5k0glFpPpO(this.T7syBIKxmEJ, ex, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(~1776946562 ^ -26183275 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_1e6a0f98bab448909cf9e1f6d70b345a), Array.Empty<object>(), lHknL1ZuGxpbmVkLhtiC.Kg4ZuHteWc4);
+				throw new C0N5HgerhM0BHep1tJPp(fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-102442854 ^ -76414920 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_1ba055b877504fb4983fb39139e67145), ex);
+			}
+			finally
+			{
+				if (flag)
+				{
+					this.F3TyB0JrtX5();
+				}
+				else
+				{
+					this.lSUyBFexC23(null);
+					this.HjgyBgAGkbL();
+				}
+			}
+			return result;
+		}
+
+		// Token: 0x06001D88 RID: 7560 RVA: 0x001D0BBC File Offset: 0x001CEDBC
+		public Task<DNkqlBySxdg5kJnmLXJ4> vKiy5oM8vGt(string \u0020, gFem6UyS5Rt06g6OuEve \u0020, CancellationToken \u0020)
+		{
+			rUUTMOy6ivNnYRiNMr63.<ActivateAsync>d__23 <ActivateAsync>d__;
+			<ActivateAsync>d__.<>t__builder = AsyncTaskMethodBuilder<DNkqlBySxdg5kJnmLXJ4>.Create();
+			<ActivateAsync>d__.<>4__this = this;
+			<ActivateAsync>d__.serialNumber = \u0020;
+			<ActivateAsync>d__.user = \u0020;
+			<ActivateAsync>d__.cancellationToken = \u0020;
+			<ActivateAsync>d__.<>1__state = -1;
+			<ActivateAsync>d__.<>t__builder.Start<rUUTMOy6ivNnYRiNMr63.<ActivateAsync>d__23>(ref <ActivateAsync>d__);
+			return <ActivateAsync>d__.<>t__builder.Task;
+		}
+
+		// Token: 0x06001D89 RID: 7561 RVA: 0x001D0C20 File Offset: 0x001CEE20
+		public Task<PwF8bkySDtbnX2ZJHrRm> hXQy5LfslGQ(string \u0020, gFem6UyS5Rt06g6OuEve \u0020, CancellationToken \u0020)
+		{
+			rUUTMOy6ivNnYRiNMr63.<DeactivateAsync>d__24 <DeactivateAsync>d__;
+			<DeactivateAsync>d__.<>t__builder = AsyncTaskMethodBuilder<PwF8bkySDtbnX2ZJHrRm>.Create();
+			<DeactivateAsync>d__.<>4__this = this;
+			<DeactivateAsync>d__.serialNumber = \u0020;
+			<DeactivateAsync>d__.user = \u0020;
+			<DeactivateAsync>d__.cancellationToken = \u0020;
+			<DeactivateAsync>d__.<>1__state = -1;
+			<DeactivateAsync>d__.<>t__builder.Start<rUUTMOy6ivNnYRiNMr63.<DeactivateAsync>d__24>(ref <DeactivateAsync>d__);
+			return <DeactivateAsync>d__.<>t__builder.Task;
+		}
+
+		// Token: 0x06001D8A RID: 7562 RVA: 0x001D0C84 File Offset: 0x001CEE84
+		public void ShowUpdateEntitlementDeadlineIfAny(bool \u0020 = false)
+		{
+			LQb8cgySkaoPNAXILaVv lqb8cgySkaoPNAXILaVv = this.G0Jy3dafF6n() as LQb8cgySkaoPNAXILaVv;
+			if (lqb8cgySkaoPNAXILaVv == null)
+			{
+				return;
+			}
+			if (lqb8cgySkaoPNAXILaVv.Ds5yWyZuauJ() > 30U)
+			{
+				return;
+			}
+			if (\u0020)
+			{
+				if (!this.iGjyBdov5Os().F1Oy3OFTC5c())
+				{
+					return;
+				}
+				if (this.iGjyBdov5Os().Ini.eJOy3YcpUbY().DoNotShowMaintenanceExpirationDialogOnStartup)
+				{
+					return;
+				}
+			}
+			vZF875y2k6niX7GWHYOE u = new vZF875y2k6niX7GWHYOE(\u0020, lqb8cgySkaoPNAXILaVv);
+			D1s2xdyId8Vv1LiZqmYy u2 = this.tBdyBtN9dFe().OlVyW5v6HXP().K74yWvOO2Df(u);
+			this.tBdyBtN9dFe().MNZyW8xqZ29().RkByWWyCFcH(u2).ShowDialog(false);
+		}
+
+		// Token: 0x06001D8B RID: 7563 RVA: 0x001D0D1C File Offset: 0x001CEF1C
+		[CompilerGenerated]
+		public XrtxBIySb5GFqrb2G1o4 G0Jy3dafF6n()
+		{
+			return this.FwuyBXerBA1;
+		}
+
+		// Token: 0x06001D8C RID: 7564 RVA: 0x001D0D2C File Offset: 0x001CEF2C
+		[CompilerGenerated]
+		private void lSUyBFexC23(XrtxBIySb5GFqrb2G1o4 \u0020)
+		{
+			this.FwuyBXerBA1 = \u0020;
+		}
+
+		// Token: 0x06001D8D RID: 7565 RVA: 0x001D0D3C File Offset: 0x001CEF3C
+		private bool gxZy6waV5CG(DateTime \u0020)
+		{
+			return XFUkwh0Jy6u6bYUESoBl.U5k0glFpPpO(this.iGjyBdov5Os().Owoy3v6O2xs(), NfdNKP0yQHFstPMLQomM.U5k0glFpPpO(ref \u0020, 14.0, NfdNKP0yQHFstPMLQomM.tNq0yNjKffj), XFUkwh0Jy6u6bYUESoBl.Ckw0J0dHCrv);
+		}
+
+		// Token: 0x06001D8E RID: 7566 RVA: 0x001D0D70 File Offset: 0x001CEF70
+		private void j4My64COZn7(OldCpLicense \u0020, bool \u0020)
+		{
+			rUUTMOy6ivNnYRiNMr63.<>c__DisplayClass31_0 CS$<>8__locals1;
+			CS$<>8__locals1.Y2myOw3R8Tw = this;
+			CS$<>8__locals1.DMdyO3t6XUo = \u0020;
+			CS$<>8__locals1.OGFyO51EpoI = \u0020;
+			CS$<>8__locals1.G0hyO4PGwGf = cxxiIDxdwh31R4V8prRE.U5k0glFpPpO(CS$<>8__locals1.DMdyO3t6XUo, cxxiIDxdwh31R4V8prRE.oqwxd4uwJSi);
+			try
+			{
+				s8aOIIZCrgti38CRKIyW.U5k0glFpPpO(this.r7byBPylaOT(), s8aOIIZCrgti38CRKIyW.E2ZZCC4VGOF);
+			}
+			catch (Exception ex)
+			{
+				lHknL1ZuGxpbmVkLhtiC.U5k0glFpPpO(this.T7syBIKxmEJ, ex, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(528849843 << 5 ^ -1169117349 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_2298ad9b55ca4ad4b689cd323c00077e), Array.Empty<object>(), lHknL1ZuGxpbmVkLhtiC.Kg4ZuHteWc4);
+			}
+			try
+			{
+				qdJJ9PZCJXHFnHCWdg1E.U5k0glFpPpO(this.r7byBPylaOT(), FileAllowFullControlAccessMode.ContainingFolder, qdJJ9PZCJXHFnHCWdg1E.nDDZCfnVtSa);
+			}
+			catch (Exception ex2)
+			{
+				kFmJKkZOnYZ1VqBs4fNS.U5k0glFpPpO(this.T7syBIKxmEJ, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(870998182 ^ 1381049524 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_e33aaf034f19408a8b8e56436ea6822e), Array.Empty<object>(), kFmJKkZOnYZ1VqBs4fNS.UbrZOdBg1N5);
+				ElbVH2ZCgbgyo72d0IXc.U5k0glFpPpO(this.T7syBIKxmEJ, ex2, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-1798489457 ^ -488211581 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_cb5387ceb494419cac8d73ec1f2e55c8), Array.Empty<object>(), ElbVH2ZCgbgyo72d0IXc.MCVZCeE9yxr);
+			}
+			this.jh3yBZ1smt2(ref CS$<>8__locals1);
+			try
+			{
+				qdJJ9PZCJXHFnHCWdg1E.U5k0glFpPpO(this.r7byBPylaOT(), FileAllowFullControlAccessMode.File, qdJJ9PZCJXHFnHCWdg1E.nDDZCfnVtSa);
+			}
+			catch (Exception ex3)
+			{
+				kFmJKkZOnYZ1VqBs4fNS.U5k0glFpPpO(this.T7syBIKxmEJ, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(1500460531 ^ 465782500 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_72ac7432c3264007a12eccd147465e80), Array.Empty<object>(), kFmJKkZOnYZ1VqBs4fNS.UbrZOdBg1N5);
+				ElbVH2ZCgbgyo72d0IXc.U5k0glFpPpO(this.T7syBIKxmEJ, ex3, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(~1776946562 ^ -308106725 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_b267cb015f6b455688ec4d3568625e28), Array.Empty<object>(), ElbVH2ZCgbgyo72d0IXc.MCVZCeE9yxr);
+			}
+		}
+
+		// Token: 0x06001D8F RID: 7567 RVA: 0x001D0F34 File Offset: 0x001CF134
+		private OldCpLicense hfqy63dQEFu()
+		{
+			bool flag;
+			string text;
+			nFygPqZOJ7lKhWOFfDZg.U5k0glFpPpO(this.r7byBPylaOT(), ref flag, ref text, nFygPqZOJ7lKhWOFfDZg.A5qZOfnm8Jv);
+			if (!flag)
+			{
+				return null;
+			}
+			if (kLcx6V0FTH5cSuuZ273O.U5k0glFpPpO(text, kLcx6V0FTH5cSuuZ273O.D0T0F7ZSNPD))
+			{
+				throw new yfCyNsySAEBSjtk0DaWg((FeaC0wySN3vvqR9BVRqr)1, null);
+			}
+			OldCpLicense result;
+			try
+			{
+				OldCpLicense oldCpLicense = JsonConvert.DeserializeObject<OldCpLicense>(text);
+				if (oldCpLicense == null)
+				{
+					throw new NullReferenceException();
+				}
+				string text2 = cxxiIDxdwh31R4V8prRE.U5k0glFpPpO(new OldCpLicense(), cxxiIDxdwh31R4V8prRE.oqwxd4uwJSi);
+				string text3 = cxxiIDxdwh31R4V8prRE.U5k0glFpPpO(oldCpLicense, cxxiIDxdwh31R4V8prRE.oqwxd4uwJSi);
+				if (Ob79qd0P94UNSwlfyj50.U5k0glFpPpO(text2, text3, Ob79qd0P94UNSwlfyj50.Vcr0PoQX5N9))
+				{
+					throw new SerializationException();
+				}
+				result = oldCpLicense;
+			}
+			catch
+			{
+				throw new yfCyNsySAEBSjtk0DaWg((FeaC0wySN3vvqR9BVRqr)2, null);
+			}
+			return result;
+		}
+
+		// Token: 0x06001D90 RID: 7568 RVA: 0x001D0FE4 File Offset: 0x001CF1E4
+		private void e5Ay65ugb64(OldCpLicense \u0020)
+		{
+			if (ptMsso0PrkdrsWldI5bh.U5k0glFpPpO(\u0020.Programm, this.iGjyBdov5Os().vd6y3QedFkP(), ptMsso0PrkdrsWldI5bh.a0k0PC63SHs))
+			{
+				string programm = \u0020.Programm;
+				if (Ob79qd0P94UNSwlfyj50.U5k0glFpPpO(programm, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(1165598136 << 1 ^ -933277787 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_72ac7432c3264007a12eccd147465e80), Ob79qd0P94UNSwlfyj50.Vcr0PoQX5N9))
+				{
+					throw new yfCyNsySAEBSjtk0DaWg((FeaC0wySN3vvqR9BVRqr)17, \u0020);
+				}
+				if (!Ob79qd0P94UNSwlfyj50.U5k0glFpPpO(programm, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(1541769407 ^ 1100832657 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_09d3e72efc8c4da2b284f081964251a1), Ob79qd0P94UNSwlfyj50.Vcr0PoQX5N9))
+				{
+					throw new yfCyNsySAEBSjtk0DaWg((FeaC0wySN3vvqR9BVRqr)3, \u0020);
+				}
+				throw new yfCyNsySAEBSjtk0DaWg((FeaC0wySN3vvqR9BVRqr)18, \u0020);
+			}
+			else
+			{
+				if (ptMsso0PrkdrsWldI5bh.U5k0glFpPpO(\u0020.Registration.Programm, this.iGjyBdov5Os().vd6y3QedFkP(), ptMsso0PrkdrsWldI5bh.a0k0PC63SHs))
+				{
+					throw new yfCyNsySAEBSjtk0DaWg((FeaC0wySN3vvqR9BVRqr)3, \u0020);
+				}
+				DateTime maintenance = \u0020.Maintenance;
+				if (VATggE0CYqaYOVJ9IXt7.U5k0glFpPpO(VYw2UjZuR990KWIIgQde.U5k0glFpPpO(ref maintenance, VYw2UjZuR990KWIIgQde.qfxZuuqM0Mk), this.EBTyBKFYHLs, VATggE0CYqaYOVJ9IXt7.YAc0CzlDW0M))
+				{
+					throw new yfCyNsySAEBSjtk0DaWg((FeaC0wySN3vvqR9BVRqr)19, \u0020);
+				}
+				if (!\u0020.t3bySuAJF9Q())
+				{
+					throw new yfCyNsySAEBSjtk0DaWg((FeaC0wySN3vvqR9BVRqr)4, \u0020);
+				}
+				return;
+			}
+		}
+
+		// Token: 0x06001D91 RID: 7569 RVA: 0x001D110C File Offset: 0x001CF30C
+		private void WnWy68XkMU1()
+		{
+			TDDDVOZk8QgoIRR9rYpR.U5k0glFpPpO(this.r7byBPylaOT(), TDDDVOZk8QgoIRR9rYpR.GufZkWXrH3f);
+		}
+
+		// Token: 0x06001D92 RID: 7570 RVA: 0x001D1128 File Offset: 0x001CF328
+		private void duFy6WuqsYo(OldCpLicense \u0020, bool \u0020)
+		{
+			Ohtcbeyq9vhowEvASqt7 u = new Ohtcbeyq9vhowEvASqt7
+			{
+				SerialNumber = \u0020.Registration.Serial,
+				UserName = \u0020.Registration.UserName,
+				EmailAddress = \u0020.Registration.Email,
+				MachineId = \u0020.Registration.Machine,
+				Company = \u0020.Registration.Company,
+				ProgramCode = this.iGjyBdov5Os().vd6y3QedFkP()
+			};
+			OyGq20yq1cAwyDEOJo81<VusmAqyqI5K1hYqMVGya> result = this.HUXyBmfRy3G().Asmy84GEo1V(u, h5ueGJ0CrSm1KekB0Ckk.U5k0glFpPpO(h5ueGJ0CrSm1KekB0Ckk.fR50CCSdjNb)).Result;
+			if (result.Success)
+			{
+				VusmAqyqI5K1hYqMVGya vusmAqyqI5K1hYqMVGya = result.drayqqPYkbN();
+				if (vusmAqyqI5K1hYqMVGya.LicenseStatus == (VusmAqyqI5K1hYqMVGya.th7XeAypF3rZbOnvhU72)2)
+				{
+					\u0020.Programm = fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-2038244484 >> 6 ^ -1452305870 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_c24e8e559e0847898d9dbbb746d3a520);
+					DateTime dateTime = DateTime.MinValue;
+					\u0020.Maintenance = VYw2UjZuR990KWIIgQde.U5k0glFpPpO(ref dateTime, VYw2UjZuR990KWIIgQde.qfxZuuqM0Mk);
+				}
+				else if (vusmAqyqI5K1hYqMVGya.LicenseStatus == (VusmAqyqI5K1hYqMVGya.th7XeAypF3rZbOnvhU72)4)
+				{
+					\u0020.Programm = fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(~672302918 ^ -952064032 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_e6bb67ba434b4144b4dddc76897e9cbb);
+					DateTime dateTime = DateTime.MinValue;
+					\u0020.Maintenance = VYw2UjZuR990KWIIgQde.U5k0glFpPpO(ref dateTime, VYw2UjZuR990KWIIgQde.qfxZuuqM0Mk);
+				}
+				else
+				{
+					if (!this.eswy6YK0y7D(u, vusmAqyqI5K1hYqMVGya))
+					{
+						throw new yfCyNsySAEBSjtk0DaWg((FeaC0wySN3vvqR9BVRqr)16, null);
+					}
+					DateTime dateTime = vusmAqyqI5K1hYqMVGya.LicenseEndsAt;
+					\u0020.Maintenance = VYw2UjZuR990KWIIgQde.U5k0glFpPpO(ref dateTime, VYw2UjZuR990KWIIgQde.qfxZuuqM0Mk);
+					if (vusmAqyqI5K1hYqMVGya.LicenseStatus == (VusmAqyqI5K1hYqMVGya.th7XeAypF3rZbOnvhU72)6)
+					{
+						dateTime = \u0020.Maintenance;
+						if (IHa918E2R2RabmC2tdwj.U5k0glFpPpO(VYw2UjZuR990KWIIgQde.U5k0glFpPpO(ref dateTime, VYw2UjZuR990KWIIgQde.qfxZuuqM0Mk), this.EBTyBKFYHLs, IHa918E2R2RabmC2tdwj.bRVE2uaA5Tq))
+						{
+							\u0020.Maintenance = this.EBTyBKFYHLs;
+						}
+					}
+					else
+					{
+						VusmAqyqI5K1hYqMVGya.th7XeAypF3rZbOnvhU72 licenseStatus = vusmAqyqI5K1hYqMVGya.LicenseStatus;
+					}
+					\u0020.UnRegisterable = vusmAqyqI5K1hYqMVGya.DeRegistrable;
+				}
+				\u0020.Vs0ySpnpJQH();
+				this.j4My64COZn7(\u0020, \u0020);
+				switch (vusmAqyqI5K1hYqMVGya.LicenseStatus)
+				{
+				case VusmAqyqI5K1hYqMVGya.th7XeAypF3rZbOnvhU72.Ok:
+				case (VusmAqyqI5K1hYqMVGya.th7XeAypF3rZbOnvhU72)2:
+				case (VusmAqyqI5K1hYqMVGya.th7XeAypF3rZbOnvhU72)4:
+				case (VusmAqyqI5K1hYqMVGya.th7XeAypF3rZbOnvhU72)6:
+					goto IL_285;
+				case (VusmAqyqI5K1hYqMVGya.th7XeAypF3rZbOnvhU72)5:
+					if (\u0020)
+					{
+						KoR8jDyMnql5dNub9gnC u2 = new KoR8jDyMnql5dNub9gnC(\u0020.butySvSSQUw(), \u0020.Registration.Serial, \u0020.Registration.Machine);
+						JQHUvWyIoYPCtBhKEEqu u3 = this.tBdyBtN9dFe().OlVyW5v6HXP().cHDyWCfHHfk(u2);
+						this.ay9yBsPAiQJ().RkByWWyCFcH(u3).ShowDialog(false);
+						goto IL_285;
+					}
+					goto IL_285;
+				}
+				throw new ArgumentOutOfRangeException(fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(517498151 ^ 857068993 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_3d9d63fbcd8a4c4bb1d9f91be963cc48), vusmAqyqI5K1hYqMVGya.LicenseStatus, null);
+				IL_285:
+				this.e5Ay65ugb64(\u0020);
+			}
+		}
+
+		// Token: 0x06001D93 RID: 7571 RVA: 0x001D13C4 File Offset: 0x001CF5C4
+		private bool eswy6YK0y7D(Ohtcbeyq9vhowEvASqt7 \u0020, VusmAqyqI5K1hYqMVGya \u0020)
+		{
+			string programCode = \u0020.ProgramCode;
+			string serialNumber = \u0020.SerialNumber;
+			string machineId = \u0020.MachineId;
+			DateTime licenseEndsAt = \u0020.LicenseEndsAt;
+			return xvZJbZ0PBsjMgfAk7XLA.U5k0glFpPpO(rUUTMOy6ivNnYRiNMr63.FgpyBna8yBj(b9Rtht0vc06ml6TobP9K.U5k0glFpPpO(programCode, serialNumber, ORM49aZuLRWe8FGDfw5c.U5k0glFpPpO(ref licenseEndsAt, zCeJDv0i8HnQcj12PGCw.U5k0glFpPpO(zCeJDv0i8HnQcj12PGCw.kGi0iWQDQH8), ORM49aZuLRWe8FGDfw5c.cyRZul3OkVX), machineId, b9Rtht0vc06ml6TobP9K.EEu0v6vUj4x)), \u0020.Hash, xvZJbZ0PBsjMgfAk7XLA.uNn0PSGOwtW);
+		}
+
+		// Token: 0x06001D94 RID: 7572 RVA: 0x001D142C File Offset: 0x001CF62C
+		private void d9Ty6zPRom3(bool \u0020, bool \u0020)
+		{
+			HoTFtuyqwopa7KgRjDgB hoTFtuyqwopa7KgRjDgB = new HoTFtuyqwopa7KgRjDgB(\u0020, \u0020);
+			this.tMayB774W9T().Send<HoTFtuyqwopa7KgRjDgB, string>(hoTFtuyqwopa7KgRjDgB, AeaJweekWFshrhZu0516.iWAekYEKn2k);
+			this.tMayB774W9T().i7NereeTciP(hoTFtuyqwopa7KgRjDgB);
+		}
+
+		// Token: 0x06001D95 RID: 7573 RVA: 0x001D1468 File Offset: 0x001CF668
+		private void HjgyBgAGkbL()
+		{
+			if (!this.XGfyBGEkisd)
+			{
+				mtg9epZOvnY6Sb8dXBZm.U5k0glFpPpO(this.r7byBPylaOT(), new EventHandler<FileCreatedEventArgs>(this.W22yByg1QN9), mtg9epZOvnY6Sb8dXBZm.DDYZOkG2tY1);
+				oPDLiwZOrLexbIYUoLS5.U5k0glFpPpO(this.r7byBPylaOT(), new EventHandler<FileChangedEventArgs>(this.W22yByg1QN9), oPDLiwZOrLexbIYUoLS5.j9GZOCR36Jr);
+				this.XGfyBGEkisd = true;
+			}
+		}
+
+		// Token: 0x06001D96 RID: 7574 RVA: 0x001D14C8 File Offset: 0x001CF6C8
+		private void p0fyBepi65N()
+		{
+			if (this.XGfyBGEkisd)
+			{
+				BWcofqZv1SUQRdhApNPp.U5k0glFpPpO(this.r7byBPylaOT(), new EventHandler<FileCreatedEventArgs>(this.W22yByg1QN9), BWcofqZv1SUQRdhApNPp.XUgZvmRCZTE);
+				GtQ4iKZvghlN1rFNkrlk.U5k0glFpPpO(this.r7byBPylaOT(), new EventHandler<FileChangedEventArgs>(this.W22yByg1QN9), GtQ4iKZvghlN1rFNkrlk.r7GZveprOoY);
+				this.XGfyBGEkisd = false;
+			}
+		}
+
+		// Token: 0x06001D97 RID: 7575 RVA: 0x001D1528 File Offset: 0x001CF728
+		private void W22yByg1QN9(object \u0020, FileEventArgs \u0020)
+		{
+			if (fdSmjVZOwBuf50BxHJPh.U5k0glFpPpO(\u0020, fdSmjVZOwBuf50BxHJPh.zSvZO49lLhE))
+			{
+				return;
+			}
+			bool flag = false;
+			try
+			{
+				OldCpLicense oldCpLicense = this.hfqy63dQEFu();
+				if (oldCpLicense != null)
+				{
+					try
+					{
+						this.e5Ay65ugb64(oldCpLicense);
+					}
+					catch
+					{
+						return;
+					}
+					if (!this.gxZy6waV5CG(oldCpLicense.Maintenance))
+					{
+						if (oldCpLicense.butySvSSQUw())
+						{
+							this.lSUyBFexC23(new BOoetdyqxLd3iStXXNo3(oldCpLicense, this.u2syB6R1IYD()));
+						}
+						else
+						{
+							this.lSUyBFexC23(new ApQwiXySr3St58Fv8AEg(oldCpLicense, this.u2syB6R1IYD()));
+						}
+						flag = true;
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				lHknL1ZuGxpbmVkLhtiC.U5k0glFpPpO(this.T7syBIKxmEJ, ex, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-890847643 + 980415 ^ -1743961727 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_4888eb666cd840669654606b599cc633), Array.Empty<object>(), lHknL1ZuGxpbmVkLhtiC.Kg4ZuHteWc4);
+			}
+			finally
+			{
+				if (flag)
+				{
+					this.p0fyBepi65N();
+					this.F3TyB0JrtX5();
+					this.d9Ty6zPRom3(true, true);
+				}
+				else
+				{
+					this.lSUyBFexC23(null);
+				}
+			}
+		}
+
+		// Token: 0x06001D98 RID: 7576 RVA: 0x001D1654 File Offset: 0x001CF854
+		private void F3TyB0JrtX5()
+		{
+			if (!this.pVeyBHSvpIS)
+			{
+				PGrGjhZvcpSnucdh6RLn.U5k0glFpPpO(this.r7byBPylaOT(), new EventHandler<FileDeletedEventArgs>(this.iyqyBEEjc3Q), PGrGjhZvcpSnucdh6RLn.ApOZv62hWmH);
+				this.pVeyBHSvpIS = true;
+			}
+		}
+
+		// Token: 0x06001D99 RID: 7577 RVA: 0x001D168C File Offset: 0x001CF88C
+		private void vIayBxTkKsj()
+		{
+			if (this.pVeyBHSvpIS)
+			{
+				g0DeUHZvBJAov3tA80tl.U5k0glFpPpO(this.r7byBPylaOT(), new EventHandler<FileDeletedEventArgs>(this.iyqyBEEjc3Q), g0DeUHZvBJAov3tA80tl.whCZvSG2erM);
+				this.pVeyBHSvpIS = false;
+			}
+		}
+
+		// Token: 0x06001D9A RID: 7578 RVA: 0x001D16C4 File Offset: 0x001CF8C4
+		private void iyqyBEEjc3Q(object \u0020, FileEventArgs \u0020)
+		{
+			if (fdSmjVZOwBuf50BxHJPh.U5k0glFpPpO(\u0020, fdSmjVZOwBuf50BxHJPh.zSvZO49lLhE))
+			{
+				return;
+			}
+			this.lSUyBFexC23(null);
+			this.HjgyBgAGkbL();
+			this.vIayBxTkKsj();
+			this.d9Ty6zPRom3(false, true);
+		}
+
+		// Token: 0x06001D9B RID: 7579 RVA: 0x001D16FC File Offset: 0x001CF8FC
+		[CompilerGenerated]
+		private void jh3yBZ1smt2(ref rUUTMOy6ivNnYRiNMr63.<>c__DisplayClass31_0 \u0020)
+		{
+			UnauthorizedAccessException ex2;
+			object obj;
+			AggregateException ex;
+			bool flag;
+			try
+			{
+				bE0WEMZO8ltHvDSGOL5Z.U5k0glFpPpO(this.r7byBPylaOT(), \u0020.G0hyO4PGwGf, bE0WEMZO8ltHvDSGOL5Z.jglZOWUvcm3);
+			}
+			catch when (delegate
+			{
+				// Failed to create a 'catch-when' expression
+				ex = (obj as AggregateException);
+				if (ex == null)
+				{
+					flag = false;
+				}
+				else
+				{
+					ex2 = (qMLptHECn9E9AVbAPS5R.U5k0glFpPpO(ex, qMLptHECn9E9AVbAPS5R.hLmECdojx7Z) as UnauthorizedAccessException);
+					flag = ((ex2 != null) > false);
+				}
+				endfilter(flag);
+			})
+			{
+				ILogger t7syBIKxmEJ = this.T7syBIKxmEJ;
+				Exception ex3 = ex2;
+				string text = fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-717710584 ^ -953790572 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_e6a6561253c644bb8a9c0e4292ef5637);
+				OldCpLicense dmdyO3t6XUo = \u0020.DMdyO3t6XUo;
+				string text2;
+				if (dmdyO3t6XUo == null)
+				{
+					text2 = null;
+				}
+				else
+				{
+					OldCpLicense.UserData registration = dmdyO3t6XUo.Registration;
+					text2 = ((registration != null) ? registration.Serial : null);
+				}
+				lHknL1ZuGxpbmVkLhtiC.U5k0glFpPpO(t7syBIKxmEJ, ex3, WPhP8P0dqOKjr3x1ZNAB.U5k0glFpPpO(text, text2, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-1737564565 ^ -1965572317 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_14855347b76148c28ef474e8c0d5e23d), WPhP8P0dqOKjr3x1ZNAB.rCU0dta3SDZ), Array.Empty<object>(), lHknL1ZuGxpbmVkLhtiC.Kg4ZuHteWc4);
+				this.EMOyBhb81By(ref \u0020);
+				try
+				{
+					bE0WEMZO8ltHvDSGOL5Z.U5k0glFpPpO(this.r7byBPylaOT(), \u0020.G0hyO4PGwGf, bE0WEMZO8ltHvDSGOL5Z.jglZOWUvcm3);
+				}
+				catch (Exception ex4)
+				{
+					lHknL1ZuGxpbmVkLhtiC.U5k0glFpPpO(this.T7syBIKxmEJ, ex4, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-1823195338 >> 3 ^ -1272704916 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_a026bfa221bb49f6b39cc7a9c66e309e), Array.Empty<object>(), lHknL1ZuGxpbmVkLhtiC.Kg4ZuHteWc4);
+					if (\u0020.OGFyO51EpoI)
+					{
+						string u = Nxcxo8ZOYrbcMB7sMFlH.U5k0glFpPpO(this.r7byBPylaOT(), Nxcxo8ZOYrbcMB7sMFlH.YUjZOzS0NpH);
+						OldCpLicense dmdyO3t6XUo2 = \u0020.DMdyO3t6XUo;
+						string u2;
+						if (dmdyO3t6XUo2 == null)
+						{
+							u2 = null;
+						}
+						else
+						{
+							OldCpLicense.UserData registration2 = dmdyO3t6XUo2.Registration;
+							u2 = ((registration2 != null) ? registration2.Serial : null);
+						}
+						iSVJKZyMaswjmF7JDxa4 u3 = new iSVJKZyMaswjmF7JDxa4(u, u2);
+						Xa53fwyI5TKU99oNMjSX u4 = this.tBdyBtN9dFe().OlVyW5v6HXP().s37yWJpB9vX(u3);
+						this.tBdyBtN9dFe().MNZyW8xqZ29().RkByWWyCFcH(u4).ShowDialog(false);
+					}
+					throw;
+				}
+			}
+		}
+
+		// Token: 0x06001D9C RID: 7580 RVA: 0x001D18DC File Offset: 0x001CFADC
+		[CompilerGenerated]
+		private void EMOyBhb81By(ref rUUTMOy6ivNnYRiNMr63.<>c__DisplayClass31_0 \u0020)
+		{
+			ICollection<FileSystemAccessRule> collection = null;
+			bool flag = false;
+			try
+			{
+				flag = MHuOFqZCbrpxRoTUvcwL.U5k0glFpPpO(this.r7byBPylaOT(), ref collection, MHuOFqZCbrpxRoTUvcwL.ivWZCiotJjn);
+			}
+			catch (Exception ex)
+			{
+				lHknL1ZuGxpbmVkLhtiC.U5k0glFpPpO(this.T7syBIKxmEJ, ex, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-434472460 + 353911003 ^ -1454607155 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_9e7a80d4720f442badbafa6e143901e4), Array.Empty<object>(), lHknL1ZuGxpbmVkLhtiC.Kg4ZuHteWc4);
+			}
+			if (flag && collection != null)
+			{
+				IEnumerator<FileSystemAccessRule> enumerator = collection.GetEnumerator();
+				try
+				{
+					while (SdWjpt0eg8Qh7IpYr1j0.U5k0glFpPpO(enumerator, SdWjpt0eg8Qh7IpYr1j0.e2u0eesyrwA))
+					{
+						FileSystemAccessRule fileSystemAccessRule = enumerator.Current;
+						kFmJKkZOnYZ1VqBs4fNS.U5k0glFpPpO(this.T7syBIKxmEJ, ocslGJ0Fc4sP5gGUvkDZ.U5k0glFpPpO(fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-215848640 ^ -295202019 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_2f7ba49667e244b093e1598489c4d705), XhGLwFZC3dhjEb9sEi3j.U5k0glFpPpO(UrvMQoZCwB9FXje7Z3rY.U5k0glFpPpO(fileSystemAccessRule, UrvMQoZCwB9FXje7Z3rY.NdJZC49CiEq), XhGLwFZC3dhjEb9sEi3j.LbZZC5NFrrQ), rX2G17ZC8uWmkwoynG00.U5k0glFpPpO(fileSystemAccessRule, rX2G17ZC8uWmkwoynG00.vLaZCWNDnY4), ocslGJ0Fc4sP5gGUvkDZ.oMV0F6XTvP8), Array.Empty<object>(), kFmJKkZOnYZ1VqBs4fNS.UbrZOdBg1N5);
+						try
+						{
+							fZv8pEZCYoTAXUdZUZ2e.U5k0glFpPpO(this.r7byBPylaOT(), UrvMQoZCwB9FXje7Z3rY.U5k0glFpPpO(fileSystemAccessRule, UrvMQoZCwB9FXje7Z3rY.NdJZC49CiEq), fZv8pEZCYoTAXUdZUZ2e.MbkZCz4KvhZ);
+						}
+						catch (Exception ex2)
+						{
+							lHknL1ZuGxpbmVkLhtiC.U5k0glFpPpO(this.T7syBIKxmEJ, ex2, ocslGJ0Fc4sP5gGUvkDZ.U5k0glFpPpO(fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-1656175004 ^ -419456952 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_b267cb015f6b455688ec4d3568625e28), XhGLwFZC3dhjEb9sEi3j.U5k0glFpPpO(UrvMQoZCwB9FXje7Z3rY.U5k0glFpPpO(fileSystemAccessRule, UrvMQoZCwB9FXje7Z3rY.NdJZC49CiEq), XhGLwFZC3dhjEb9sEi3j.LbZZC5NFrrQ), rX2G17ZC8uWmkwoynG00.U5k0glFpPpO(fileSystemAccessRule, rX2G17ZC8uWmkwoynG00.vLaZCWNDnY4), ocslGJ0Fc4sP5gGUvkDZ.oMV0F6XTvP8), Array.Empty<object>(), lHknL1ZuGxpbmVkLhtiC.Kg4ZuHteWc4);
+						}
+					}
+				}
+				finally
+				{
+					if (enumerator != null)
+					{
+						mXwRIP0eygb1BTNpLu9o.U5k0glFpPpO(enumerator, mXwRIP0eygb1BTNpLu9o.eIw0e0n8dTJ);
+					}
+				}
+			}
+			try
+			{
+				qdJJ9PZCJXHFnHCWdg1E.U5k0glFpPpO(this.r7byBPylaOT(), FileAllowFullControlAccessMode.ContainingFolder, qdJJ9PZCJXHFnHCWdg1E.nDDZCfnVtSa);
+			}
+			catch (Exception ex3)
+			{
+				lHknL1ZuGxpbmVkLhtiC.U5k0glFpPpO(this.T7syBIKxmEJ, ex3, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(489683115 ^ 1603508162 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_5dfdc76a66824331bfbf67043c6720cd), Array.Empty<object>(), lHknL1ZuGxpbmVkLhtiC.Kg4ZuHteWc4);
+			}
+			try
+			{
+				qdJJ9PZCJXHFnHCWdg1E.U5k0glFpPpO(this.r7byBPylaOT(), FileAllowFullControlAccessMode.File, qdJJ9PZCJXHFnHCWdg1E.nDDZCfnVtSa);
+			}
+			catch (Exception ex4)
+			{
+				lHknL1ZuGxpbmVkLhtiC.U5k0glFpPpO(this.T7syBIKxmEJ, ex4, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(~1823292761 ^ -1247819183 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_a12f5aaf303741d5adc4e1d90c3c9599), Array.Empty<object>(), lHknL1ZuGxpbmVkLhtiC.Kg4ZuHteWc4);
+			}
+			try
+			{
+				if (IMS6YxZJgLI78d1X8ReG.U5k0glFpPpO(this.r7byBPylaOT(), FileAttributes.ReadOnly, IMS6YxZJgLI78d1X8ReG.RSBZJeVF48g))
+				{
+					kFmJKkZOnYZ1VqBs4fNS.U5k0glFpPpO(this.T7syBIKxmEJ, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-1532401704 ^ -1505772950 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_1ba055b877504fb4983fb39139e67145), Array.Empty<object>(), kFmJKkZOnYZ1VqBs4fNS.UbrZOdBg1N5);
+					C1WEIAZJyhDQ7N9jIcgl.U5k0glFpPpO(this.r7byBPylaOT(), FileAttributes.ReadOnly, C1WEIAZJyhDQ7N9jIcgl.rQoZJ02GjlJ);
+				}
+			}
+			catch (Exception ex5)
+			{
+				lHknL1ZuGxpbmVkLhtiC.U5k0glFpPpO(this.T7syBIKxmEJ, ex5, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(--855826109 ^ 202659466 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_da08d471c54d43618b119e42c4901a50), Array.Empty<object>(), lHknL1ZuGxpbmVkLhtiC.Kg4ZuHteWc4);
+			}
+			try
+			{
+				if (IMS6YxZJgLI78d1X8ReG.U5k0glFpPpO(this.r7byBPylaOT(), FileAttributes.Hidden, IMS6YxZJgLI78d1X8ReG.RSBZJeVF48g))
+				{
+					kFmJKkZOnYZ1VqBs4fNS.U5k0glFpPpO(this.T7syBIKxmEJ, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(1329385335 ^ 2051948639 ^ 1321587246 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_b267cb015f6b455688ec4d3568625e28), Array.Empty<object>(), kFmJKkZOnYZ1VqBs4fNS.UbrZOdBg1N5);
+					C1WEIAZJyhDQ7N9jIcgl.U5k0glFpPpO(this.r7byBPylaOT(), FileAttributes.Hidden, C1WEIAZJyhDQ7N9jIcgl.rQoZJ02GjlJ);
+				}
+			}
+			catch (Exception ex6)
+			{
+				lHknL1ZuGxpbmVkLhtiC.U5k0glFpPpO(this.T7syBIKxmEJ, ex6, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-1737564565 ^ -686021892 ^ <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_8d1364a92157439d86c1be1ec5432644), Array.Empty<object>(), lHknL1ZuGxpbmVkLhtiC.Kg4ZuHteWc4);
+			}
+		}
+
+		// Token: 0x06001D9D RID: 7581 RVA: 0x001D1D00 File Offset: 0x001CFF00
+		[CompilerGenerated]
+		internal static string FgpyBna8yBj(string \u0020)
+		{
+			return lRLbPdeCEXTtgI2II2PI.jF5eCZEpxXG(\u0020, "", (dCjw5heCxcTbTwQyKpWG)0, false);
+		}
+
+		// Token: 0x06001D9E RID: 7582 RVA: 0x001D1D18 File Offset: 0x001CFF18
+		// Note: this type is marked as 'beforefieldinit'.
+		static rUUTMOy6ivNnYRiNMr63()
+		{
+			fXUU4jykVT4coaAMg9aB.gRpykFhmKaB();
+		}
+
+		// Token: 0x04001889 RID: 6281
+		private readonly n6l3C2efhca2k0Ai5oMo QtVyBUwWYdP;
+
+		// Token: 0x0400188A RID: 6282
+		private readonly ILogger T7syBIKxmEJ;
+
+		// Token: 0x0400188B RID: 6283
+		private readonly DateTime EBTyBKFYHLs;
+
+		// Token: 0x0400188C RID: 6284
+		[CompilerGenerated]
+		private XrtxBIySb5GFqrb2G1o4 FwuyBXerBA1;
+
+		// Token: 0x0400188D RID: 6285
+		private bool XGfyBGEkisd;
+
+		// Token: 0x0400188E RID: 6286
+		private bool pVeyBHSvpIS;
+	}
+}
