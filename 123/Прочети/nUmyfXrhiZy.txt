@@ -1,0 +1,8 @@
+0	0000	br.s	2 (0007) ldc.i4.0 
+1	0002	call	null
+2	0007	ldc.i4.0
+3	0008	stloc.0
+4	0009	ldarg.0
+5	000A	ldloca.s	V_0 (0)
+6	000C	call	instance void tcluRCmJ2u79OhTbGG.EpkPbayCU7YvCOI36TbN/xFW0LUyfKqppENFaPFPW::BLVyfHKtAbK(bool&)
+7	0011	ret

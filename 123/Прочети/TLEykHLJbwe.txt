@@ -1,0 +1,18 @@
+0	0000	ldc.i4	2
+1	0005	newarr	[mscorlib]System.Object
+2	000A	stloc.0
+3	000B	ldloc.0
+4	000C	ldc.i4	0
+5	0011	ldarg	\u0020 (0)
+6	0015	stelem.ref
+7	0016	ldloc.0
+8	0017	ldc.i4	1
+9	001C	ldarg	\u0020 (1)
+10	0020	box	[mscorlib]System.Int32
+11	0025	stelem.ref
+12	0026	ldc.i4	0
+13	002B	ldloc.0
+14	002C	ldnull
+15	002D	call	object[] tcluRCmJ2u79OhTbGG.EpkPbayCU7YvCOI36TbN::JtwyCGLsdfE(int32, object[], object)
+16	0032	pop
+17	0033	ret

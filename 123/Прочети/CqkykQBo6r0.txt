@@ -1,0 +1,144 @@
+0	0000	ldsfld	uint8[] tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::GuiyrVW19Wk
+1	0005	ldlen
+2	0006	brtrue	12 (0034) ldsfld int32 tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::EWayrZVfYy5
+3	000B	newobj	instance void class [mscorlib]System.Collections.Generic.List`1<string>::.ctor()
+4	0010	stsfld	class [mscorlib]System.Collections.Generic.List`1<string> tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::x1fyrnSiO4M
+5	0015	newobj	instance void class [mscorlib]System.Collections.Generic.List`1<int32>::.ctor()
+6	001A	stsfld	class [mscorlib]System.Collections.Generic.List`1<int32> tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::NQIyrdgriFV
+7	001F	ldsfld	class [mscorlib]System.Reflection.Assembly tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::oU6ykzWLIeb
+8	0024	ldstr	"uNs7Wte18A4oyf6jm5.SPbLiIyKtHBSsv8DfR"
+9	0029	callvirt	instance class [mscorlib]System.IO.Stream [mscorlib]System.Reflection.Assembly::GetManifestResourceStream(string)
+10	002E	ldarg.0
+11	002F	call	void tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::TLEykHLJbwe(class [mscorlib]System.IO.Stream, int32)
+12	0034	ldsfld	int32 tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::EWayrZVfYy5
+13	0039	ldc.i4.s	0x4B
+14	003B	bge	68 (00D8) ldsfld object tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::vblyrh09ovx
+15	0040	ldc.i4.1
+16	0041	newobj	instance void [mscorlib]System.Diagnostics.StackFrame::.ctor(int32)
+17	0046	callvirt	instance class [mscorlib]System.Reflection.MethodBase [mscorlib]System.Diagnostics.StackFrame::GetMethod()
+18	004B	stloc.0
+19	004C	ldsfld	class [mscorlib]System.Reflection.Assembly tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::oU6ykzWLIeb
+20	0051	ldloc.0
+21	0052	callvirt	instance class [mscorlib]System.Type [mscorlib]System.Reflection.MemberInfo::get_DeclaringType()
+22	0057	callvirt	instance class [mscorlib]System.Reflection.Assembly [mscorlib]System.Type::get_Assembly()
+23	005C	call	bool [mscorlib]System.Reflection.Assembly::op_Inequality(class [mscorlib]System.Reflection.Assembly, class [mscorlib]System.Reflection.Assembly)
+24	0061	brfalse	64 (00CC) ldsfld int32 tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::EWayrZVfYy5
+25	0066	ldc.i4.0
+26	0067	stloc.1
+27	0068	ldloc.0
+28	0069	callvirt	instance class [mscorlib]System.Type [mscorlib]System.Reflection.MemberInfo::get_DeclaringType()
+29	006E	callvirt	instance class [mscorlib]System.Reflection.Assembly [mscorlib]System.Type::get_Assembly()
+30	0073	callvirt	instance class [mscorlib]System.Reflection.AssemblyName [mscorlib]System.Reflection.Assembly::GetName()
+31	0078	callvirt	instance string [mscorlib]System.Reflection.AssemblyName::get_Name()
+32	007D	stloc.2
+33	007E	ldsfld	class [mscorlib]System.Reflection.Assembly tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::oU6ykzWLIeb
+34	0083	callvirt	instance class [mscorlib]System.Reflection.AssemblyName[] [mscorlib]System.Reflection.Assembly::GetReferencedAssemblies()
+35	0088	stloc.3
+36	0089	ldc.i4.0
+37	008A	stloc.s	V_4 (4)
+38	008C	br	55 (00B6) ldloc.s V_4 (4)
+39	0091	ldloc.3
+40	0092	ldloc.s	V_4 (4)
+41	0094	ldelem.ref
+42	0095	stloc.s	V_5 (5)
+43	0097	ldloc.2
+44	0098	ldloc.s	V_5 (5)
+45	009A	callvirt	instance string [mscorlib]System.Reflection.AssemblyName::get_Name()
+46	009F	call	bool [mscorlib]System.String::op_Equality(string, string)
+47	00A4	brfalse	51 (00B0) ldloc.s V_4 (4)
+48	00A9	ldc.i4.1
+49	00AA	stloc.1
+50	00AB	br	60 (00C0) ldloc.1 
+51	00B0	ldloc.s	V_4 (4)
+52	00B2	ldc.i4.1
+53	00B3	add
+54	00B4	stloc.s	V_4 (4)
+55	00B6	ldloc.s	V_4 (4)
+56	00B8	ldloc.3
+57	00B9	ldlen
+58	00BA	conv.i4
+59	00BB	blt	39 (0091) ldloc.3 
+60	00C0	ldloc.1
+61	00C1	brtrue	64 (00CC) ldsfld int32 tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::EWayrZVfYy5
+62	00C6	newobj	instance void [mscorlib]System.Exception::.ctor()
+63	00CB	throw
+64	00CC	ldsfld	int32 tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::EWayrZVfYy5
+65	00D1	ldc.i4.1
+66	00D2	add
+67	00D3	stsfld	int32 tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::EWayrZVfYy5
+68	00D8	ldsfld	object tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::vblyrh09ovx
+69	00DD	stloc.s	V_6 (6)
+70	00DF	ldc.i4.0
+71	00E0	stloc.s	V_7 (7)
+72	00E2	ldloc.s	V_6 (6)
+73	00E4	ldloca.s	V_7 (7)
+74	00E6	call	void [mscorlib]System.Threading.Monitor::Enter(object, bool&)
+75	00EB	ldsfld	uint8[] tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::GuiyrVW19Wk
+76	00F0	ldarg.0
+77	00F1	call	int32 [mscorlib]System.BitConverter::ToInt32(uint8[], int32)
+78	00F6	stloc.s	V_8 (8)
+79	00F8	ldloc.s	V_8 (8)
+80	00FA	ldsfld	class [mscorlib]System.Collections.Generic.List`1<int32> tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::NQIyrdgriFV
+81	00FF	callvirt	instance int32 class [mscorlib]System.Collections.Generic.List`1<int32>::get_Count()
+82	0104	bge	93 (012E) nop 
+83	0109	ldsfld	class [mscorlib]System.Collections.Generic.List`1<int32> tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::NQIyrdgriFV
+84	010E	ldloc.s	V_8 (8)
+85	0110	callvirt	instance !0 class [mscorlib]System.Collections.Generic.List`1<int32>::get_Item(int32)
+86	0115	ldarg.0
+87	0116	bne.un	93 (012E) nop 
+88	011B	ldsfld	class [mscorlib]System.Collections.Generic.List`1<string> tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::x1fyrnSiO4M
+89	0120	ldloc.s	V_8 (8)
+90	0122	callvirt	instance !0 class [mscorlib]System.Collections.Generic.List`1<string>::get_Item(int32)
+91	0127	stloc.s	V_9 (9)
+92	0129	leave	142 (01BB) ldloc.s V_9 (9)
+93	012E	nop
+94	012F	call	void tcluRCmJ2u79OhTbGG.zpXS6PyCgduBtel37AmL::awKZzBfLDKu()
+95	0134	ldloc.s	V_8 (8)
+96	0136	newarr	[mscorlib]System.Byte
+97	013B	stloc.s	V_10 (10)
+98	013D	ldsfld	uint8[] tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::GuiyrVW19Wk
+99	0142	ldarg.0
+100	0143	ldc.i4.4
+101	0144	add
+102	0145	ldloc.s	V_10 (10)
+103	0147	ldc.i4.0
+104	0148	ldloc.s	V_8 (8)
+105	014A	call	void [mscorlib]System.Array::Copy(class [mscorlib]System.Array, int32, class [mscorlib]System.Array, int32, int32)
+106	014F	call	class [mscorlib]System.Text.Encoding [mscorlib]System.Text.Encoding::get_Unicode()
+107	0154	ldloc.s	V_10 (10)
+108	0156	ldc.i4.0
+109	0157	ldloc.s	V_10 (10)
+110	0159	ldlen
+111	015A	conv.i4
+112	015B	callvirt	instance string [mscorlib]System.Text.Encoding::GetString(uint8[], int32, int32)
+113	0160	stloc.s	V_11 (11)
+114	0162	ldsfld	class [mscorlib]System.Collections.Generic.List`1<string> tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::x1fyrnSiO4M
+115	0167	ldloc.s	V_11 (11)
+116	0169	callvirt	instance void class [mscorlib]System.Collections.Generic.List`1<string>::Add(!0)
+117	016E	ldsfld	class [mscorlib]System.Collections.Generic.List`1<int32> tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::NQIyrdgriFV
+118	0173	ldarg.0
+119	0174	callvirt	instance void class [mscorlib]System.Collections.Generic.List`1<int32>::Add(!0)
+120	0179	ldsfld	class [mscorlib]System.Collections.Generic.List`1<string> tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::x1fyrnSiO4M
+121	017E	callvirt	instance int32 class [mscorlib]System.Collections.Generic.List`1<string>::get_Count()
+122	0183	ldc.i4.1
+123	0184	sub
+124	0185	call	uint8[] [mscorlib]System.BitConverter::GetBytes(int32)
+125	018A	ldc.i4.0
+126	018B	ldsfld	uint8[] tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::GuiyrVW19Wk
+127	0190	ldarg.0
+128	0191	ldc.i4.4
+129	0192	call	void [mscorlib]System.Array::Copy(class [mscorlib]System.Array, int32, class [mscorlib]System.Array, int32, int32)
+130	0197	ldloc.s	V_11 (11)
+131	0199	stloc.s	V_9 (9)
+132	019B	leave	142 (01BB) ldloc.s V_9 (9)
+133	01A0	pop
+134	01A1	leave	140 (01B5) ldstr ""
+135	01A6	ldloc.s	V_7 (7)
+136	01A8	brfalse	139 (01B4) endfinally 
+137	01AD	ldloc.s	V_6 (6)
+138	01AF	call	void [mscorlib]System.Threading.Monitor::Exit(object)
+139	01B4	endfinally
+140	01B5	ldstr	""
+141	01BA	ret
+142	01BB	ldloc.s	V_9 (9)
+143	01BD	ret

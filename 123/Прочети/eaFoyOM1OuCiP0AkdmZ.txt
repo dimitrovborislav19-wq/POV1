@@ -1,0 +1,313 @@
+Imports System
+Imports System.Data.SqlServerCe
+Imports System.Linq
+Imports System.Runtime.CompilerServices
+Imports System.Text
+Imports System.Threading.Tasks
+Imports System.Windows.Forms
+Imports EnergySoftware.PV.DB
+Imports EnergySoftware.PV.IoC
+Imports EnergySoftware.PV.Main.Infrastructure
+Imports ValentinSoftware.Common.UnitConversion.Internal
+Imports ValentinSoftware.Infrastructure.Common.Forms
+Imports ValentinSoftware.Infrastructure.Common.Helper
+Imports ValentinSoftware.Infrastructure.Common.Interfaces
+Imports ValentinSoftware.Infrastructure.Common.Logger
+Imports ValentinSoftware.Infrastructure.Messenger.Messages.DialogMessages
+Imports ValentinSoftware.Infrastructure.Messenger.Tokens
+Imports ValentinSoftware.Infrastructure.Threading
+Imports ValentinSoftware.PV.Desktop.WinForms
+Imports ValentinSoftware.PV.Desktop.WinForms.Presenters
+Imports ValentinSoftware.PV.Desktop.WinForms.ViewLoader
+Imports ValentinSoftware.PV.Main.MVVM.Models
+Imports ValentinSoftware.PV.Main.ProgramManagement.Interfaces
+
+Namespace tcluRCmJ2u79OhTbGG
+	' Token: 0x02000068 RID: 104
+	Friend Class eaFoyOM1OuCiP0AkdmZ
+		' Token: 0x060005C9 RID: 1481 RVA: 0x0008FA70 File Offset: 0x0008DC70
+		<STAThread()>
+		Private Shared Sub XLYMmU0Q55(\u0020 As String())
+			Dim CS$<>8__locals1 As eaFoyOM1OuCiP0AkdmZ.<>c__DisplayClass5_0 = New eaFoyOM1OuCiP0AkdmZ.<>c__DisplayClass5_0()
+			gB4W4HxQKcUR63XnICue.U5k0glFpPpO(fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-310130161 Xor -1435002745 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_c8c89156eb7a45f3a22c9a48a285f2c4), gB4W4HxQKcUR63XnICue.RbfxQXScH7x)
+			ViewProvider.Init()
+			Oou6QNxQGy3G0XUQHjtn.U5k0glFpPpO(UnhandledExceptionMode.ThrowException, Oou6QNxQGy3G0XUQHjtn.eEhxQH8PrPy)
+			nS5FSqxQAwwut10QXJAY.U5k0glFpPpO(QTPhEkxQQZLKaZEcvc6q.U5k0glFpPpO(QTPhEkxQQZLKaZEcvc6q.Q4MxQNrCt5A), AddressOf eaFoyOM1OuCiP0AkdmZ.WDZEE2eRBrB7SXgfv9cB.UnhandledException, nS5FSqxQAwwut10QXJAY.w9NxQjdp4nf)
+			X2HhuRxQ2x51aJpJE4oT.U5k0glFpPpO(X2HhuRxQ2x51aJpJE4oT.gyUxQMw2TdO)
+			k3LAUkxQ9aml3qKScQ4r.U5k0glFpPpO(False, k3LAUkxQ9aml3qKScQ4r.FRRxQoAUTNw)
+			zpXS6PyCgduBtel37AmL.awKZzBfLDKu()
+			G0G04WxQLW7gyfmSHpBm.U5k0glFpPpO(RbSBy80FKdpGjsU8ML8b.U5k0glFpPpO(GetType(eaFoyOM1OuCiP0AkdmZ).TypeHandle, RbSBy80FKdpGjsU8ML8b.XxB0FXkIOBX), G0G04WxQLW7gyfmSHpBm.SWexQlBpsTW)
+			Dim bFirstPVSOLInstance As Boolean
+			eaFoyOM1OuCiP0AkdmZ.C5IMBXMtAD = New VesMutex(False, Bst6sxxQRO5WZXXltGcs.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.YYg0Ok3Moho), Bst6sxxQRO5WZXXltGcs.PfsxQu7BV1f), bFirstPVSOLInstance)
+			Dim flag As Boolean
+			eaFoyOM1OuCiP0AkdmZ.s4oMSgxBhC = New VesMutex(False, E6WiAO0n9TIJAatkcQnV.U5k0glFpPpO(dE4QDJxQO2s91573fgMo.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.YYg0Ok3Moho), dE4QDJxQO2s91573fgMo.DD8xQp8TSr6), fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-1823195338 >> 3 Xor -120549517 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_692bdd559b8147c093be33e94928a8ef), E6WiAO0n9TIJAatkcQnV.Uus0noj2iqv), flag)
+			Dim flag2 As Boolean
+			eaFoyOM1OuCiP0AkdmZ.QmdMtmeKh4 = New VesMutex(False, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(Not 1551870904 Xor -667572381 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_b267cb015f6b455688ec4d3568625e28), flag2)
+			Dim flag3 As Boolean
+			eaFoyOM1OuCiP0AkdmZ.joGMqBjjcE = New VesMutex(False, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-2038244484 >> 6 Xor -141619577 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_fe20fb5456ef40298d3ce7595fb9bb9b), flag3)
+			Dim flag4 As Boolean
+			eaFoyOM1OuCiP0AkdmZ.t4fMa4FSNU = New VesMutex(False, E6WiAO0n9TIJAatkcQnV.U5k0glFpPpO(Bst6sxxQRO5WZXXltGcs.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.YYg0Ok3Moho), Bst6sxxQRO5WZXXltGcs.PfsxQu7BV1f), fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(1886365856 Xor 1270915016 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_aa401add0e664b8eb6d2e334b602a605), E6WiAO0n9TIJAatkcQnV.Uus0noj2iqv), flag4)
+			CS$<>8__locals1.hkReRUhBvX9 = VesLoggerProvider.GetLogger(Of eaFoyOM1OuCiP0AkdmZ)()
+			If Not xgeFiJxQvkPifoL365d3.U5k0glFpPpO(eaFoyOM1OuCiP0AkdmZ.s4oMSgxBhC, 1000, xgeFiJxQvkPifoL365d3.sX9xQkLW0OW) OrElse Not xgeFiJxQvkPifoL365d3.U5k0glFpPpO(eaFoyOM1OuCiP0AkdmZ.t4fMa4FSNU, 1000, xgeFiJxQvkPifoL365d3.sX9xQkLW0OW) OrElse Not xgeFiJxQvkPifoL365d3.U5k0glFpPpO(eaFoyOM1OuCiP0AkdmZ.QmdMtmeKh4, 1000, xgeFiJxQvkPifoL365d3.sX9xQkLW0OW) OrElse Not xgeFiJxQvkPifoL365d3.U5k0glFpPpO(eaFoyOM1OuCiP0AkdmZ.joGMqBjjcE, 1000, xgeFiJxQvkPifoL365d3.sX9xQkLW0OW) Then
+				UZdWSZ0kRgyUDUh06t3K.U5k0glFpPpO(CS$<>8__locals1.hkReRUhBvX9, E6WiAO0n9TIJAatkcQnV.U5k0glFpPpO(fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(330562743 + -26560542 Xor 1457680148 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_126dafcf7837461d9d717c5f43ddec9b), tpmDun0C1EK4cWAxU0LR.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.YYg0Ok3Moho), tpmDun0C1EK4cWAxU0LR.JV00CmDnfQe), E6WiAO0n9TIJAatkcQnV.Uus0noj2iqv), UZdWSZ0kRgyUDUh06t3K.T0Q0ku9DhDj)
+				Return
+			End If
+			UZdWSZ0kRgyUDUh06t3K.U5k0glFpPpO(CS$<>8__locals1.hkReRUhBvX9, E6WiAO0n9TIJAatkcQnV.U5k0glFpPpO(fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-114778844 Xor -1609804926 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_44f989693c264220a939728b02483de2), tpmDun0C1EK4cWAxU0LR.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.YYg0Ok3Moho), tpmDun0C1EK4cWAxU0LR.JV00CmDnfQe), E6WiAO0n9TIJAatkcQnV.Uus0noj2iqv), UZdWSZ0kRgyUDUh06t3K.T0Q0ku9DhDj)
+			If Not ku8951xQrux2G5dWGdhZ.U5k0glFpPpO(RbSBy80FKdpGjsU8ML8b.U5k0glFpPpO(GetType(eaFoyOM1OuCiP0AkdmZ).TypeHandle, RbSBy80FKdpGjsU8ML8b.XxB0FXkIOBX), ku8951xQrux2G5dWGdhZ.D8bxQCqGOKP) Then
+				Return
+			End If
+			If Ytnph90XJFRQBSeGvvlV.U5k0glFpPpO(P0aJpRxqgOYluxM1kw3u.U5k0glFpPpO(h96xSI0E9KHnHmdTCaQZ.U5k0glFpPpO(h96xSI0E9KHnHmdTCaQZ.Qjd0Eo3feyG), P0aJpRxqgOYluxM1kw3u.JeDxqe5jg11), Ytnph90XJFRQBSeGvvlV.X4O0XfogQvW) Then
+				Dim CS$<>8__locals2 As eaFoyOM1OuCiP0AkdmZ.<>c__DisplayClass5_1 = New eaFoyOM1OuCiP0AkdmZ.<>c__DisplayClass5_1()
+				U7NiMC0r1u6FA0v1BO9y.U5k0glFpPpO(CS$<>8__locals1.hkReRUhBvX9, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(928426171 Xor 1889729421 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_c8c89156eb7a45f3a22c9a48a285f2c4), U7NiMC0r1u6FA0v1BO9y.ULt0rm7I1HH)
+				CS$<>8__locals2.NaueRXKKFiU = r905wJ0CUe2On7wCABvh.U5k0glFpPpO(r905wJ0CUe2On7wCABvh.N8k0CIf4VbW)
+				U7NiMC0r1u6FA0v1BO9y.U5k0glFpPpO(CS$<>8__locals1.hkReRUhBvX9, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-153871427 Xor -260568313 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_f86e86eb490a4be6a9d971f234ef366f), U7NiMC0r1u6FA0v1BO9y.ULt0rm7I1HH)
+				Dim languageDialog As LanguageDialog = New LanguageDialog(CS$<>8__locals2.NaueRXKKFiU, yOnOLrxQJujiZ1VnNWnG.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.y3J0VNvFbxh), yOnOLrxQJujiZ1VnNWnG.jAbxQfjhGRP))
+				Try
+					U7NiMC0r1u6FA0v1BO9y.U5k0glFpPpO(CS$<>8__locals1.hkReRUhBvX9, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-459570598 Xor -1260624778 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_bd7c1a0ef0a748ffbe64b272320f07ad), U7NiMC0r1u6FA0v1BO9y.ULt0rm7I1HH)
+					xCrtV00cZcPDsjcGaeBS.U5k0glFpPpO(languageDialog, xCrtV00cZcPDsjcGaeBS.Smi0chVGqOx)
+					WvD5e60fBkMU3kOHVGZm.U5k0glFpPpO(h96xSI0E9KHnHmdTCaQZ.U5k0glFpPpO(h96xSI0E9KHnHmdTCaQZ.Qjd0Eo3feyG), tRu6du0C26ZsQDluAu0u.U5k0glFpPpO(CS$<>8__locals2.NaueRXKKFiU, tRu6du0C26ZsQDluAu0u.k1A0CMW2Cne), WvD5e60fBkMU3kOHVGZm.yLc0fSk1rbQ)
+					If Enumerable.Any(Of ILanguage)(HS2PAJ0Yg7CPccKJ8eAX.U5k0glFpPpO(CS$<>8__locals2.NaueRXKKFiU, HS2PAJ0Yg7CPccKJ8eAX.GCd0YelpdKY), AddressOf CS$<>8__locals2.SYqeRKWiFDi) Then
+						YjJlhwxQb9Zq5TZQ5Vfn.U5k0glFpPpO(KeybTZxE8tqWM2hQlP9W.U5k0glFpPpO(h96xSI0E9KHnHmdTCaQZ.U5k0glFpPpO(h96xSI0E9KHnHmdTCaQZ.Qjd0Eo3feyG), KeybTZxE8tqWM2hQlP9W.OjAxEWMQfeo), tRu6du0C26ZsQDluAu0u.U5k0glFpPpO(CS$<>8__locals2.NaueRXKKFiU, tRu6du0C26ZsQDluAu0u.k1A0CMW2Cne), YjJlhwxQb9Zq5TZQ5Vfn.ktMxQiePbFb)
+					End If
+				Finally
+					If languageDialog IsNot Nothing Then
+						mXwRIP0eygb1BTNpLu9o.U5k0glFpPpO(languageDialog, mXwRIP0eygb1BTNpLu9o.eIw0e0n8dTJ)
+					End If
+				End Try
+			End If
+			U7NiMC0r1u6FA0v1BO9y.U5k0glFpPpO(CS$<>8__locals1.hkReRUhBvX9, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-483393173 - -732990940 Xor 361791261 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_1edaa31db10e43cdb407c68566ea822f), U7NiMC0r1u6FA0v1BO9y.ULt0rm7I1HH)
+			If Kc0yZFxQwoKci5QJkeel.U5k0glFpPpO(h96xSI0E9KHnHmdTCaQZ.U5k0glFpPpO(h96xSI0E9KHnHmdTCaQZ.Qjd0Eo3feyG), Kc0yZFxQwoKci5QJkeel.OuDxQ4KRM0s) Then
+				lIAuBO0rytGcFZO1NRWA.U5k0glFpPpO(adq6eSxQ3H4LMtR9j1bP.U5k0glFpPpO(adq6eSxQ3H4LMtR9j1bP.hnOxQ5POEZd), slmRmD0rgx0qXOPMANKe.U5k0glFpPpO(slmRmD0rgx0qXOPMANKe.bQG0reB5cNX), MessageBoxButtons.OK, MessageBoxIcon.Hand, lIAuBO0rytGcFZO1NRWA.Buf0r048Chb)
+				sWLFBdxQ8tWtmeCZ24wC.U5k0glFpPpO(-1, sWLFBdxQ8tWtmeCZ24wC.ammxQWPhaAE)
+			End If
+			U7NiMC0r1u6FA0v1BO9y.U5k0glFpPpO(CS$<>8__locals1.hkReRUhBvX9, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-1355164140 Xor -339407279 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_126dafcf7837461d9d717c5f43ddec9b), U7NiMC0r1u6FA0v1BO9y.ULt0rm7I1HH)
+			Dim text As String
+			If Not KW6LcoxQYKG9OmnSUTat.U5k0glFpPpO(GAV2ut0rTSUFA4qaYFcK.U5k0glFpPpO(GAV2ut0rTSUFA4qaYFcK.YVe0r70uiZh), text, KW6LcoxQYKG9OmnSUTat.mVNxQzlANn6) Then
+				lIAuBO0rytGcFZO1NRWA.U5k0glFpPpO(r0ixDP0Svoq54F71shcs.U5k0glFpPpO(New String() { vIyK7BxNgRndBZulgtMo.U5k0glFpPpO(vIyK7BxNgRndBZulgtMo.XrnxNegoYyu), fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-1798489457 Xor -886874823 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_36911c0d1d0a4cdaa4cbe936f999cd27), JBb74AxNyGutMwdPRniA.U5k0glFpPpO(JBb74AxNyGutMwdPRniA.gBGxN0ZDBYd), fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-104447640 + -1014144754 Xor -105940363 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_126dafcf7837461d9d717c5f43ddec9b), text }, r0ixDP0Svoq54F71shcs.NdX0SkPvZqK), QcEJmR0GGL2AVErGJyXI.U5k0glFpPpO(QcEJmR0GGL2AVErGJyXI.Xlq0GH7nc5U), MessageBoxButtons.OK, MessageBoxIcon.Hand, lIAuBO0rytGcFZO1NRWA.Buf0r048Chb)
+				lIAuBO0rytGcFZO1NRWA.U5k0glFpPpO(hdRScCxNxnlqENZuJ1gv.U5k0glFpPpO(hdRScCxNxnlqENZuJ1gv.dIQxNE8AcKe), slmRmD0rgx0qXOPMANKe.U5k0glFpPpO(slmRmD0rgx0qXOPMANKe.bQG0reB5cNX), MessageBoxButtons.OK, MessageBoxIcon.Asterisk, lIAuBO0rytGcFZO1NRWA.Buf0r048Chb)
+				sWLFBdxQ8tWtmeCZ24wC.U5k0glFpPpO(-1, sWLFBdxQ8tWtmeCZ24wC.ammxQWPhaAE)
+			End If
+			U7NiMC0r1u6FA0v1BO9y.U5k0glFpPpO(CS$<>8__locals1.hkReRUhBvX9, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(707165691 - 1311796620 Xor -581303339 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_f86e86eb490a4be6a9d971f234ef366f), U7NiMC0r1u6FA0v1BO9y.ULt0rm7I1HH)
+			CS$<>8__locals1.lP8eRI5QmuI = New Splash(GtgUTnxNZrIgLb2ZkG4J.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.y3J0VNvFbxh), GtgUTnxNZrIgLb2ZkG4J.TTsxNhnQE2L), AW20vExNnEDvuudHBgmG.U5k0glFpPpO(J7uYtT0eLnus3GMMRU13.U5k0glFpPpO(z0gJhS0e9iIMUlIiMw9q.U5k0glFpPpO(z0gJhS0e9iIMUlIiMw9q.x7L0eosyuAS), J7uYtT0eLnus3GMMRU13.JPO0el5r7R8), AW20vExNnEDvuudHBgmG.V4YxNdStuwB), wTgwp6xNVXQwAZpvpU7h.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.YYg0Ok3Moho), wTgwp6xNVXQwAZpvpU7h.bfYxNPUSfUx), u9YCbL0OrFvnMZ1EjI2j.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.YYg0Ok3Moho), u9YCbL0OrFvnMZ1EjI2j.qvO0OCVBK9k), tpmDun0C1EK4cWAxU0LR.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.YYg0Ok3Moho), tpmDun0C1EK4cWAxU0LR.JV00CmDnfQe))
+			zxIdPJxN1CBHi4w7HE8F.U5k0glFpPpO(CS$<>8__locals1.lP8eRI5QmuI, zxIdPJxN1CBHi4w7HE8F.XCuxNmPY8fg)
+			snGA2C0fyeJ1oVboGe85.U5k0glFpPpO(New StatisticsTracker(), fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-1737564565 Xor -568138223 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_a026bfa221bb49f6b39cc7a9c66e309e), snGA2C0fyeJ1oVboGe85.koi0f0Y5RBE)
+			N50fxlxNBQ0CRf8adWO3.U5k0glFpPpO(CS$<>8__locals1.lP8eRI5QmuI, E6WiAO0n9TIJAatkcQnV.U5k0glFpPpO(sJ0DtXxNcEeQCA6gdGGj.U5k0glFpPpO(sJ0DtXxNcEeQCA6gdGGj.s5VxN6sdud1), fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-319031581 >> 2 Xor -849370597 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_5d5395b1caf24784ac3b4d2fe44c6c43), E6WiAO0n9TIJAatkcQnV.Uus0noj2iqv), N50fxlxNBQ0CRf8adWO3.spLxNScoXcF)
+			U7NiMC0r1u6FA0v1BO9y.U5k0glFpPpO(CS$<>8__locals1.hkReRUhBvX9, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(870998182 Xor 93011769 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_5d5395b1caf24784ac3b4d2fe44c6c43), U7NiMC0r1u6FA0v1BO9y.ULt0rm7I1HH)
+			b0yfXoxNqqck4UjXIJjL.U5k0glFpPpO(QwfC5A0pRLWLUTMyTpLN.U5k0glFpPpO(QwfC5A0pRLWLUTMyTpLN.yNO0puphHDd), b0yfXoxNqqck4UjXIJjL.drtxNtRIRiu)
+			If Arg1mAxNaVud0MeN4dFC.U5k0glFpPpO(QwfC5A0pRLWLUTMyTpLN.U5k0glFpPpO(QwfC5A0pRLWLUTMyTpLN.yNO0puphHDd), Arg1mAxNaVud0MeN4dFC.gRHxNsqYyBx) Then
+				UZdWSZ0kRgyUDUh06t3K.U5k0glFpPpO(CS$<>8__locals1.hkReRUhBvX9, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(1541769407 Xor 870345306 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_56d7c7bf73e546cc9c23cab0b09a8eff), UZdWSZ0kRgyUDUh06t3K.T0Q0ku9DhDj)
+				CZ09k6xNDgYZbVrGa2rd.U5k0glFpPpO(CS$<>8__locals1.lP8eRI5QmuI, pPq2JqxNTQLyfBANNJMB.U5k0glFpPpO(pPq2JqxNTQLyfBANNJMB.WLdxN7XgWTE), CZ09k6xNDgYZbVrGa2rd.M2pxNF1aqpJ)
+			Else
+				Dim text2 As String = Mem7PnxNUfaX2CmQ1CgB.U5k0glFpPpO(QwfC5A0pRLWLUTMyTpLN.U5k0glFpPpO(QwfC5A0pRLWLUTMyTpLN.yNO0puphHDd), Mem7PnxNUfaX2CmQ1CgB.OFsxNIgUVmy)
+				If PeuAaf0bqTbb6owiQGDw.U5k0glFpPpO(QwfC5A0pRLWLUTMyTpLN.U5k0glFpPpO(QwfC5A0pRLWLUTMyTpLN.yNO0puphHDd), PeuAaf0bqTbb6owiQGDw.YKX0bt0PQJ5) Then
+					CZ09k6xNDgYZbVrGa2rd.U5k0glFpPpO(CS$<>8__locals1.lP8eRI5QmuI, G52iNhxNKpGptEqUq90y.U5k0glFpPpO(QwfC5A0pRLWLUTMyTpLN.U5k0glFpPpO(QwfC5A0pRLWLUTMyTpLN.yNO0puphHDd), G52iNhxNKpGptEqUq90y.v96xNXxNxqh), CZ09k6xNDgYZbVrGa2rd.M2pxNF1aqpJ)
+					text2 = E6WiAO0n9TIJAatkcQnV.U5k0glFpPpO(text2, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-295164342 Xor -1139522022 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_9e7a80d4720f442badbafa6e143901e4), E6WiAO0n9TIJAatkcQnV.Uus0noj2iqv)
+				End If
+				UZdWSZ0kRgyUDUh06t3K.U5k0glFpPpO(CS$<>8__locals1.hkReRUhBvX9, text2, UZdWSZ0kRgyUDUh06t3K.T0Q0ku9DhDj)
+			End If
+			OKaS4exNG8GHarIldYh6.U5k0glFpPpO(OKaS4exNG8GHarIldYh6.WV1xNHatlWr)
+			dWQTV0xNAy5mDIdHCinN.U5k0glFpPpO(New UnitConverterRepository(UyngUsxNQu6oWUfW69t8.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.y3J0VNvFbxh), UyngUsxNQu6oWUfW69t8.uHuxNNdypmn)), dWQTV0xNAy5mDIdHCinN.RwJxNjEGhcj)
+			q8yw4wxZJdS3YT42pFjU.U5k0glFpPpO(ONjcAZxN2YagfUHJ3OD6.U5k0glFpPpO(h96xSI0E9KHnHmdTCaQZ.U5k0glFpPpO(h96xSI0E9KHnHmdTCaQZ.Qjd0Eo3feyG), ONjcAZxN2YagfUHJ3OD6.NPexNMvsOTt), q8yw4wxZJdS3YT42pFjU.TvSxZfG10le)
+			Dim ioCFactoryConfiguration As IoCFactoryConfiguration = New IoCFactoryConfiguration()
+			eAWNDvxNLegvHl9yhHDh.U5k0glFpPpO(ioCFactoryConfiguration, tESC9UxN9AootY9ToaQ7.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.y3J0VNvFbxh), tESC9UxN9AootY9ToaQ7.B85xNonwLUL), eAWNDvxNLegvHl9yhHDh.qQaxNlTrEZf)
+			sxJ1hQxNOIOiUOPmjZcp.U5k0glFpPpO(ioCFactoryConfiguration, ybHMsp0m9oWgZKIf4Cdf.U5k0glFpPpO(d9IHVZxNRmtsVNhrYyMc.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.YYg0Ok3Moho), d9IHVZxNRmtsVNhrYyMc.MYVxNu6uK4f), ybHMsp0m9oWgZKIf4Cdf.VRX0moZJw6Q), sxJ1hQxNOIOiUOPmjZcp.dDXxNpnXH5o)
+			MmFrLSxNrf49iCmK3KOd.U5k0glFpPpO(ioCFactoryConfiguration, hyGUerxNveIP239cNYUS.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.y3J0VNvFbxh), hyGUerxNveIP239cNYUS.jnAxNkakHcx), MmFrLSxNrf49iCmK3KOd.LLIxNCXCU6F)
+			XgIfYDxNbkR95aWLn6X9.U5k0glFpPpO(ioCFactoryConfiguration, z5fQvhxNJeilZBikLOBb.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.YYg0Ok3Moho), z5fQvhxNJeilZBikLOBb.H69xNfifC3v), XgIfYDxNbkR95aWLn6X9.dBYxNiIbq7v)
+			N50fxlxNBQ0CRf8adWO3.U5k0glFpPpO(CS$<>8__locals1.lP8eRI5QmuI, E6WiAO0n9TIJAatkcQnV.U5k0glFpPpO(cxec4hxNwVoEWjrRgGwh.U5k0glFpPpO(cxec4hxNwVoEWjrRgGwh.OpyxN4VcFDA), fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-1041688138 Xor -951776282 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_f86e86eb490a4be6a9d971f234ef366f), E6WiAO0n9TIJAatkcQnV.Uus0noj2iqv), N50fxlxNBQ0CRf8adWO3.spLxNScoXcF)
+			sbIpMyxN3aBCWVS5XaHD.U5k0glFpPpO(New FormPleaseWait(KdA7tQ0wn3JWpYMBXji0.U5k0glFpPpO(KdA7tQ0wn3JWpYMBXji0.ckG0wdUGKkC)), sbIpMyxN3aBCWVS5XaHD.RW4xN5aVJTa)
+			Dim pvdbviewLoader As PVDBViewLoader = New PVDBViewLoader()
+			CS$<>8__locals1.xrFeRFZ802r(pvdbviewLoader, JZkdAPxN85xHa6l0bdy3.U5k0glFpPpO(CS$<>8__locals1.lP8eRI5QmuI, JZkdAPxN85xHa6l0bdy3.WQExNWYdQ6i))
+			eaFoyOM1OuCiP0AkdmZ.LBQM6FDbga(pvdbviewLoader, JZkdAPxN85xHa6l0bdy3.U5k0glFpPpO(CS$<>8__locals1.lP8eRI5QmuI, JZkdAPxN85xHa6l0bdy3.WQExNWYdQ6i))
+			lhl2cbxNY1hPYT3WJ5d9.U5k0glFpPpO(h96xSI0E9KHnHmdTCaQZ.U5k0glFpPpO(h96xSI0E9KHnHmdTCaQZ.Qjd0Eo3feyG), lhl2cbxNY1hPYT3WJ5d9.FArxNzgcuky)
+			Dim updateConfig As IUpdateConfig = shQKK8x0QPmjOQ2DKNcn.U5k0glFpPpO(h96xSI0E9KHnHmdTCaQZ.U5k0glFpPpO(h96xSI0E9KHnHmdTCaQZ.Qjd0Eo3feyG), shQKK8x0QPmjOQ2DKNcn.UXkx0NpABJX)
+			If FaP19Dx0AwbWP1F7ct13.U5k0glFpPpO(updateConfig, FaP19Dx0AwbWP1F7ct13.uhux0jcgmnJ) Then
+				Dim dateTime As DateTime = rZ6Si90FnjXH56SpEE3H.U5k0glFpPpO(rZ6Si90FnjXH56SpEE3H.WN90Fd6HhII)
+				If Not RnH1sZxAykKm0cmTRy8S.U5k0glFpPpO(dateTime, svXiuGxAgqe7JMGLST3h.U5k0glFpPpO(updateConfig, svXiuGxAgqe7JMGLST3h.lxKxAeF7Zxy), RnH1sZxAykKm0cmTRy8S.M7lxA0fwCGs) Then
+					N50fxlxNBQ0CRf8adWO3.U5k0glFpPpO(CS$<>8__locals1.lP8eRI5QmuI, E6WiAO0n9TIJAatkcQnV.U5k0glFpPpO(CJvGgT0vY8ZbwOuNrbA5.U5k0glFpPpO(CJvGgT0vY8ZbwOuNrbA5.QLc0vzxHCBq), fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(Not 672302918 Xor -984273465 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_14855347b76148c28ef474e8c0d5e23d), E6WiAO0n9TIJAatkcQnV.Uus0noj2iqv), N50fxlxNBQ0CRf8adWO3.spLxNScoXcF)
+					pvdbviewLoader.UpdateProgram(True, JZkdAPxN85xHa6l0bdy3.U5k0glFpPpO(CS$<>8__locals1.lP8eRI5QmuI, JZkdAPxN85xHa6l0bdy3.WQExNWYdQ6i))
+					k7nIhRxAxmbmeJP1ARp9.U5k0glFpPpO(updateConfig, rZ6Si90FnjXH56SpEE3H.U5k0glFpPpO(rZ6Si90FnjXH56SpEE3H.WN90Fd6HhII), k7nIhRxAxmbmeJP1ARp9.txXxAEcuMwY)
+				End If
+			End If
+			N50fxlxNBQ0CRf8adWO3.U5k0glFpPpO(CS$<>8__locals1.lP8eRI5QmuI, E6WiAO0n9TIJAatkcQnV.U5k0glFpPpO(DYybMkxAZAfdZn0x3dTl.U5k0glFpPpO(DYybMkxAZAfdZn0x3dTl.ldBxAhidXSo), fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-1464342633 Xor -1591143122 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_820d24365e74458688ea5811ecc686db), E6WiAO0n9TIJAatkcQnV.Uus0noj2iqv), N50fxlxNBQ0CRf8adWO3.spLxNScoXcF)
+			p0DPIdxAnb8pNCr7fL92.U5k0glFpPpO(p0DPIdxAnb8pNCr7fL92.sCKxAdpr48J)
+			wvAfEfxA1FnvgRoWF3em.U5k0glFpPpO(g1YmSSxAVRvL3UsLVKKF.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.y3J0VNvFbxh), g1YmSSxAVRvL3UsLVKKF.TedxAP359eM), wvAfEfxA1FnvgRoWF3em.mb5xAmIcEmY)
+			N50fxlxNBQ0CRf8adWO3.U5k0glFpPpO(CS$<>8__locals1.lP8eRI5QmuI, E6WiAO0n9TIJAatkcQnV.U5k0glFpPpO(a2avP2xAc1fHkXNr2CEO.U5k0glFpPpO(a2avP2xAc1fHkXNr2CEO.aA5xA68k4uE), fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(1525197133 Xor 2079632776 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_e29358a211644e2e83467f7bfce8d955), E6WiAO0n9TIJAatkcQnV.Uus0noj2iqv), N50fxlxNBQ0CRf8adWO3.spLxNScoXcF)
+			Dim formMain As FormMain = New FormMain()
+			formMain.Init(bFirstPVSOLInstance)
+			fEV2ODxABMV5W18eJIw2.U5k0glFpPpO(CS$<>8__locals1.lP8eRI5QmuI, fEV2ODxABMV5W18eJIw2.gCTxASn2NZ5)
+			VZTlVIxAqLQxvOJ0SYDX.U5k0glFpPpO(formMain, AddressOf eaFoyOM1OuCiP0AkdmZ.MtsMc6g0gi, VZTlVIxAqLQxvOJ0SYDX.qRYxAtjXFPP)
+			oe22GhxAaqR88D7L0N6F.U5k0glFpPpO(formMain, AddressOf CS$<>8__locals1.umGeRD4cTWq, oe22GhxAaqR88D7L0N6F.O7kxAsg52nQ)
+			dYqdH9xATJWC9ksQUohu.U5k0glFpPpO(formMain, dYqdH9xATJWC9ksQUohu.AsmxA7q8xP0)
+		End Sub
+
+		' Token: 0x060005CA RID: 1482 RVA: 0x000905D0 File Offset: 0x0008E7D0
+		Public Sub New()
+			fXUU4jykVT4coaAMg9aB.O73ykGjbHBD()
+			MyBase..ctor()
+		End Sub
+
+		' Token: 0x060005CB RID: 1483 RVA: 0x000905E4 File Offset: 0x0008E7E4
+		<CompilerGenerated()>
+		Friend Shared Sub MtsMc6g0gi(\u0020 As Object, \u0020 As EventArgs)
+			bx8bltxADhvqTp3UcuQS.U5k0glFpPpO(eaFoyOM1OuCiP0AkdmZ.s4oMSgxBhC, bx8bltxADhvqTp3UcuQS.tpAxAFSSRMy)
+			SohMDQxAU1GV785h9WJA.U5k0glFpPpO(eaFoyOM1OuCiP0AkdmZ.s4oMSgxBhC, SohMDQxAU1GV785h9WJA.WXRxAIDw6pC)
+			bx8bltxADhvqTp3UcuQS.U5k0glFpPpO(eaFoyOM1OuCiP0AkdmZ.t4fMa4FSNU, bx8bltxADhvqTp3UcuQS.tpAxAFSSRMy)
+			SohMDQxAU1GV785h9WJA.U5k0glFpPpO(eaFoyOM1OuCiP0AkdmZ.t4fMa4FSNU, SohMDQxAU1GV785h9WJA.WXRxAIDw6pC)
+			bx8bltxADhvqTp3UcuQS.U5k0glFpPpO(eaFoyOM1OuCiP0AkdmZ.QmdMtmeKh4, bx8bltxADhvqTp3UcuQS.tpAxAFSSRMy)
+			SohMDQxAU1GV785h9WJA.U5k0glFpPpO(eaFoyOM1OuCiP0AkdmZ.QmdMtmeKh4, SohMDQxAU1GV785h9WJA.WXRxAIDw6pC)
+			bx8bltxADhvqTp3UcuQS.U5k0glFpPpO(eaFoyOM1OuCiP0AkdmZ.joGMqBjjcE, bx8bltxADhvqTp3UcuQS.tpAxAFSSRMy)
+			SohMDQxAU1GV785h9WJA.U5k0glFpPpO(eaFoyOM1OuCiP0AkdmZ.joGMqBjjcE, SohMDQxAU1GV785h9WJA.WXRxAIDw6pC)
+		End Sub
+
+		' Token: 0x060005CC RID: 1484 RVA: 0x00090670 File Offset: 0x0008E870
+		<CompilerGenerated()>
+		Friend Shared Sub LBQM6FDbga(\u0020 As PVDBViewLoader, \u0020 As IWin32Window)
+			Dim task As Task(Of MeteoSynDbUpdateError) = NonThreadPoolTask.Run(Of MeteoSynDbUpdateError)(AddressOf \u0020.UpdateMeteoSynDb)
+			Dim task2 As Task(Of ConsumptionDbUpdateError) = NonThreadPoolTask.Run(Of ConsumptionDbUpdateError)(AddressOf \u0020.UpdateConsumptionDb)
+			N7NhCRxAKh7j4tCb2Brm.U5k0glFpPpO(New Task() { task, task2 }, N7NhCRxAKh7j4tCb2Brm.GnCxAXcUHtP)
+			Dim result As MeteoSynDbUpdateError = task.Result
+			If result <> MeteoSynDbUpdateError.NoError Then
+				If result <> MeteoSynDbUpdateError.Mn72Bug Then
+					Throw New ArgumentOutOfRangeException(fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(1708024757 Xor 2022258438 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_2f7ba49667e244b093e1598489c4d705), task.Result, Nothing)
+				End If
+				yreSrhxZG4CEsHpZ8dc6.U5k0glFpPpO(\u0020, IVosAxxAGZoki9BpdWIq.U5k0glFpPpO(IVosAxxAGZoki9BpdWIq.AVuxAHjY1Ve), qpFbBuxVyaBsaai8QOud.U5k0glFpPpO(qpFbBuxVyaBsaai8QOud.r0VxV0ixGfS), MessageBoxButtons.OK, MessageBoxIcon.Asterisk, yreSrhxZG4CEsHpZ8dc6.QtQxZHVaJOE)
+			End If
+			Select Case task2.Result
+				Case ConsumptionDbUpdateError.NoError, ConsumptionDbUpdateError.IncompatibleDatabases
+					Return
+				Case ConsumptionDbUpdateError.CopyToTmpDirFailed
+					Dim text As String = xHsa390ycykW2iae7Y9A.U5k0glFpPpO(oXpKKsxAQCoI8KFXoEyS.U5k0glFpPpO(oXpKKsxAQCoI8KFXoEyS.EdjxAN1MuHs), CrI29ExAAcDWCDa9q8fI.U5k0glFpPpO(CrI29ExAAcDWCDa9q8fI.r0JxAjjGgKa), xHsa390ycykW2iae7Y9A.Rfr0y6GhMvc)
+					yreSrhxZG4CEsHpZ8dc6.U5k0glFpPpO(\u0020, text, QcEJmR0GGL2AVErGJyXI.U5k0glFpPpO(QcEJmR0GGL2AVErGJyXI.Xlq0GH7nc5U), MessageBoxButtons.OK, MessageBoxIcon.Hand, yreSrhxZG4CEsHpZ8dc6.QtQxZHVaJOE)
+					Return
+				Case Else
+					Throw New ArgumentOutOfRangeException(fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-1187542508 Xor -73838255 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_72ac7432c3264007a12eccd147465e80), task2.Result, Nothing)
+			End Select
+		End Sub
+
+		' Token: 0x060005CD RID: 1485 RVA: 0x000907B0 File Offset: 0x0008E9B0
+		' Note: this type is marked as 'beforefieldinit'.
+		Shared Sub New()
+			fXUU4jykVT4coaAMg9aB.gRpykFhmKaB()
+			fXUU4jykVT4coaAMg9aB.gRpykFhmKaB()
+		End Sub
+
+		' Token: 0x0400062F RID: 1583
+		Private Shared C5IMBXMtAD As VesMutex
+
+		' Token: 0x04000630 RID: 1584
+		Private Shared s4oMSgxBhC As VesMutex
+
+		' Token: 0x04000631 RID: 1585
+		Private Shared joGMqBjjcE As VesMutex
+
+		' Token: 0x04000632 RID: 1586
+		Private Shared QmdMtmeKh4 As VesMutex
+
+		' Token: 0x04000633 RID: 1587
+		Private Shared t4fMa4FSNU As VesMutex
+
+		' Token: 0x02000069 RID: 105
+		Private Class WDZEE2eRBrB7SXgfv9cB
+			' Token: 0x060005CE RID: 1486 RVA: 0x001B160C File Offset: 0x001AF80C
+			Private Sub New(\u0020 As Exception)
+				fXUU4jykVT4coaAMg9aB.O73ykGjbHBD()
+				zpXS6PyCgduBtel37AmL.awKZzBfLDKu()
+				MyBase..ctor()
+				Me.YkjeRTMZZjR = fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-1820013463 Xor -873581572 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_f977c339bba04ab6a6279c94cb9fc6da)
+				Me.SsUeRskrPie = \u0020
+				Me.RoYeR7Sguox = VesLoggerProvider.GetLogger(Of eaFoyOM1OuCiP0AkdmZ.WDZEE2eRBrB7SXgfv9cB)()
+			End Sub
+
+			' Token: 0x060005CF RID: 1487 RVA: 0x001B1664 File Offset: 0x001AF864
+			Public Shared Sub UnhandledException(sender As Object, e As UnhandledExceptionEventArgs)
+				New eaFoyOM1OuCiP0AkdmZ.WDZEE2eRBrB7SXgfv9cB(CType(UF1XamZLB6cG11usD5Ss.U5k0glFpPpO(e, UF1XamZLB6cG11usD5Ss.YY2ZLSEUQIc), Exception)).qnmeRSM7eP7()
+			End Sub
+
+			' Token: 0x060005D0 RID: 1488 RVA: 0x001B1688 File Offset: 0x001AF888
+			Private Sub qnmeRSM7eP7()
+				If MainPresenter.SetCrashed() Then
+					Return
+				End If
+				If x63rkwZLqphy4iNXrKLY.U5k0glFpPpO(Me.SsUeRskrPie, x63rkwZLqphy4iNXrKLY.eHoZLt80FOE) Then
+					Dim stringBuilder As StringBuilder = New StringBuilder()
+					n4AAlexV8BfjGxR3aJmZ.U5k0glFpPpO(n4AAlexV8BfjGxR3aJmZ.U5k0glFpPpO(stringBuilder, YbhBbGZLalRl7o74Aybu.U5k0glFpPpO(YbhBbGZLalRl7o74Aybu.j1RZLswHr3s), n4AAlexV8BfjGxR3aJmZ.dcrxVW6ZrbJ), fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-613732039 Xor -910768814 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_5928dc55b1fb4252bd018fef5c940559), n4AAlexV8BfjGxR3aJmZ.dcrxVW6ZrbJ)
+					tuj2nG0F1oofEKvekwBD.U5k0glFpPpO(gZr0XX0FVXMJ64aA7Jt0.U5k0glFpPpO(stringBuilder, Jvn7XfZLTh1V1e5uhbft.U5k0glFpPpO(Jvn7XfZLTh1V1e5uhbft.I9EZL7W6Ck4), gZr0XX0FVXMJ64aA7Jt0.aiE0FPEGyJH), tuj2nG0F1oofEKvekwBD.sjG0FmiV0fj)
+					AIn0sN0BwUOC9Fe8yHik.U5k0glFpPpO(fitJ390PcUT3TmB3uxX4.U5k0glFpPpO(stringBuilder, fitJ390PcUT3TmB3uxX4.wSD0P6mZVIp), QcEJmR0GGL2AVErGJyXI.U5k0glFpPpO(QcEJmR0GGL2AVErGJyXI.Xlq0GH7nc5U), MessageBoxButtons.OK, MessageBoxIcon.Hand, AIn0sN0BwUOC9Fe8yHik.Cdt0B49odiF)
+					Me.RwmeRt7NgE8()
+					Return
+				End If
+				If zatx66ZLDgN1m2qJnFkK.U5k0glFpPpO(Me.SsUeRskrPie, zatx66ZLDgN1m2qJnFkK.D89ZLFmUAeX) Then
+					Dim stringBuilder2 As StringBuilder = New StringBuilder()
+					n4AAlexV8BfjGxR3aJmZ.U5k0glFpPpO(n4AAlexV8BfjGxR3aJmZ.U5k0glFpPpO(stringBuilder2, rF2N1VZLUq68cpRHBEkS.U5k0glFpPpO(rF2N1VZLUq68cpRHBEkS.cHwZLIjIQ16), n4AAlexV8BfjGxR3aJmZ.dcrxVW6ZrbJ), fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(312061120 Xor 1449397829 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_126dafcf7837461d9d717c5f43ddec9b), n4AAlexV8BfjGxR3aJmZ.dcrxVW6ZrbJ)
+					tuj2nG0F1oofEKvekwBD.U5k0glFpPpO(gZr0XX0FVXMJ64aA7Jt0.U5k0glFpPpO(stringBuilder2, YgfOFqZLKqyCiZtk3TGP.U5k0glFpPpO(YgfOFqZLKqyCiZtk3TGP.s7qZLX1sH8R), gZr0XX0FVXMJ64aA7Jt0.aiE0FPEGyJH), tuj2nG0F1oofEKvekwBD.sjG0FmiV0fj)
+					AIn0sN0BwUOC9Fe8yHik.U5k0glFpPpO(fitJ390PcUT3TmB3uxX4.U5k0glFpPpO(stringBuilder2, fitJ390PcUT3TmB3uxX4.wSD0P6mZVIp), QcEJmR0GGL2AVErGJyXI.U5k0glFpPpO(QcEJmR0GGL2AVErGJyXI.Xlq0GH7nc5U), MessageBoxButtons.OK, MessageBoxIcon.Hand, AIn0sN0BwUOC9Fe8yHik.Cdt0B49odiF)
+					Me.RwmeRt7NgE8()
+					Return
+				End If
+				Try
+					Dim ex As SqlCeException = TryCast(Me.SsUeRskrPie, SqlCeException)
+					If ex IsNot Nothing Then
+						IHS1vvZLGOqsl9IPCqEd.U5k0glFpPpO(ex, Me.RoYeR7Sguox, IHS1vvZLGOqsl9IPCqEd.q5AZLHsAILh)
+					End If
+				Catch ex2 As Exception
+					cANKsu0BA2SnTmQlm9Qu.U5k0glFpPpO(Me.RoYeR7Sguox, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-215848640 Xor -1021184049 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_1b1104cefc194f9fbcdf6770da50bd7c), ex2, cANKsu0BA2SnTmQlm9Qu.Rqk0BjSoMfS)
+				End Try
+				cANKsu0BA2SnTmQlm9Qu.U5k0glFpPpO(Me.RoYeR7Sguox, Me.YkjeRTMZZjR, Me.SsUeRskrPie, cANKsu0BA2SnTmQlm9Qu.Rqk0BjSoMfS)
+				xvDhn1ZLQUGsYsWGcn5M.U5k0glFpPpO(New StatisticsTracker(), Me.SsUeRskrPie, xvDhn1ZLQUGsYsWGcn5M.CBHZLNNAHZ4)
+				Try
+					Me.HTGeRqA0551()
+				Catch ex3 As Exception
+					cANKsu0BA2SnTmQlm9Qu.U5k0glFpPpO(Me.RoYeR7Sguox, fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(1886365856 Xor 13808557 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_e56c74a972ce47f695202753a40d8696), ex3, cANKsu0BA2SnTmQlm9Qu.Rqk0BjSoMfS)
+				End Try
+				If BsQLcfxGxLqHqmxlCLkW.U5k0glFpPpO(yyEX79ZL2AuS9vKFBBFP.U5k0glFpPpO(New String() { fZ6r8QZLAtuKKZg8fV5d.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.y3J0VNvFbxh), fZ6r8QZLAtuKKZg8fV5d.YIMZLjLXH4c) }, yyEX79ZL2AuS9vKFBBFP.ysCZLMgSFcv), fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(-935450961 Xor -1970075842 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_72ac7432c3264007a12eccd147465e80), BsQLcfxGxLqHqmxlCLkW.MHExGEJsHQV).Length <> 0 Then
+					N0S1SjZL9ScwpxAGX05L.U5k0glFpPpO(TWiFOG0in0EJrNjlMVnK.U5k0glFpPpO(fZ6r8QZLAtuKKZg8fV5d.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.U5k0glFpPpO(GZ43gZ0VQGIF4VHDNPSh.y3J0VNvFbxh), fZ6r8QZLAtuKKZg8fV5d.YIMZLjLXH4c), fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(270013388 >> 2 Xor 705374047 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_4dc93099cf5f49c2821f2225a87834de), TWiFOG0in0EJrNjlMVnK.DI60idDngGE), N0S1SjZL9ScwpxAGX05L.OOoZLoIIRog)
+				End If
+				Me.RwmeRt7NgE8()
+			End Sub
+
+			' Token: 0x060005D1 RID: 1489 RVA: 0x001B196C File Offset: 0x001AFB6C
+			Private Sub HTGeRqA0551()
+				If Me.SHPeRaZWKuP(AddressOf Me.HTGeRqA0551) Then
+					Return
+				End If
+				Dim model As ErrorWithMantisReportWindowModel = New ErrorWithMantisReportWindowModel(True, Me.SsUeRskrPie, FormMain.Presenter)
+				dtmns60GKRmgf12KgqvM.U5k0glFpPpO(FwEVnB0GUCj7Vj7ikT2L.U5k0glFpPpO(QaJjI10ULJIG814liwbU.U5k0glFpPpO(QaJjI10ULJIG814liwbU.qvn0UlZUuyG), New GetViewFromViewProviderMessage(Of ErrorWithMantisReportWindowModel)(PublicViewId.ErrorWithMantisReportWindow, model, IntPtr.Zero), FwEVnB0GUCj7Vj7ikT2L.WUW0GI5d9lP), dtmns60GKRmgf12KgqvM.xX00GXddEEB)
+			End Sub
+
+			' Token: 0x060005D2 RID: 1490 RVA: 0x001B19D8 File Offset: 0x001AFBD8
+			Private Sub RwmeRt7NgE8()
+				If Me.SHPeRaZWKuP(AddressOf Me.RwmeRt7NgE8) Then
+					Return
+				End If
+				wqUGNaZLLyrHgUJUVQHK.U5k0glFpPpO(60000, wqUGNaZLLyrHgUJUVQHK.v49ZLlmbLMl)
+				z4JQXPZLRmxo51Y7LMdK.U5k0glFpPpO(QwfC5A0pRLWLUTMyTpLN.U5k0glFpPpO(QwfC5A0pRLWLUTMyTpLN.yNO0puphHDd), z4JQXPZLRmxo51Y7LMdK.VgSZLuQW8PY)
+				UZdWSZ0kRgyUDUh06t3K.U5k0glFpPpO(Me.RoYeR7Sguox, E6WiAO0n9TIJAatkcQnV.U5k0glFpPpO(fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(1761592137 Xor 663513302 Xor <Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}.m_883a017eaf2d46218d88e2e4193d0feb.m_8d1364a92157439d86c1be1ec5432644), KxC17VZLOBoNGK7eVoET.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.U5k0glFpPpO(bLhVHo0OvTgrOn564V7g.YYg0Ok3Moho), KxC17VZLOBoNGK7eVoET.wgEZLpbRqhH), E6WiAO0n9TIJAatkcQnV.Uus0noj2iqv), UZdWSZ0kRgyUDUh06t3K.T0Q0ku9DhDj)
+				sWLFBdxQ8tWtmeCZ24wC.U5k0glFpPpO(-1, sWLFBdxQ8tWtmeCZ24wC.ammxQWPhaAE)
+			End Sub
+
+			' Token: 0x060005D3 RID: 1491 RVA: 0x001B1A7C File Offset: 0x001AFC7C
+			Private Function SHPeRaZWKuP(\u0020 As Action) As Boolean
+				If TcEox3xRLC6IxYTmTUW9.U5k0glFpPpO(q2sjGb0J1lFn3p5BPDqW.U5k0glFpPpO(q2sjGb0J1lFn3p5BPDqW.XM10JmYoZqh), TcEox3xRLC6IxYTmTUW9.NMDxRl0HMhw) > 0 AndAlso mINd3WxIbahJ7MuCbceC.U5k0glFpPpO(OrZTW9xRRSKHIghohiHI.U5k0glFpPpO(q2sjGb0J1lFn3p5BPDqW.U5k0glFpPpO(q2sjGb0J1lFn3p5BPDqW.XM10JmYoZqh), 0, OrZTW9xRRSKHIghohiHI.ogmxRuHkBWX), mINd3WxIbahJ7MuCbceC.aKxxIiM8OvA) Then
+					OrZTW9xRRSKHIghohiHI.U5k0glFpPpO(q2sjGb0J1lFn3p5BPDqW.U5k0glFpPpO(q2sjGb0J1lFn3p5BPDqW.XM10JmYoZqh), 0, OrZTW9xRRSKHIghohiHI.ogmxRuHkBWX).Invoke(\u0020)
+					Return True
+				End If
+				Return False
+			End Function
+
+			' Token: 0x060005D4 RID: 1492 RVA: 0x001B1AF0 File Offset: 0x001AFCF0
+			' Note: this type is marked as 'beforefieldinit'.
+			Shared Sub New()
+				fXUU4jykVT4coaAMg9aB.gRpykFhmKaB()
+			End Sub
+
+			' Token: 0x04000634 RID: 1588
+			Private SsUeRskrPie As Exception
+
+			' Token: 0x04000635 RID: 1589
+			Private YkjeRTMZZjR As String
+
+			' Token: 0x04000636 RID: 1590
+			Private RoYeR7Sguox As IVesLogger
+		End Class
+	End Class
+End Namespace

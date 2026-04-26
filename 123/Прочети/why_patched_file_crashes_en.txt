@@ -1,0 +1,256 @@
+WHY THE PATCHED FILE CRASHES
+Excluding the Zero variant — only the patch case analyzed so far
+
+1. Short conclusion
+
+The patched file does not crash because of a simple issue such as a missing file, a missing resource, or an incorrect entry point.
+
+Based on the analysis, the crash comes from a multi-layer defensive architecture around the application. It includes:
+
+- an early module-level anti-tamper check;
+- a protected resource/string bootstrap layer;
+- a dispatcher / VM-style execution layer;
+- caller assembly validation around protected string access;
+- a separate normal licensing architecture that comes later.
+
+In other words, the problem is not located in one single method. The patch changes the managed binary structure in a way that breaks the expected state of the protected bootstrap/dispatcher layer.
+
+2. What actually happens during startup
+
+High-level flow:
+
+Application load
+    ↓
+<Module>.cctor()
+    ↓
+fXUU4jykVT4coaAMg9aB.gRpykFhmKaB()
+    ↓
+module-level anti-tamper / integrity check
+    ↓
+managed entry point:
+tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ.XLYMmU0Q55(String[])
+    ↓
+protected string/resource bootstrap:
+fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(Int32)
+    ↓
+embedded protected resource:
+uNs7Wte18A4oyf6jm5.SPbLiIyKtHBSsv8DfR
+    ↓
+TLEykHLJbwe(Stream, Int32)
+    ↓
+EpkPbayCU7YvCOI36TbN dispatcher / VM-style layer
+    ↓
+normal startup / licensing architecture
+
+3. First defensive layer: module-level anti-tamper
+
+The first important layer is the module initializer path.
+
+The observed failure path is:
+
+<Module>.cctor()
+  -> tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB.gRpykFhmKaB()
+  -> System.Exception: PVSOLpremium is tampered.
+
+This means the application performs an early integrity/tamper check before the normal startup flow reaches the main application logic.
+
+This is not a normal business exception. It is a defensive fail-fast mechanism.
+
+4. Second defensive layer: protected resource / string bootstrap
+
+After the first anti-tamper layer, there is a second problematic layer.
+
+It goes through:
+
+fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(Int32)
+fXUU4jykVT4coaAMg9aB.TLEykHLJbwe(Stream, Int32)
+EpkPbayCU7YvCOI36TbN dispatcher
+
+CqkykQBo6r0(Int32) is not a simple string helper. It appears to be a lazy protected string/resource decoder with caching and caller validation.
+
+Its responsibilities include:
+
+- loading an embedded manifest resource;
+- initializing a protected byte table;
+- decoding Unicode string data;
+- caching already decoded string values;
+- validating which assembly calls the method;
+- fail-closed behavior when the caller context is unexpected.
+
+5. Why the protected resource itself is not the cause
+
+The protected resource was verified to exist.
+
+Resource name:
+
+uNs7Wte18A4oyf6jm5.SPbLiIyKtHBSsv8DfR
+
+Observed values:
+
+Resource count: 114 resources
+Target resource: found
+Target resource length: 263,168 bytes
+Target resource SHA256:
+b69aa599274d818416707a40e44d164690267d8f390bbfcf89b5872ced84dc9a
+
+Conclusion:
+
+The crash is not explained by:
+
+- a missing embedded resource;
+- a null resource stream;
+- a different raw protected resource payload;
+- a different managed entry point;
+- a direct failure in the module constructor during this second phase.
+
+So the resource has not “disappeared.” The problem is more likely in the runtime state around the dispatcher/bootstrap layer.
+
+6. The role of TLEykHLJbwe(Stream, Int32)
+
+TLEykHLJbwe(Stream, Int32) does not appear to be the real decryptor.
+
+Based on the observed structure, it is a wrapper/bridge that passes:
+
+- Stream;
+- Int32 index;
+
+to:
+
+EpkPbayCU7YvCOI36TbN.JtwyCGLsdfE(0, object[], null)
+
+Conclusion:
+
+The real logic is not inside TLEykHLJbwe. It is hidden behind the dispatcher / VM-style layer.
+
+7. The role of the EpkPbayCU7YvCOI36TbN dispatcher layer
+
+EpkPbayCU7YvCOI36TbN appears to be a protected dispatcher, interpreter, or VM-style execution layer.
+
+Observed chain:
+
+JtwyCGLsdfE(...)
+  -> qD2yCK8vZdW(...)
+  -> nUmyfXrhiZy()
+  -> BLVvfHKtAbK(Boolean ByRef)
+  -> System.Exception
+
+Inside BLVvfHKtAbK, the logic looks like a complex state-machine-style flow:
+
+- current instruction/state index;
+- lists of handlers;
+- exception handling;
+- recursive/iterative transitions through internal dispatcher states;
+- generic System.Exception on a fail-closed path.
+
+This suggests that the patch may have violated the assumptions of the protected dispatcher layer, even when the embedded resource is present and byte-identical.
+
+8. Most likely cause of the crash
+
+The most likely cause is a structural mismatch between the patched managed binary and the protected bootstrap/dispatcher layer.
+
+Possible structural dependencies:
+
+A) Metadata / method-body dependency
+
+The protection may depend on:
+
+- metadata tokens;
+- method bodies;
+- method RVAs;
+- section layout;
+- internal tables;
+- stable module-level state;
+- a specific IL shape/order.
+
+If the patch changes a method body, instruction size, control flow, or metadata layout, the dispatcher may detect a mismatch or fail because the expected state no longer exists.
+
+B) Dispatcher / VM runtime state mismatch
+
+The dispatcher may expect internal runtime variables to be initialized in a precise order.
+
+If the early protection layer is changed, skipped, shortened, or made to return an unexpected value, the later layer may crash generically.
+
+C) Bootstrap side-effect dependency
+
+The first protection method may do more than validate integrity. It may also perform side effects such as:
+
+- table initialization;
+- preparation of keys/indexes;
+- writing runtime flags;
+- validation of module state;
+- preparation of dispatcher context.
+
+If the patch changes the method so that the check appears to pass, but the side effects do not occur correctly, the second layer may crash.
+
+D) Caller validation mismatch
+
+CqkykQBo6r0(Int32) performs caller validation through StackFrame(1), MethodBase, DeclaringType, and Assembly.
+
+If a patch/testing wrapper, loader, or changed call path leads to an unexpected caller assembly/context, the method may throw a generic System.Exception.
+
+9. Why the crash looks different in different phases
+
+There are two different failure styles:
+
+Layer 1:
+Explicit tamper error:
+"<AssemblyName> is tampered."
+
+Layer 2:
+Generic System.Exception inside the dispatcher/bootstrap layer.
+
+This is typical fail-closed behavior. The first layer gives a visible tamper error, while the second does not expose details and simply terminates execution.
+
+10. How this differs from the normal licensing logic
+
+Important: the normal licensing architecture is a separate layer.
+
+It includes:
+
+- OldCpLicense;
+- rUUTMOy6ivNnYRiNMr63;
+- LkLyi7yBQ7XAcNujCQmj;
+- uJjmZVyBNLEPehuR5EEL;
+- remote HTTP licensing client;
+- VusmAqyqI5K1hYqMVGya DTO;
+- local hash/integrity seam;
+- runtime/UI consumers.
+
+However, the crash analyzed here is earlier and lower-level:
+
+- module anti-tamper;
+- protected resource/string bootstrap;
+- dispatcher/VM-style execution;
+- caller validation.
+
+So the patch likely crashes around the protection/bootstrap infrastructure before the normal license flow becomes the main issue.
+
+11. Practical conclusion
+
+The patched file crashes because the application is not protected by a single license check.
+
+It has a multi-layer defensive bootstrap that may depend on:
+
+- unchanged method bodies;
+- stable metadata tokens;
+- correct module initialization;
+- required side effects from early protection methods;
+- correct caller context;
+- dispatcher state matching the protected tables.
+
+Therefore, directly patching individual methods may create a situation where:
+
+- the first check appears to be passed or is no longer the immediate cause;
+- the resource exists and is byte-identical;
+- the entry point is the same;
+- but the protected dispatcher/bootstrap layer no longer finds the expected runtime/metadata state and crashes generically.
+
+12. Final short explanation
+
+The patch does not crash because a resource is missing or because the application no longer knows where to start.
+
+The patch crashes because the modification breaks the protected bootstrap/dispatcher layer around the application.
+
+This layer is separate from the normal licensing logic and includes anti-tamper, protected resource decoding, caller validation, and a VM-style dispatcher. When a mismatch occurs, it fails closed either through an explicit tamper exception or through a generic System.Exception.
+
+That is why the patched file behaves unstably: it is not enough to look at one method-level license check. The entire protection/bootstrap architecture must be considered.

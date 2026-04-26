@@ -1,0 +1,849 @@
+1. What We Actually Analyzed
+
+We analyzed an obfuscated .NET application in which the licensing logic is not located in a single place, but is split across several layers:
+
+local licensing/state layer
+startup/orchestration layer
+remote HTTP licensing client
+request/response pipeline
+signature/integrity seam
+runtime state and UI consumers
+
+The main conclusion is that this is not a simple license check inside one method, but a multi-stage architecture.
+
+
+
+
+1.1 Scope Clarification
+
+This is a structural architecture analysis, not a patch-vs-original comparison report.
+
+Binary comparisons, hashes, resource checks, and runtime tests were used only as validation techniques.
+Their purpose was to confirm the execution structure and to eliminate incorrect hypotheses, such as:
+
+different entry point
+missing embedded resource
+modified protected resource payload
+failing module constructor
+early anti-tamper crash
+
+The core goal of the analysis is to map the application architecture:
+
+startup flow
+protection/bootstrap layers
+protected resource and string infrastructure
+dispatcher / VM-style execution layer
+normal licensing manager
+local and remote licensing flows
+runtime/UI consumers
+
+Therefore, binary variant observations should be treated as supporting evidence, not as the main subject of the document.
+
+
+2. The Main Architectural Picture
+
+In short, the system looks like this:
+
+Local old license file/state
+        ↓
+OldCpLicense
+        ↓
+rUUTMOy6ivNnYRiNMr63   (local manager / startup coordinator)
+        ↓
+LkLyi7yBQ7XAcNujCQmj   (interface)
+        ↓
+uJjmZVyBNLEPehuR5EEL   (HTTP licensing client)
+        ↓
+GetLicenseInfo / Register / DeRegister
+        ↓
+Response DTO: VusmAqyqI5K1hYqMVGya
+        ↓
+hash/signature/integrity seam
+        ↓
+manager updates local state + runtime state
+        ↓
+UI / dialogs / feature-related state
+
+3. The Most Important Types Found and Their Roles
+
+A) rUUTMOy6ivNnYRiNMr63
+
+This is the most important class we found.
+
+Its role is:
+
+startup license coordinator
+local license manager
+runtime state manager
+bridge between the local old model and the newer remote model
+persistence orchestration
+file watcher / reactive state updater
+
+This is not just a UI class and not a DTO.
+It is a central operational/service layer.
+
+B) OldCpLicense
+
+This is the local legacy licensing model.
+
+Its role is:
+
+local operational license record
+deserialized from local storage
+validated
+updated
+written back
+
+Conclusion:
+this is the old local licensing state that the application still uses.
+
+C) VusmAqyqI5K1hYqMVGya
+
+This is the newer DTO / payload / licensing response model.
+
+Fields:
+
+LicenseType
+LicenseStatus
+LicenseEndsAt
+DeRegistrable
+Hash
+
+Role:
+
+comes from the remote/service flow
+serves as a newer license state snapshot
+is used to refresh/update the local model
+
+This is not an engine, but a transport/state object.
+
+D) LkLyi7yBQ7XAcNujCQmj
+
+This is an interface/facade contract, not a concrete implementation.
+
+Methods:
+
+Asmy84GEo1V(...)
+GYwy83wlECY(...)
+uHny856HnqY(...)
+
+Role:
+
+abstraction in front of the remote licensing client
+the manager does not work directly with the implementation, but through an interface
+
+E) uJjmZVyBNLEPehuR5EEL
+
+This is the actual concrete HTTP licensing client.
+
+Confirmed by:
+
+HttpClient
+base URL string
+JsonSerializerSettings
+timeout configuration
+request/response helpers
+
+This is a network/service layer, not just a helper.
+
+4. The Most Important Methods and What They Do
+
+Inside rUUTMOy6ivNnYRiNMr63
+
+OnProgramStart(bool = true)
+
+This is the startup entry point for the local licensing flow.
+
+What it does:
+
+prepares the file/service context
+resets runtime state
+loads the local old license
+validates it
+checks machine-related data
+writes it back if necessary
+calls the remote refresh path
+builds runtime state
+raises warning/maintenance/license UI
+sets up watchers
+
+Conclusion:
+this is the main startup coordinator.
+
+hfqy63dQEFu()
+
+This is the local loader/deserializer for OldCpLicense.
+
+What it does:
+
+reads local content
+JsonConvert.DeserializeObject<OldCpLicense>(...)
+checks basic serialization sanity
+returns OldCpLicense or throws a licensing exception
+
+Conclusion:
+this is the entry point into local licensing storage.
+
+e5Ay65ugb64(OldCpLicense)
+
+This is the local domain validator.
+
+What it checks:
+
+product/program compatibility
+registration/program consistency
+maintenance date validity
+internal validity check of the old model
+
+Conclusion:
+this is real validation logic over the local license object.
+
+duFy6WuqsYo(OldCpLicense, bool)
+
+This is one of the most important methods.
+
+What it does:
+
+builds a request object with:
+serial
+user
+email
+machine
+company
+program code
+calls the remote service through the interface/client
+receives VusmAqyqI5K1hYqMVGya
+depending on LicenseStatus, updates OldCpLicense
+performs an integrity check
+writes the old model back
+then validates the old model again
+
+Conclusion:
+this is the bridge / synchronization / refresh layer between:
+
+local OldCpLicense
+remote Vusm...
+
+eswy6YK0y7D(...)
+
+This is the local integrity check.
+
+What it does:
+
+takes the program code
+serial
+machine ID
+expiry / end date
+builds a derived value
+compares it with Hash
+
+Conclusion:
+there is a real local hash/integrity check; it is not a decorative field.
+
+j4My64COZn7(OldCpLicense, bool)
+
+This is the local persistence writer.
+
+What it does:
+
+touches ACL/permissions
+fixes file/folder access
+serializes and writes the local license state
+removes read-only/hidden attributes and other obstacles
+
+Conclusion:
+this is the local persistence layer for OldCpLicense.
+
+W22yByg1QN9(...) and iyqyBEEjc3Q(...)
+
+These are file watcher handlers.
+
+What this means:
+
+the local licensing artifact is monitored for create/change/delete events
+the application reacts when the local state changes
+
+Conclusion:
+the local artifact is a live runtime factor, not just a passive cache.
+
+Inside uJjmZVyBNLEPehuR5EEL
+
+Constructor
+
+From the constructor we saw:
+
+HttpClient
+base URL
+serializer settings
+timeout
+default headers
+
+Conclusion:
+this is a real HTTP client.
+
+Asmy84GEo1V(...)
+
+This is an async wrapper for:
+
+GetLicenseInfoAsync
+
+GYwy83wlECY(...)
+
+This is an async wrapper for:
+
+RegisterAsync
+
+uHny856HnqY(...)
+
+This is an async wrapper for:
+
+DeRegisterAsync
+
+QdhyBALkkve(...)
+
+This is:
+
+generic MakeRequestAsync
+
+HLeyB92ANUT(...)
+
+This is:
+
+generic MakeRequestAsync_unsafe
+
+urpyBRyGunV(...)
+
+This is:
+
+ProcessResponseAsync
+
+JMjyBO4Y9Pe(...)
+
+This is:
+
+IsSignatureValid
+
+DSayBpIRl9I(...)
+
+This is:
+
+ReadObjectFromResponseAsync
+
+cG8yBkb7U4i(...)
+
+This is:
+
+ReadContentAsStringAsync
+
+All of these methods turned out to be wrappers that only start compiler-generated async state machines.
+
+5. Why It Was Difficult to Reach the “Body”
+
+There were three reasons at the same time:
+
+1. Obfuscation
+
+The names are destroyed and you cannot naturally read the flow.
+
+2. Async state machine compilation
+
+The real logic is not in:
+
+Asmy84GEo1V
+urpyBRyGunV
+JMjyBO4Y9Pe
+
+but in generated types such as:
+
+<GetLicenseInfoAsync>d__7
+<ProcessResponseAsync>d__12
+<IsSignatureValid>d__13
+<ReadObjectFromResponseAsync>d__14
+
+3. dnSpy navigation quirks
+
+When you click MoveNext, dnSpy often sends you back to the wrapper method instead of opening the clean body of the state machine.
+
+6. What We Learned Anyway
+
+Even without conveniently opening every MoveNext, we already understood enough:
+
+Confirmed:
+there is a local legacy licensing model
+there is a local startup/orchestration manager
+there is a remote HTTP licensing client
+there is a request/response pipeline
+there is a signature validation seam
+there is a DTO for the remote licensing snapshot
+there is a bridge between the local old state and the remote new state
+there is a local integrity/hash check
+there are runtime state models and UI consumers
+
+7. Anti-Tamper and Protected Resource Bootstrap Layer
+
+After the initial licensing architecture analysis, we also identified a separate protection/bootstrap layer.
+This layer is not the same as the normal licensing manager or the HTTP licensing client.
+
+It sits earlier and lower in the startup sequence and is responsible for:
+
+assembly integrity validation
+protected resource loading
+protected string table initialization
+runtime dispatcher / VM-style execution
+caller validation around protected string access
+
+This means the application has at least one additional defensive layer before or around the normal licensing logic.
+
+7.1 Module-Level Anti-Tamper Check
+
+The first protection point observed was the module initializer path.
+
+Observed runtime failure:
+
+<Module> .cctor()
+  -> tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB.gRpykFhmKaB()
+  -> System.Exception: PVSOLpremium is tampered.
+
+Meaning:
+
+the application performs an early module-level integrity check
+the check runs before the normal application entry point
+when the executable is modified, the check detects the change
+the application terminates with an explicit tamper message
+
+Important conclusion:
+
+This is not a normal business exception.
+It is an explicit anti-tamper failure path.
+
+The relevant method is:
+
+fXUU4jykVT4coaAMg9aB.gRpykFhmKaB()
+
+The method contains an explicit failure path that builds the message:
+
+<AssemblyName> is tampered.
+
+In the observed case, this became:
+
+PVSOLpremium is tampered.
+
+7.2 Protected String / Resource Bootstrap
+
+A second crash path was later observed after the application progressed past the first explicit tamper path.
+
+Observed stack structure:
+
+eaFoyOM1OuCiP0AkdmZ.XLYMmU0Q55(String[])
+  -> fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(Int32)
+  -> fXUU4jykVT4coaAMg9aB.TLEykHLJbwe(Stream, Int32)
+  -> EpkPbayCU7YvCOI36TbN.JtwyCGLsdfE(Int32, Object[], Object)
+  -> EpkPbayCU7YvCOI36TbN.qD2yCK8vZdW(...)
+  -> EpkPbayCU7YvCOI36TbN+xFWOLUyfKqppENFaPFPW.nUmyfXrhiZy()
+  -> EpkPbayCU7YvCOI36TbN+xFWOLUyfKqppENFaPFPW.BLVvfHKtAbK(Boolean ByRef)
+  -> System.Exception
+
+This indicates a second protected initialization layer.
+
+7.3 CqkykQBo6r0(Int32)
+
+This method appears to be a protected string/resource access method.
+
+Its responsibilities:
+
+lazy initialization of a protected byte table
+loading an embedded manifest resource
+initializing string and index caches
+decoding Unicode strings from a protected byte array
+rewriting the byte table with cache indexes after decoding
+validating caller assembly context
+
+Important fields involved:
+
+GuiyrVW19Wk
+  byte array used as the protected string/resource table
+
+x1fyrnSiO4M
+  List<string> used as a decoded string cache
+
+NQIyrdgriFV
+  List<int> used as an index/cache mapping table
+
+vblyrh09ovx
+  lock object used during protected string decoding
+
+oU6ykzWLIeb
+  Assembly reference used for resource loading and caller validation
+
+Resource loaded:
+
+uNs7Wte18A4oyf6jm5.SPbLiIyKtHBSsv8DfR
+
+Observed IL-level behavior:
+
+if GuiyrVW19Wk.Length == 0:
+  create List<string>
+  create List<int>
+  load manifest resource:
+    uNs7Wte18A4oyf6jm5.SPbLiIyKtHBSsv8DfR
+  pass the resource stream and index into TLEykHLJbwe(Stream, Int32)
+
+Then, after initialization:
+
+lock(vblyrh09ovx)
+read Int32 length_or_cache_index from GuiyrVW19Wk at the requested offset
+if value points to a cached string:
+  return cached string
+else:
+  copy string bytes from GuiyrVW19Wk
+  decode with Encoding.Unicode
+  add decoded string to cache
+  overwrite the original offset with the cache index
+  return decoded string
+
+Conclusion:
+
+CqkykQBo6r0(Int32) is a lazy protected string/resource decoder with caching.
+
+7.4 Caller Assembly Validation in CqkykQBo6r0
+
+The same method also performs a caller validation check.
+
+Observed behavior:
+
+StackFrame(1)
+  -> GetMethod()
+  -> DeclaringType
+  -> Assembly
+
+It compares the caller assembly with the protected assembly reference.
+
+If the caller is not the expected assembly, it checks whether the caller assembly name exists among the referenced assemblies.
+
+If that check fails, it throws:
+
+System.Exception
+
+Conclusion:
+
+CqkykQBo6r0 is not only a string decoder.
+It also includes an anti-external-call / caller validation guard.
+
+7.5 TLEykHLJbwe(Stream, Int32)
+
+This method is not the real decryptor.
+
+Its observed role is a bridge into the protected dispatcher layer.
+
+Observed IL-level structure:
+
+create object[2]
+object[0] = Stream
+object[1] = Int32
+call EpkPbayCU7YvCOI36TbN.JtwyCGLsdfE(0, object[], null)
+
+Conclusion:
+
+TLEykHLJbwe(Stream, Int32) is a wrapper that forwards the resource stream and index into the obfuscated dispatcher / VM-style execution layer.
+
+7.6 EpkPbayCU7YvCOI36TbN Dispatcher Layer
+
+The stack trace shows that the real exception is thrown inside the EpkPbayCU7YvCOI36TbN dispatcher path.
+
+Observed chain:
+
+JtwyCGLsdfE(...)
+  -> qD2yCK8vZdW(...)
+  -> nUmyfXrhiZy()
+  -> BLVvfHKtAbK(Boolean ByRef)
+  -> System.Exception
+
+Interpretation:
+
+EpkPbayCU7YvCOI36TbN appears to be a protected dispatcher, interpreter, or VM-style layer.
+It receives generic arguments as Object[] and performs hidden internal execution.
+The method BLVvfHKtAbK(Boolean ByRef) is the observed throw site in the second crash.
+
+7.7 Meaning of the Second Crash
+
+The second crash is different from the explicit:
+
+PVSOLpremium is tampered.
+
+Instead, it is a generic:
+
+System.Exception
+
+inside the protected dispatcher.
+
+The important point is that later validation narrowed this down structurally.
+
+Runtime validation showed:
+
+the protected manifest resource exists
+the protected manifest resource is not null
+the protected manifest resource has the same length in the observed binary variants
+the protected manifest resource has the same SHA256 hash in the observed binary variants
+the module constructor succeeds
+the managed entry point is the same
+
+Observed protected resource:
+
+uNs7Wte18A4oyf6jm5.SPbLiIyKtHBSsv8DfR
+
+Observed resource length:
+
+263,168 bytes
+
+Observed resource SHA256:
+
+b69aa599274d818416707a40e44d164690267d8f390bbfcf89b5872ced84dc9a
+
+Therefore, the second crash is not explained by:
+
+missing embedded resource
+null resource stream
+different raw protected resource payload
+failure in <Module>.cctor()
+different managed EntryPoint
+
+Updated interpretation:
+
+The second crash is most likely caused by one of the following structural conditions:
+
+A) Dispatcher / VM runtime state mismatch
+
+The protected dispatcher may depend on runtime state initialized outside the raw resource payload.
+
+B) Metadata or method-body dependent protection
+
+The dispatcher may depend on stable metadata tokens, method bodies, RVAs, section layout, internal tables, or module-level state.
+
+C) Bootstrap side-effect dependency
+
+The module-level protection method may do more than validate integrity.
+It may initialize state required by the protected string/resource loader.
+
+D) Secondary fail-closed behavior
+
+The first layer can produce an explicit tamper message.
+The second layer appears to fail generically through System.Exception, likely to avoid exposing internal protection details.
+
+Important conclusion:
+
+The protected resource exists and is byte-identical in the observed checks.
+The crash therefore belongs to the protected dispatcher/bootstrap state layer, not to simple resource absence.
+
+
+7.8 Defensive Interpretation
+
+This protection model should be documented as a separate defensive layer:
+
+Layer 1:
+Module-level anti-tamper check
+Location:
+  <Module> .cctor()
+  fXUU4jykVT4coaAMg9aB.gRpykFhmKaB()
+Failure:
+  "<AssemblyName> is tampered."
+
+Layer 2:
+Protected string/resource bootstrap
+Location:
+  fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(Int32)
+  fXUU4jykVT4coaAMg9aB.TLEykHLJbwe(Stream, Int32)
+  EpkPbayCU7YvCOI36TbN dispatcher
+Failure:
+  generic System.Exception
+
+Layer 3:
+Caller validation around protected string access
+Location:
+  CqkykQBo6r0(Int32)
+Mechanism:
+  StackFrame(1) caller assembly inspection
+Failure:
+  generic System.Exception
+
+7.9 Updated Architectural Picture
+
+The architecture is therefore not only:
+
+local license state
+remote license client
+hash/signature check
+UI/runtime consumers
+
+It also includes:
+
+module-level integrity check
+protected embedded resource loader
+protected string table decoder
+dispatcher / VM-style execution layer
+caller validation guard
+
+Updated high-level flow:
+
+Application load
+        ↓
+<Module> .cctor()
+        ↓
+fXUU4jykVT4coaAMg9aB.gRpykFhmKaB()
+        ↓
+module-level anti-tamper / integrity check
+        ↓
+startup entry point
+        ↓
+protected string/resource bootstrap:
+CqkykQBo6r0(Int32)
+        ↓
+embedded resource:
+uNs7Wte18A4oyf6jm5.SPbLiIyKtHBSsv8DfR
+        ↓
+TLEykHLJbwe(Stream, Int32)
+        ↓
+EpkPbayCU7YvCOI36TbN dispatcher
+        ↓
+normal startup / licensing architecture
+        ↓
+rUUTMOy6ivNnYRiNMr63
+        ↓
+OldCpLicense / HTTP client / DTO / hash-integrity seam
+        ↓
+runtime state + UI consumers
+
+
+
+
+7.9.1 Runtime Validation Evidence
+
+The following validation points were used to support the structural interpretation.
+
+Binary inventory showed that the active executable and the backup executable were not byte-identical.
+However, this was treated only as supporting evidence, not as the main subject of the analysis.
+
+Observed binary inventory:
+
+PVSOLpremium.exe
+  Size: 10,447,616 bytes
+  SHA256: AECFF583D2DECCFA94BCAE5729B3D5F9E5460B8F61A956FF5C61185867AE1A6B
+
+PVSOLpremium.exe.backup
+  Size: 10,375,168 bytes
+  SHA256: A35A10100F05DCA761C7236627640A154849A44A1B427656F6C710D9C3F166C3
+
+Protected resource validation:
+
+Resource name:
+  uNs7Wte18A4oyf6jm5.SPbLiIyKtHBSsv8DfR
+
+Resource count:
+  114 resources observed
+
+Target resource:
+  found
+
+Target resource length:
+  263,168 bytes
+
+Target resource SHA256:
+  b69aa599274d818416707a40e44d164690267d8f390bbfcf89b5872ced84dc9a
+
+Module constructor validation:
+
+PVSOLpremium.exe:
+  <Module>.cctor(): OK
+
+PVSOLpremium.exe.backup:
+  <Module>.cctor(): OK
+
+EntryPoint validation:
+
+Both observed binary variants expose the same managed entry point:
+
+tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ.XLYMmU0Q55(System.String[])
+
+Observed entry point details:
+
+MetadataToken:
+  100664777
+
+Return type:
+  System.Void
+
+Parameter:
+  System.String[]
+
+Conclusion from validation:
+
+The observed second crash is post-module and post-entrypoint.
+It is not caused by a missing target resource, a null resource stream, a modified target resource payload, a failing module constructor, or a different entry point.
+It is best treated as a protected dispatcher/bootstrap failure.
+
+
+7.10 Updated Main Conclusion
+
+The application uses a multi-layer defensive design.
+
+The licensing system is not protected only by business-level checks.
+It is surrounded by lower-level protection mechanisms:
+
+early module integrity validation
+protected embedded resources
+lazy string decoding
+dispatcher / VM-style invocation
+caller assembly validation
+generic fail-closed exceptions
+
+Therefore, any analysis of the licensing architecture must separate:
+
+normal licensing logic
+
+from:
+
+protection/bootstrap infrastructure
+
+These are related at runtime, but architecturally they are different layers.
+
+
+7.11 Next Structural Target: Startup Chain
+
+The next analysis target is the managed entry point:
+
+tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ.XLYMmU0Q55(System.String[])
+
+This method should be mapped structurally to identify:
+
+first startup calls
+first protected string/resource access
+the index passed into CqkykQBo6r0(Int32)
+transition into UI/runtime initialization
+transition into the normal licensing manager
+possible try/catch or fail-closed startup handling
+
+This step should remain architectural.
+The goal is to connect the entry point to the protection/bootstrap layer and then to the normal licensing architecture.
+
+8. Startup Chain: XLYMmU0Q55
+
+Role:
+  Managed application entry point and startup orchestrator.
+
+Responsibilities:
+  - first protected string/resource access
+  - UI/view loader initialization
+  - WinForms exception behavior setup
+  - global unhandled exception handler registration
+  - basic runtime compatibility setup
+  - application type registration / bootstrap
+  - multiple VesMutex objects for process coordination
+  - logger initialization
+  - early mutex-based exit path
+  - early runtime/environment gate
+  - language / first-run initialization branch
+  - transition toward splash screen, runtime setup, and later licensing flow
+
+Important observation:
+  CqkykQBo6r0 is called immediately at startup.
+  Therefore the protected string/resource layer is part of the startup bootstrap path.
+

@@ -1,0 +1,702 @@
+0	0000	br.s	2 (0007) newobj instance void tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::.ctor()
+1	0002	call	null
+2	0007	newobj	instance void tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::.ctor()
+3	000C	stloc.0
+4	000D	ldc.i4	-0x127C35F1
+5	0012	ldc.i4	-0x55886779
+6	0017	xor
+7	0018	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+8	001D	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_c8c89156eb7a45f3a22c9a48a285f2c4
+9	0022	xor
+10	0023	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+11	0028	ldsfld	class gB4W4HxQKcUR63XnICue gB4W4HxQKcUR63XnICue::RbfxQXScH7x
+12	002D	call	void gB4W4HxQKcUR63XnICue::U5k0glFpPpO(string, class gB4W4HxQKcUR63XnICue)
+13	0032	call	void ValentinSoftware.PV.Desktop.WinForms.ViewLoader.ViewProvider::Init()
+14	0037	ldc.i4.1
+15	0038	ldsfld	class Oou6QNxQGy3G0XUQHjtn Oou6QNxQGy3G0XUQHjtn::eEhxQH8PrPy
+16	003D	call	void Oou6QNxQGy3G0XUQHjtn::U5k0glFpPpO(valuetype [System.Windows.Forms]System.Windows.Forms.UnhandledExceptionMode, class Oou6QNxQGy3G0XUQHjtn)
+17	0042	ldsfld	class QTPhEkxQQZLKaZEcvc6q QTPhEkxQQZLKaZEcvc6q::Q4MxQNrCt5A
+18	0047	call	class [mscorlib]System.AppDomain QTPhEkxQQZLKaZEcvc6q::U5k0glFpPpO(class QTPhEkxQQZLKaZEcvc6q)
+19	004C	ldnull
+20	004D	ldftn	void tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/WDZEE2eRBrB7SXgfv9cB::UnhandledException(object, class [mscorlib]System.UnhandledExceptionEventArgs)
+21	0053	newobj	instance void [mscorlib]System.UnhandledExceptionEventHandler::.ctor(object, native int)
+22	0058	ldsfld	class nS5FSqxQAwwut10QXJAY nS5FSqxQAwwut10QXJAY::w9NxQjdp4nf
+23	005D	call	void nS5FSqxQAwwut10QXJAY::U5k0glFpPpO(object, class [mscorlib]System.UnhandledExceptionEventHandler, class nS5FSqxQAwwut10QXJAY)
+24	0062	ldsfld	class X2HhuRxQ2x51aJpJE4oT X2HhuRxQ2x51aJpJE4oT::gyUxQMw2TdO
+25	0067	call	void X2HhuRxQ2x51aJpJE4oT::U5k0glFpPpO(class X2HhuRxQ2x51aJpJE4oT)
+26	006C	ldc.i4.0
+27	006D	ldsfld	class k3LAUkxQ9aml3qKScQ4r k3LAUkxQ9aml3qKScQ4r::FRRxQoAUTNw
+28	0072	call	void k3LAUkxQ9aml3qKScQ4r::U5k0glFpPpO(bool, class k3LAUkxQ9aml3qKScQ4r)
+29	0077	call	void tcluRCmJ2u79OhTbGG.zpXS6PyCgduBtel37AmL::awKZzBfLDKu()
+30	007C	ldtoken	tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ
+31	0081	ldsfld	class RbSBy80FKdpGjsU8ML8b RbSBy80FKdpGjsU8ML8b::XxB0FXkIOBX
+32	0086	call	class [mscorlib]System.Type RbSBy80FKdpGjsU8ML8b::U5k0glFpPpO(valuetype [mscorlib]System.RuntimeTypeHandle, class RbSBy80FKdpGjsU8ML8b)
+33	008B	ldsfld	class G0G04WxQLW7gyfmSHpBm G0G04WxQLW7gyfmSHpBm::SWexQlBpsTW
+34	0090	call	void G0G04WxQLW7gyfmSHpBm::U5k0glFpPpO(class [mscorlib]System.Type, class G0G04WxQLW7gyfmSHpBm)
+35	0095	ldc.i4.0
+36	0096	ldsfld	class bLhVHo0OvTgrOn564V7g bLhVHo0OvTgrOn564V7g::YYg0Ok3Moho
+37	009B	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramInfo bLhVHo0OvTgrOn564V7g::U5k0glFpPpO(class bLhVHo0OvTgrOn564V7g)
+38	00A0	ldsfld	class Bst6sxxQRO5WZXXltGcs Bst6sxxQRO5WZXXltGcs::PfsxQu7BV1f
+39	00A5	call	string Bst6sxxQRO5WZXXltGcs::U5k0glFpPpO(object, class Bst6sxxQRO5WZXXltGcs)
+40	00AA	ldloca.s	V_1 (1)
+41	00AC	newobj	instance void [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Helper.VesMutex::.ctor(bool, string, bool&)
+42	00B1	stsfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Helper.VesMutex tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ::C5IMBXMtAD
+43	00B6	ldc.i4.0
+44	00B7	ldsfld	class bLhVHo0OvTgrOn564V7g bLhVHo0OvTgrOn564V7g::YYg0Ok3Moho
+45	00BC	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramInfo bLhVHo0OvTgrOn564V7g::U5k0glFpPpO(class bLhVHo0OvTgrOn564V7g)
+46	00C1	ldsfld	class dE4QDJxQO2s91573fgMo dE4QDJxQO2s91573fgMo::DD8xQp8TSr6
+47	00C6	call	string dE4QDJxQO2s91573fgMo::U5k0glFpPpO(object, class dE4QDJxQO2s91573fgMo)
+48	00CB	ldc.i4	-0x6CABC0CA
+49	00D0	ldc.i4	3
+50	00D5	shr
+51	00D6	ldc.i4	-0x72F708D
+52	00DB	xor
+53	00DC	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+54	00E1	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_692bdd559b8147c093be33e94928a8ef
+55	00E6	xor
+56	00E7	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+57	00EC	ldsfld	class E6WiAO0n9TIJAatkcQnV E6WiAO0n9TIJAatkcQnV::Uus0noj2iqv
+58	00F1	call	string E6WiAO0n9TIJAatkcQnV::U5k0glFpPpO(string, string, class E6WiAO0n9TIJAatkcQnV)
+59	00F6	ldloca.s	V_2 (2)
+60	00F8	newobj	instance void [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Helper.VesMutex::.ctor(bool, string, bool&)
+61	00FD	stsfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Helper.VesMutex tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ::s4oMSgxBhC
+62	0102	ldc.i4.0
+63	0103	ldc.i4	0x5C7FABB8
+64	0108	not
+65	0109	ldc.i4	-0x27CA589D
+66	010E	xor
+67	010F	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+68	0114	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_b267cb015f6b455688ec4d3568625e28
+69	0119	xor
+70	011A	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+71	011F	ldloca.s	V_3 (3)
+72	0121	newobj	instance void [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Helper.VesMutex::.ctor(bool, string, bool&)
+73	0126	stsfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Helper.VesMutex tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ::QmdMtmeKh4
+74	012B	ldc.i4.0
+75	012C	ldc.i4	-0x797D2484
+76	0131	ldc.i4	6
+77	0136	shr
+78	0137	ldc.i4	-0x870F179
+79	013C	xor
+80	013D	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+81	0142	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_fe20fb5456ef40298d3ce7595fb9bb9b
+82	0147	xor
+83	0148	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+84	014D	ldloca.s	V_4 (4)
+85	014F	newobj	instance void [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Helper.VesMutex::.ctor(bool, string, bool&)
+86	0154	stsfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Helper.VesMutex tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ::joGMqBjjcE
+87	0159	ldc.i4.0
+88	015A	ldsfld	class bLhVHo0OvTgrOn564V7g bLhVHo0OvTgrOn564V7g::YYg0Ok3Moho
+89	015F	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramInfo bLhVHo0OvTgrOn564V7g::U5k0glFpPpO(class bLhVHo0OvTgrOn564V7g)
+90	0164	ldsfld	class Bst6sxxQRO5WZXXltGcs Bst6sxxQRO5WZXXltGcs::PfsxQu7BV1f
+91	0169	call	string Bst6sxxQRO5WZXXltGcs::U5k0glFpPpO(object, class Bst6sxxQRO5WZXXltGcs)
+92	016E	ldc.i4	0x706FA8A0
+93	0173	ldc.i4	0x4BC09FC8
+94	0178	xor
+95	0179	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+96	017E	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_aa401add0e664b8eb6d2e334b602a605
+97	0183	xor
+98	0184	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+99	0189	ldsfld	class E6WiAO0n9TIJAatkcQnV E6WiAO0n9TIJAatkcQnV::Uus0noj2iqv
+100	018E	call	string E6WiAO0n9TIJAatkcQnV::U5k0glFpPpO(string, string, class E6WiAO0n9TIJAatkcQnV)
+101	0193	ldloca.s	V_5 (5)
+102	0195	newobj	instance void [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Helper.VesMutex::.ctor(bool, string, bool&)
+103	019A	stsfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Helper.VesMutex tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ::t4fMa4FSNU
+104	019F	ldloc.0
+105	01A0	call	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Logger.IVesLogger [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Logger.VesLoggerProvider::GetLogger<class tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ>()
+106	01A5	stfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Logger.IVesLogger tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::hkReRUhBvX9
+107	01AA	ldsfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Helper.VesMutex tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ::s4oMSgxBhC
+108	01AF	ldc.i4	1000
+109	01B4	ldsfld	class xgeFiJxQvkPifoL365d3 xgeFiJxQvkPifoL365d3::sX9xQkLW0OW
+110	01B9	call	bool xgeFiJxQvkPifoL365d3::U5k0glFpPpO(object, int32, class xgeFiJxQvkPifoL365d3)
+111	01BE	brfalse	127 (020E) ldloc.0 
+112	01C3	ldsfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Helper.VesMutex tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ::t4fMa4FSNU
+113	01C8	ldc.i4	1000
+114	01CD	ldsfld	class xgeFiJxQvkPifoL365d3 xgeFiJxQvkPifoL365d3::sX9xQkLW0OW
+115	01D2	call	bool xgeFiJxQvkPifoL365d3::U5k0glFpPpO(object, int32, class xgeFiJxQvkPifoL365d3)
+116	01D7	brfalse	127 (020E) ldloc.0 
+117	01DC	ldsfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Helper.VesMutex tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ::QmdMtmeKh4
+118	01E1	ldc.i4	1000
+119	01E6	ldsfld	class xgeFiJxQvkPifoL365d3 xgeFiJxQvkPifoL365d3::sX9xQkLW0OW
+120	01EB	call	bool xgeFiJxQvkPifoL365d3::U5k0glFpPpO(object, int32, class xgeFiJxQvkPifoL365d3)
+121	01F0	brfalse	127 (020E) ldloc.0 
+122	01F5	ldsfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Helper.VesMutex tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ::joGMqBjjcE
+123	01FA	ldc.i4	1000
+124	01FF	ldsfld	class xgeFiJxQvkPifoL365d3 xgeFiJxQvkPifoL365d3::sX9xQkLW0OW
+125	0204	call	bool xgeFiJxQvkPifoL365d3::U5k0glFpPpO(object, int32, class xgeFiJxQvkPifoL365d3)
+126	0209	brtrue	147 (025E) ldloc.0 
+127	020E	ldloc.0
+128	020F	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Logger.IVesLogger tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::hkReRUhBvX9
+129	0214	ldc.i4	0x13B3FCB7
+130	0219	ldc.i4	-0x195481E
+131	021E	add
+132	021F	ldc.i4	0x56E26F14
+133	0224	xor
+134	0225	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+135	022A	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_126dafcf7837461d9d717c5f43ddec9b
+136	022F	xor
+137	0230	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+138	0235	ldsfld	class bLhVHo0OvTgrOn564V7g bLhVHo0OvTgrOn564V7g::YYg0Ok3Moho
+139	023A	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramInfo bLhVHo0OvTgrOn564V7g::U5k0glFpPpO(class bLhVHo0OvTgrOn564V7g)
+140	023F	ldsfld	class tpmDun0C1EK4cWAxU0LR tpmDun0C1EK4cWAxU0LR::JV00CmDnfQe
+141	0244	call	string tpmDun0C1EK4cWAxU0LR::U5k0glFpPpO(object, class tpmDun0C1EK4cWAxU0LR)
+142	0249	ldsfld	class E6WiAO0n9TIJAatkcQnV E6WiAO0n9TIJAatkcQnV::Uus0noj2iqv
+143	024E	call	string E6WiAO0n9TIJAatkcQnV::U5k0glFpPpO(string, string, class E6WiAO0n9TIJAatkcQnV)
+144	0253	ldsfld	class UZdWSZ0kRgyUDUh06t3K UZdWSZ0kRgyUDUh06t3K::T0Q0ku9DhDj
+145	0258	call	void UZdWSZ0kRgyUDUh06t3K::U5k0glFpPpO(object, string, class UZdWSZ0kRgyUDUh06t3K)
+146	025D	ret
+147	025E	ldloc.0
+148	025F	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Logger.IVesLogger tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::hkReRUhBvX9
+149	0264	ldc.i4	-0x6D762DC
+150	0269	ldc.i4	-0x5FF3AC7E
+151	026E	xor
+152	026F	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+153	0274	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_44f989693c264220a939728b02483de2
+154	0279	xor
+155	027A	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+156	027F	ldsfld	class bLhVHo0OvTgrOn564V7g bLhVHo0OvTgrOn564V7g::YYg0Ok3Moho
+157	0284	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramInfo bLhVHo0OvTgrOn564V7g::U5k0glFpPpO(class bLhVHo0OvTgrOn564V7g)
+158	0289	ldsfld	class tpmDun0C1EK4cWAxU0LR tpmDun0C1EK4cWAxU0LR::JV00CmDnfQe
+159	028E	call	string tpmDun0C1EK4cWAxU0LR::U5k0glFpPpO(object, class tpmDun0C1EK4cWAxU0LR)
+160	0293	ldsfld	class E6WiAO0n9TIJAatkcQnV E6WiAO0n9TIJAatkcQnV::Uus0noj2iqv
+161	0298	call	string E6WiAO0n9TIJAatkcQnV::U5k0glFpPpO(string, string, class E6WiAO0n9TIJAatkcQnV)
+162	029D	ldsfld	class UZdWSZ0kRgyUDUh06t3K UZdWSZ0kRgyUDUh06t3K::T0Q0ku9DhDj
+163	02A2	call	void UZdWSZ0kRgyUDUh06t3K::U5k0glFpPpO(object, string, class UZdWSZ0kRgyUDUh06t3K)
+164	02A7	ldtoken	tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ
+165	02AC	ldsfld	class RbSBy80FKdpGjsU8ML8b RbSBy80FKdpGjsU8ML8b::XxB0FXkIOBX
+166	02B1	call	class [mscorlib]System.Type RbSBy80FKdpGjsU8ML8b::U5k0glFpPpO(valuetype [mscorlib]System.RuntimeTypeHandle, class RbSBy80FKdpGjsU8ML8b)
+167	02B6	ldsfld	class ku8951xQrux2G5dWGdhZ ku8951xQrux2G5dWGdhZ::D8bxQCqGOKP
+168	02BB	call	bool ku8951xQrux2G5dWGdhZ::U5k0glFpPpO(class [mscorlib]System.Type, class ku8951xQrux2G5dWGdhZ)
+169	02C0	brtrue	171 (02C6) ldsfld class h96xSI0E9KHnHmdTCaQZ h96xSI0E9KHnHmdTCaQZ::Qjd0Eo3feyG
+170	02C5	ret
+171	02C6	ldsfld	class h96xSI0E9KHnHmdTCaQZ h96xSI0E9KHnHmdTCaQZ::Qjd0Eo3feyG
+172	02CB	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IIniSettings h96xSI0E9KHnHmdTCaQZ::U5k0glFpPpO(class h96xSI0E9KHnHmdTCaQZ)
+173	02D0	ldsfld	class P0aJpRxqgOYluxM1kw3u P0aJpRxqgOYluxM1kw3u::JeDxqe5jg11
+174	02D5	call	string P0aJpRxqgOYluxM1kw3u::U5k0glFpPpO(object, class P0aJpRxqgOYluxM1kw3u)
+175	02DA	ldsfld	class Ytnph90XJFRQBSeGvvlV Ytnph90XJFRQBSeGvvlV::X4O0XfogQvW
+176	02DF	call	bool Ytnph90XJFRQBSeGvvlV::U5k0glFpPpO(string, class Ytnph90XJFRQBSeGvvlV)
+177	02E4	brfalse	263 (0446) ldloc.0 
+178	02E9	newobj	instance void tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_1'::.ctor()
+179	02EE	stloc.s	V_9 (9)
+180	02F0	ldloc.0
+181	02F1	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Logger.IVesLogger tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::hkReRUhBvX9
+182	02F6	ldc.i4	0x3756A8BB
+183	02FB	ldc.i4	0x70A2FB8D
+184	0300	xor
+185	0301	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+186	0306	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_c8c89156eb7a45f3a22c9a48a285f2c4
+187	030B	xor
+188	030C	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+189	0311	ldsfld	class U7NiMC0r1u6FA0v1BO9y U7NiMC0r1u6FA0v1BO9y::ULt0rm7I1HH
+190	0316	call	void U7NiMC0r1u6FA0v1BO9y::U5k0glFpPpO(object, string, class U7NiMC0r1u6FA0v1BO9y)
+191	031B	ldloc.s	V_9 (9)
+192	031D	ldsfld	class r905wJ0CUe2On7wCABvh r905wJ0CUe2On7wCABvh::N8k0CIf4VbW
+193	0322	call	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Interfaces.IProgramLanguage r905wJ0CUe2On7wCABvh::U5k0glFpPpO(class r905wJ0CUe2On7wCABvh)
+194	0327	stfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Interfaces.IProgramLanguage tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_1'::NaueRXKKFiU
+195	032C	ldloc.0
+196	032D	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Logger.IVesLogger tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::hkReRUhBvX9
+197	0332	ldc.i4	-0x92BE443
+198	0337	ldc.i4	-0xF87F4F9
+199	033C	xor
+200	033D	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+201	0342	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_f86e86eb490a4be6a9d971f234ef366f
+202	0347	xor
+203	0348	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+204	034D	ldsfld	class U7NiMC0r1u6FA0v1BO9y U7NiMC0r1u6FA0v1BO9y::ULt0rm7I1HH
+205	0352	call	void U7NiMC0r1u6FA0v1BO9y::U5k0glFpPpO(object, string, class U7NiMC0r1u6FA0v1BO9y)
+206	0357	ldloc.s	V_9 (9)
+207	0359	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Interfaces.IProgramLanguage tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_1'::NaueRXKKFiU
+208	035E	ldsfld	class GZ43gZ0VQGIF4VHDNPSh GZ43gZ0VQGIF4VHDNPSh::y3J0VNvFbxh
+209	0363	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramPaths GZ43gZ0VQGIF4VHDNPSh::U5k0glFpPpO(class GZ43gZ0VQGIF4VHDNPSh)
+210	0368	ldsfld	class yOnOLrxQJujiZ1VnNWnG yOnOLrxQJujiZ1VnNWnG::jAbxQfjhGRP
+211	036D	call	string yOnOLrxQJujiZ1VnNWnG::U5k0glFpPpO(object, class yOnOLrxQJujiZ1VnNWnG)
+212	0372	newobj	instance void [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.LanguageDialog::.ctor(class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Interfaces.IProgramLanguage, string)
+213	0377	stloc.s	V_10 (10)
+214	0379	ldloc.0
+215	037A	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Logger.IVesLogger tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::hkReRUhBvX9
+216	037F	ldc.i4	-0x1B647DA6
+217	0384	ldc.i4	-0x4B239B8A
+218	0389	xor
+219	038A	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+220	038F	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_bd7c1a0ef0a748ffbe64b272320f07ad
+221	0394	xor
+222	0395	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+223	039A	ldsfld	class U7NiMC0r1u6FA0v1BO9y U7NiMC0r1u6FA0v1BO9y::ULt0rm7I1HH
+224	039F	call	void U7NiMC0r1u6FA0v1BO9y::U5k0glFpPpO(object, string, class U7NiMC0r1u6FA0v1BO9y)
+225	03A4	ldloc.s	V_10 (10)
+226	03A6	ldsfld	class xCrtV00cZcPDsjcGaeBS xCrtV00cZcPDsjcGaeBS::Smi0chVGqOx
+227	03AB	call	valuetype [System.Windows.Forms]System.Windows.Forms.DialogResult xCrtV00cZcPDsjcGaeBS::U5k0glFpPpO(object, class xCrtV00cZcPDsjcGaeBS)
+228	03B0	pop
+229	03B1	ldsfld	class h96xSI0E9KHnHmdTCaQZ h96xSI0E9KHnHmdTCaQZ::Qjd0Eo3feyG
+230	03B6	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IIniSettings h96xSI0E9KHnHmdTCaQZ::U5k0glFpPpO(class h96xSI0E9KHnHmdTCaQZ)
+231	03BB	ldloc.s	V_9 (9)
+232	03BD	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Interfaces.IProgramLanguage tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_1'::NaueRXKKFiU
+233	03C2	ldsfld	class tRu6du0C26ZsQDluAu0u tRu6du0C26ZsQDluAu0u::k1A0CMW2Cne
+234	03C7	call	string tRu6du0C26ZsQDluAu0u::U5k0glFpPpO(object, class tRu6du0C26ZsQDluAu0u)
+235	03CC	ldsfld	class WvD5e60fBkMU3kOHVGZm WvD5e60fBkMU3kOHVGZm::yLc0fSk1rbQ
+236	03D1	call	void WvD5e60fBkMU3kOHVGZm::U5k0glFpPpO(object, string, class WvD5e60fBkMU3kOHVGZm)
+237	03D6	ldloc.s	V_9 (9)
+238	03D8	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Interfaces.IProgramLanguage tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_1'::NaueRXKKFiU
+239	03DD	ldsfld	class HS2PAJ0Yg7CPccKJ8eAX HS2PAJ0Yg7CPccKJ8eAX::GCd0YelpdKY
+240	03E2	call	class [mscorlib]System.Collections.Generic.List`1<class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Interfaces.ILanguage> HS2PAJ0Yg7CPccKJ8eAX::U5k0glFpPpO(object, class HS2PAJ0Yg7CPccKJ8eAX)
+241	03E7	ldloc.s	V_9 (9)
+242	03E9	ldftn	instance bool tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_1'::SYqeRKWiFDi(class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Interfaces.ILanguage)
+243	03EF	newobj	instance void class [mscorlib]System.Func`2<class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Interfaces.ILanguage, bool>::.ctor(object, native int)
+244	03F4	call	bool [System.Core]System.Linq.Enumerable::Any<class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Interfaces.ILanguage>(class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>, class [mscorlib]System.Func`2<!!0, bool>)
+245	03F9	brfalse	256 (042D) leave 263 (0446)
+246	03FE	ldsfld	class h96xSI0E9KHnHmdTCaQZ h96xSI0E9KHnHmdTCaQZ::Qjd0Eo3feyG
+247	0403	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IIniSettings h96xSI0E9KHnHmdTCaQZ::U5k0glFpPpO(class h96xSI0E9KHnHmdTCaQZ)
+248	0408	ldsfld	class KeybTZxE8tqWM2hQlP9W KeybTZxE8tqWM2hQlP9W::OjAxEWMQfeo
+249	040D	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IReportConfig KeybTZxE8tqWM2hQlP9W::U5k0glFpPpO(object, class KeybTZxE8tqWM2hQlP9W)
+250	0412	ldloc.s	V_9 (9)
+251	0414	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Interfaces.IProgramLanguage tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_1'::NaueRXKKFiU
+252	0419	ldsfld	class tRu6du0C26ZsQDluAu0u tRu6du0C26ZsQDluAu0u::k1A0CMW2Cne
+253	041E	call	string tRu6du0C26ZsQDluAu0u::U5k0glFpPpO(object, class tRu6du0C26ZsQDluAu0u)
+254	0423	ldsfld	class YjJlhwxQb9Zq5TZQ5Vfn YjJlhwxQb9Zq5TZQ5Vfn::ktMxQiePbFb
+255	0428	call	void YjJlhwxQb9Zq5TZQ5Vfn::U5k0glFpPpO(object, string, class YjJlhwxQb9Zq5TZQ5Vfn)
+256	042D	leave	263 (0446) ldloc.0 
+257	0432	ldloc.s	V_10 (10)
+258	0434	brfalse	262 (0445) endfinally 
+259	0439	ldloc.s	V_10 (10)
+260	043B	ldsfld	class mXwRIP0eygb1BTNpLu9o mXwRIP0eygb1BTNpLu9o::eIw0e0n8dTJ
+261	0440	call	void mXwRIP0eygb1BTNpLu9o::U5k0glFpPpO(object, class mXwRIP0eygb1BTNpLu9o)
+262	0445	endfinally
+263	0446	ldloc.0
+264	0447	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Logger.IVesLogger tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::hkReRUhBvX9
+265	044C	ldc.i4	-0x1CCFFE95
+266	0451	ldc.i4	-0x2BB08DDC
+267	0456	sub
+268	0457	ldc.i4	0x15907F1D
+269	045C	xor
+270	045D	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+271	0462	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_1edaa31db10e43cdb407c68566ea822f
+272	0467	xor
+273	0468	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+274	046D	ldsfld	class U7NiMC0r1u6FA0v1BO9y U7NiMC0r1u6FA0v1BO9y::ULt0rm7I1HH
+275	0472	call	void U7NiMC0r1u6FA0v1BO9y::U5k0glFpPpO(object, string, class U7NiMC0r1u6FA0v1BO9y)
+276	0477	ldsfld	class h96xSI0E9KHnHmdTCaQZ h96xSI0E9KHnHmdTCaQZ::Qjd0Eo3feyG
+277	047C	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IIniSettings h96xSI0E9KHnHmdTCaQZ::U5k0glFpPpO(class h96xSI0E9KHnHmdTCaQZ)
+278	0481	ldsfld	class Kc0yZFxQwoKci5QJkeel Kc0yZFxQwoKci5QJkeel::OuDxQ4KRM0s
+279	0486	call	bool Kc0yZFxQwoKci5QJkeel::U5k0glFpPpO(object, class Kc0yZFxQwoKci5QJkeel)
+280	048B	brfalse	293 (04BD) ldloc.0 
+281	0490	ldsfld	class adq6eSxQ3H4LMtR9j1bP adq6eSxQ3H4LMtR9j1bP::hnOxQ5POEZd
+282	0495	call	string adq6eSxQ3H4LMtR9j1bP::U5k0glFpPpO(class adq6eSxQ3H4LMtR9j1bP)
+283	049A	ldsfld	class slmRmD0rgx0qXOPMANKe slmRmD0rgx0qXOPMANKe::bQG0reB5cNX
+284	049F	call	string slmRmD0rgx0qXOPMANKe::U5k0glFpPpO(class slmRmD0rgx0qXOPMANKe)
+285	04A4	ldc.i4.0
+286	04A5	ldc.i4.s	16
+287	04A7	ldsfld	class lIAuBO0rytGcFZO1NRWA lIAuBO0rytGcFZO1NRWA::Buf0r048Chb
+288	04AC	call	valuetype [System.Windows.Forms]System.Windows.Forms.DialogResult lIAuBO0rytGcFZO1NRWA::U5k0glFpPpO(string, string, valuetype [System.Windows.Forms]System.Windows.Forms.MessageBoxButtons, valuetype [System.Windows.Forms]System.Windows.Forms.MessageBoxIcon, class lIAuBO0rytGcFZO1NRWA)
+289	04B1	pop
+290	04B2	ldc.i4.m1
+291	04B3	ldsfld	class sWLFBdxQ8tWtmeCZ24wC sWLFBdxQ8tWtmeCZ24wC::ammxQWPhaAE
+292	04B8	call	void sWLFBdxQ8tWtmeCZ24wC::U5k0glFpPpO(int32, class sWLFBdxQ8tWtmeCZ24wC)
+293	04BD	ldloc.0
+294	04BE	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Logger.IVesLogger tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::hkReRUhBvX9
+295	04C3	ldc.i4	-0x50C629EC
+296	04C8	ldc.i4	-0x143AF1AF
+297	04CD	xor
+298	04CE	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+299	04D3	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_126dafcf7837461d9d717c5f43ddec9b
+300	04D8	xor
+301	04D9	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+302	04DE	ldsfld	class U7NiMC0r1u6FA0v1BO9y U7NiMC0r1u6FA0v1BO9y::ULt0rm7I1HH
+303	04E3	call	void U7NiMC0r1u6FA0v1BO9y::U5k0glFpPpO(object, string, class U7NiMC0r1u6FA0v1BO9y)
+304	04E8	ldsfld	class GAV2ut0rTSUFA4qaYFcK GAV2ut0rTSUFA4qaYFcK::YVe0r70uiZh
+305	04ED	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramManagementGeneral GAV2ut0rTSUFA4qaYFcK::U5k0glFpPpO(class GAV2ut0rTSUFA4qaYFcK)
+306	04F2	ldloca.s	V_6 (6)
+307	04F4	ldsfld	class KW6LcoxQYKG9OmnSUTat KW6LcoxQYKG9OmnSUTat::mVNxQzlANn6
+308	04F9	call	bool KW6LcoxQYKG9OmnSUTat::U5k0glFpPpO(object, string&, class KW6LcoxQYKG9OmnSUTat)
+309	04FE	brtrue	369 (05B9) ldloc.0 
+310	0503	ldc.i4.5
+311	0504	newarr	[mscorlib]System.String
+312	0509	dup
+313	050A	ldc.i4.0
+314	050B	ldsfld	class vIyK7BxNgRndBZulgtMo vIyK7BxNgRndBZulgtMo::XrnxNegoYyu
+315	0510	call	string vIyK7BxNgRndBZulgtMo::U5k0glFpPpO(class vIyK7BxNgRndBZulgtMo)
+316	0515	stelem.ref
+317	0516	dup
+318	0517	ldc.i4.1
+319	0518	ldc.i4	-0x6B32C571
+320	051D	ldc.i4	-0x34DCA2C7
+321	0522	xor
+322	0523	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+323	0528	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_36911c0d1d0a4cdaa4cbe936f999cd27
+324	052D	xor
+325	052E	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+326	0533	stelem.ref
+327	0534	dup
+328	0535	ldc.i4.2
+329	0536	ldsfld	class JBb74AxNyGutMwdPRniA JBb74AxNyGutMwdPRniA::gBGxN0ZDBYd
+330	053B	call	string JBb74AxNyGutMwdPRniA::U5k0glFpPpO(class JBb74AxNyGutMwdPRniA)
+331	0540	stelem.ref
+332	0541	dup
+333	0542	ldc.i4.3
+334	0543	ldc.i4	-0x639BE98
+335	0548	ldc.i4	-0x3C729EF2
+336	054D	add
+337	054E	ldc.i4	-0x650858B
+338	0553	xor
+339	0554	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+340	0559	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_126dafcf7837461d9d717c5f43ddec9b
+341	055E	xor
+342	055F	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+343	0564	stelem.ref
+344	0565	dup
+345	0566	ldc.i4.4
+346	0567	ldloc.s	V_6 (6)
+347	0569	stelem.ref
+348	056A	ldsfld	class r0ixDP0Svoq54F71shcs r0ixDP0Svoq54F71shcs::NdX0SkPvZqK
+349	056F	call	string r0ixDP0Svoq54F71shcs::U5k0glFpPpO(string[], class r0ixDP0Svoq54F71shcs)
+350	0574	ldsfld	class QcEJmR0GGL2AVErGJyXI QcEJmR0GGL2AVErGJyXI::Xlq0GH7nc5U
+351	0579	call	string QcEJmR0GGL2AVErGJyXI::U5k0glFpPpO(class QcEJmR0GGL2AVErGJyXI)
+352	057E	ldc.i4.0
+353	057F	ldc.i4.s	16
+354	0581	ldsfld	class lIAuBO0rytGcFZO1NRWA lIAuBO0rytGcFZO1NRWA::Buf0r048Chb
+355	0586	call	valuetype [System.Windows.Forms]System.Windows.Forms.DialogResult lIAuBO0rytGcFZO1NRWA::U5k0glFpPpO(string, string, valuetype [System.Windows.Forms]System.Windows.Forms.MessageBoxButtons, valuetype [System.Windows.Forms]System.Windows.Forms.MessageBoxIcon, class lIAuBO0rytGcFZO1NRWA)
+356	058B	pop
+357	058C	ldsfld	class hdRScCxNxnlqENZuJ1gv hdRScCxNxnlqENZuJ1gv::dIQxNE8AcKe
+358	0591	call	string hdRScCxNxnlqENZuJ1gv::U5k0glFpPpO(class hdRScCxNxnlqENZuJ1gv)
+359	0596	ldsfld	class slmRmD0rgx0qXOPMANKe slmRmD0rgx0qXOPMANKe::bQG0reB5cNX
+360	059B	call	string slmRmD0rgx0qXOPMANKe::U5k0glFpPpO(class slmRmD0rgx0qXOPMANKe)
+361	05A0	ldc.i4.0
+362	05A1	ldc.i4.s	0x40
+363	05A3	ldsfld	class lIAuBO0rytGcFZO1NRWA lIAuBO0rytGcFZO1NRWA::Buf0r048Chb
+364	05A8	call	valuetype [System.Windows.Forms]System.Windows.Forms.DialogResult lIAuBO0rytGcFZO1NRWA::U5k0glFpPpO(string, string, valuetype [System.Windows.Forms]System.Windows.Forms.MessageBoxButtons, valuetype [System.Windows.Forms]System.Windows.Forms.MessageBoxIcon, class lIAuBO0rytGcFZO1NRWA)
+365	05AD	pop
+366	05AE	ldc.i4.m1
+367	05AF	ldsfld	class sWLFBdxQ8tWtmeCZ24wC sWLFBdxQ8tWtmeCZ24wC::ammxQWPhaAE
+368	05B4	call	void sWLFBdxQ8tWtmeCZ24wC::U5k0glFpPpO(int32, class sWLFBdxQ8tWtmeCZ24wC)
+369	05B9	ldloc.0
+370	05BA	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Logger.IVesLogger tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::hkReRUhBvX9
+371	05BF	ldc.i4	0x2A267DFB
+372	05C4	ldc.i4	0x4E306D8C
+373	05C9	sub
+374	05CA	ldc.i4	-0x22A5FC2B
+375	05CF	xor
+376	05D0	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+377	05D5	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_f86e86eb490a4be6a9d971f234ef366f
+378	05DA	xor
+379	05DB	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+380	05E0	ldsfld	class U7NiMC0r1u6FA0v1BO9y U7NiMC0r1u6FA0v1BO9y::ULt0rm7I1HH
+381	05E5	call	void U7NiMC0r1u6FA0v1BO9y::U5k0glFpPpO(object, string, class U7NiMC0r1u6FA0v1BO9y)
+382	05EA	ldloc.0
+383	05EB	ldsfld	class GZ43gZ0VQGIF4VHDNPSh GZ43gZ0VQGIF4VHDNPSh::y3J0VNvFbxh
+384	05F0	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramPaths GZ43gZ0VQGIF4VHDNPSh::U5k0glFpPpO(class GZ43gZ0VQGIF4VHDNPSh)
+385	05F5	ldsfld	class GtgUTnxNZrIgLb2ZkG4J GtgUTnxNZrIgLb2ZkG4J::TTsxNhnQE2L
+386	05FA	call	string GtgUTnxNZrIgLb2ZkG4J::U5k0glFpPpO(object, class GtgUTnxNZrIgLb2ZkG4J)
+387	05FF	ldsfld	class z0gJhS0e9iIMUlIiMw9q z0gJhS0e9iIMUlIiMw9q::x7L0eosyuAS
+388	0604	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IGui z0gJhS0e9iIMUlIiMw9q::U5k0glFpPpO(class z0gJhS0e9iIMUlIiMw9q)
+389	0609	ldsfld	class J7uYtT0eLnus3GMMRU13 J7uYtT0eLnus3GMMRU13::JPO0el5r7R8
+390	060E	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IColors J7uYtT0eLnus3GMMRU13::U5k0glFpPpO(object, class J7uYtT0eLnus3GMMRU13)
+391	0613	ldsfld	class AW20vExNnEDvuudHBgmG AW20vExNnEDvuudHBgmG::V4YxNdStuwB
+392	0618	call	valuetype [System.Drawing]System.Drawing.Color AW20vExNnEDvuudHBgmG::U5k0glFpPpO(object, class AW20vExNnEDvuudHBgmG)
+393	061D	ldsfld	class bLhVHo0OvTgrOn564V7g bLhVHo0OvTgrOn564V7g::YYg0Ok3Moho
+394	0622	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramInfo bLhVHo0OvTgrOn564V7g::U5k0glFpPpO(class bLhVHo0OvTgrOn564V7g)
+395	0627	ldsfld	class wTgwp6xNVXQwAZpvpU7h wTgwp6xNVXQwAZpvpU7h::bfYxNPUSfUx
+396	062C	call	int32 wTgwp6xNVXQwAZpvpU7h::U5k0glFpPpO(object, class wTgwp6xNVXQwAZpvpU7h)
+397	0631	ldsfld	class bLhVHo0OvTgrOn564V7g bLhVHo0OvTgrOn564V7g::YYg0Ok3Moho
+398	0636	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramInfo bLhVHo0OvTgrOn564V7g::U5k0glFpPpO(class bLhVHo0OvTgrOn564V7g)
+399	063B	ldsfld	class u9YCbL0OrFvnMZ1EjI2j u9YCbL0OrFvnMZ1EjI2j::qvO0OCVBK9k
+400	0640	call	class [System.Drawing]System.Drawing.Icon u9YCbL0OrFvnMZ1EjI2j::U5k0glFpPpO(object, class u9YCbL0OrFvnMZ1EjI2j)
+401	0645	ldsfld	class bLhVHo0OvTgrOn564V7g bLhVHo0OvTgrOn564V7g::YYg0Ok3Moho
+402	064A	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramInfo bLhVHo0OvTgrOn564V7g::U5k0glFpPpO(class bLhVHo0OvTgrOn564V7g)
+403	064F	ldsfld	class tpmDun0C1EK4cWAxU0LR tpmDun0C1EK4cWAxU0LR::JV00CmDnfQe
+404	0654	call	string tpmDun0C1EK4cWAxU0LR::U5k0glFpPpO(object, class tpmDun0C1EK4cWAxU0LR)
+405	0659	newobj	instance void [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.Splash::.ctor(string, valuetype [System.Drawing]System.Drawing.Color, int32, class [System.Drawing]System.Drawing.Icon, string)
+406	065E	stfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.Splash tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::lP8eRI5QmuI
+407	0663	ldloc.0
+408	0664	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.Splash tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::lP8eRI5QmuI
+409	0669	ldsfld	class zxIdPJxN1CBHi4w7HE8F zxIdPJxN1CBHi4w7HE8F::XCuxNmPY8fg
+410	066E	call	void zxIdPJxN1CBHi4w7HE8F::U5k0glFpPpO(object, class zxIdPJxN1CBHi4w7HE8F)
+411	0673	newobj	instance void [ValentinSoftware.PV.Main]EnergySoftware.PV.Main.Infrastructure.StatisticsTracker::.ctor()
+412	0678	ldc.i4	-0x67912195
+413	067D	ldc.i4	-0x21DD19EF
+414	0682	xor
+415	0683	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+416	0688	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_a026bfa221bb49f6b39cc7a9c66e309e
+417	068D	xor
+418	068E	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+419	0693	ldsfld	class snGA2C0fyeJ1oVboGe85 snGA2C0fyeJ1oVboGe85::koi0f0Y5RBE
+420	0698	call	void snGA2C0fyeJ1oVboGe85::U5k0glFpPpO(object, string, class snGA2C0fyeJ1oVboGe85)
+421	069D	ldloc.0
+422	069E	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.Splash tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::lP8eRI5QmuI
+423	06A3	ldsfld	class sJ0DtXxNcEeQCA6gdGGj sJ0DtXxNcEeQCA6gdGGj::s5VxN6sdud1
+424	06A8	call	string sJ0DtXxNcEeQCA6gdGGj::U5k0glFpPpO(class sJ0DtXxNcEeQCA6gdGGj)
+425	06AD	ldc.i4	-0x1304091D
+426	06B2	ldc.i4	2
+427	06B7	shr
+428	06B8	ldc.i4	-0x32A05DE5
+429	06BD	xor
+430	06BE	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+431	06C3	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_5d5395b1caf24784ac3b4d2fe44c6c43
+432	06C8	xor
+433	06C9	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+434	06CE	ldsfld	class E6WiAO0n9TIJAatkcQnV E6WiAO0n9TIJAatkcQnV::Uus0noj2iqv
+435	06D3	call	string E6WiAO0n9TIJAatkcQnV::U5k0glFpPpO(string, string, class E6WiAO0n9TIJAatkcQnV)
+436	06D8	ldsfld	class N50fxlxNBQ0CRf8adWO3 N50fxlxNBQ0CRf8adWO3::spLxNScoXcF
+437	06DD	call	void N50fxlxNBQ0CRf8adWO3::U5k0glFpPpO(object, string, class N50fxlxNBQ0CRf8adWO3)
+438	06E2	ldloc.0
+439	06E3	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Logger.IVesLogger tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::hkReRUhBvX9
+440	06E8	ldc.i4	0x33EA60A6
+441	06ED	ldc.i4	0x58B3F39
+442	06F2	xor
+443	06F3	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+444	06F8	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_5d5395b1caf24784ac3b4d2fe44c6c43
+445	06FD	xor
+446	06FE	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+447	0703	ldsfld	class U7NiMC0r1u6FA0v1BO9y U7NiMC0r1u6FA0v1BO9y::ULt0rm7I1HH
+448	0708	call	void U7NiMC0r1u6FA0v1BO9y::U5k0glFpPpO(object, string, class U7NiMC0r1u6FA0v1BO9y)
+449	070D	ldsfld	class QwfC5A0pRLWLUTMyTpLN QwfC5A0pRLWLUTMyTpLN::yNO0puphHDd
+450	0712	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.ILm QwfC5A0pRLWLUTMyTpLN::U5k0glFpPpO(class QwfC5A0pRLWLUTMyTpLN)
+451	0717	ldsfld	class b0yfXoxNqqck4UjXIJjL b0yfXoxNqqck4UjXIJjL::drtxNtRIRiu
+452	071C	call	void b0yfXoxNqqck4UjXIJjL::U5k0glFpPpO(object, class b0yfXoxNqqck4UjXIJjL)
+453	0721	ldsfld	class QwfC5A0pRLWLUTMyTpLN QwfC5A0pRLWLUTMyTpLN::yNO0puphHDd
+454	0726	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.ILm QwfC5A0pRLWLUTMyTpLN::U5k0glFpPpO(class QwfC5A0pRLWLUTMyTpLN)
+455	072B	ldsfld	class Arg1mAxNaVud0MeN4dFC Arg1mAxNaVud0MeN4dFC::gRHxNsqYyBx
+456	0730	call	bool Arg1mAxNaVud0MeN4dFC::U5k0glFpPpO(object, class Arg1mAxNaVud0MeN4dFC)
+457	0735	brfalse	476 (0784) ldsfld class QwfC5A0pRLWLUTMyTpLN QwfC5A0pRLWLUTMyTpLN::yNO0puphHDd
+458	073A	ldloc.0
+459	073B	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Logger.IVesLogger tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::hkReRUhBvX9
+460	0740	ldc.i4	0x5BE588BF
+461	0745	ldc.i4	0x33E06A5A
+462	074A	xor
+463	074B	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+464	0750	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_56d7c7bf73e546cc9c23cab0b09a8eff
+465	0755	xor
+466	0756	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+467	075B	ldsfld	class UZdWSZ0kRgyUDUh06t3K UZdWSZ0kRgyUDUh06t3K::T0Q0ku9DhDj
+468	0760	call	void UZdWSZ0kRgyUDUh06t3K::U5k0glFpPpO(object, string, class UZdWSZ0kRgyUDUh06t3K)
+469	0765	ldloc.0
+470	0766	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.Splash tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::lP8eRI5QmuI
+471	076B	ldsfld	class pPq2JqxNTQLyfBANNJMB pPq2JqxNTQLyfBANNJMB::WLdxN7XgWTE
+472	0770	call	string pPq2JqxNTQLyfBANNJMB::U5k0glFpPpO(class pPq2JqxNTQLyfBANNJMB)
+473	0775	ldsfld	class CZ09k6xNDgYZbVrGa2rd CZ09k6xNDgYZbVrGa2rd::M2pxNF1aqpJ
+474	077A	call	void CZ09k6xNDgYZbVrGa2rd::U5k0glFpPpO(object, string, class CZ09k6xNDgYZbVrGa2rd)
+475	077F	br	510 (0812) ldsfld class OKaS4exNG8GHarIldYh6 OKaS4exNG8GHarIldYh6::WV1xNHatlWr
+476	0784	ldsfld	class QwfC5A0pRLWLUTMyTpLN QwfC5A0pRLWLUTMyTpLN::yNO0puphHDd
+477	0789	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.ILm QwfC5A0pRLWLUTMyTpLN::U5k0glFpPpO(class QwfC5A0pRLWLUTMyTpLN)
+478	078E	ldsfld	class Mem7PnxNUfaX2CmQ1CgB Mem7PnxNUfaX2CmQ1CgB::OFsxNIgUVmy
+479	0793	call	string Mem7PnxNUfaX2CmQ1CgB::U5k0glFpPpO(object, class Mem7PnxNUfaX2CmQ1CgB)
+480	0798	stloc.s	V_11 (11)
+481	079A	ldsfld	class QwfC5A0pRLWLUTMyTpLN QwfC5A0pRLWLUTMyTpLN::yNO0puphHDd
+482	079F	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.ILm QwfC5A0pRLWLUTMyTpLN::U5k0glFpPpO(class QwfC5A0pRLWLUTMyTpLN)
+483	07A4	ldsfld	class PeuAaf0bqTbb6owiQGDw PeuAaf0bqTbb6owiQGDw::YKX0bt0PQJ5
+484	07A9	call	bool PeuAaf0bqTbb6owiQGDw::U5k0glFpPpO(object, class PeuAaf0bqTbb6owiQGDw)
+485	07AE	brfalse	505 (0800) ldloc.0 
+486	07B3	ldloc.0
+487	07B4	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.Splash tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::lP8eRI5QmuI
+488	07B9	ldsfld	class QwfC5A0pRLWLUTMyTpLN QwfC5A0pRLWLUTMyTpLN::yNO0puphHDd
+489	07BE	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.ILm QwfC5A0pRLWLUTMyTpLN::U5k0glFpPpO(class QwfC5A0pRLWLUTMyTpLN)
+490	07C3	ldsfld	class G52iNhxNKpGptEqUq90y G52iNhxNKpGptEqUq90y::v96xNXxNxqh
+491	07C8	call	string G52iNhxNKpGptEqUq90y::U5k0glFpPpO(object, class G52iNhxNKpGptEqUq90y)
+492	07CD	ldsfld	class CZ09k6xNDgYZbVrGa2rd CZ09k6xNDgYZbVrGa2rd::M2pxNF1aqpJ
+493	07D2	call	void CZ09k6xNDgYZbVrGa2rd::U5k0glFpPpO(object, string, class CZ09k6xNDgYZbVrGa2rd)
+494	07D7	ldloc.s	V_11 (11)
+495	07D9	ldc.i4	-0x1197D9B6
+496	07DE	ldc.i4	-0x43EBB9E6
+497	07E3	xor
+498	07E4	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+499	07E9	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_9e7a80d4720f442badbafa6e143901e4
+500	07EE	xor
+501	07EF	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+502	07F4	ldsfld	class E6WiAO0n9TIJAatkcQnV E6WiAO0n9TIJAatkcQnV::Uus0noj2iqv
+503	07F9	call	string E6WiAO0n9TIJAatkcQnV::U5k0glFpPpO(string, string, class E6WiAO0n9TIJAatkcQnV)
+504	07FE	stloc.s	V_11 (11)
+505	0800	ldloc.0
+506	0801	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Logger.IVesLogger tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::hkReRUhBvX9
+507	0806	ldloc.s	V_11 (11)
+508	0808	ldsfld	class UZdWSZ0kRgyUDUh06t3K UZdWSZ0kRgyUDUh06t3K::T0Q0ku9DhDj
+509	080D	call	void UZdWSZ0kRgyUDUh06t3K::U5k0glFpPpO(object, string, class UZdWSZ0kRgyUDUh06t3K)
+510	0812	ldsfld	class OKaS4exNG8GHarIldYh6 OKaS4exNG8GHarIldYh6::WV1xNHatlWr
+511	0817	call	void OKaS4exNG8GHarIldYh6::U5k0glFpPpO(class OKaS4exNG8GHarIldYh6)
+512	081C	ldsfld	class GZ43gZ0VQGIF4VHDNPSh GZ43gZ0VQGIF4VHDNPSh::y3J0VNvFbxh
+513	0821	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramPaths GZ43gZ0VQGIF4VHDNPSh::U5k0glFpPpO(class GZ43gZ0VQGIF4VHDNPSh)
+514	0826	ldsfld	class UyngUsxNQu6oWUfW69t8 UyngUsxNQu6oWUfW69t8::uHuxNNdypmn
+515	082B	call	string UyngUsxNQu6oWUfW69t8::U5k0glFpPpO(object, class UyngUsxNQu6oWUfW69t8)
+516	0830	newobj	instance void [ValentinSoftware.Common.UnitConversion]ValentinSoftware.Common.UnitConversion.Internal.UnitConverterRepository::.ctor(string)
+517	0835	ldsfld	class dWQTV0xNAy5mDIdHCinN dWQTV0xNAy5mDIdHCinN::RwJxNjEGhcj
+518	083A	call	void dWQTV0xNAy5mDIdHCinN::U5k0glFpPpO(class [ValentinSoftware.Common.UnitConversion]ValentinSoftware.Common.UnitConversion.Internal.IUnitConverterRepository, class dWQTV0xNAy5mDIdHCinN)
+519	083F	ldsfld	class h96xSI0E9KHnHmdTCaQZ h96xSI0E9KHnHmdTCaQZ::Qjd0Eo3feyG
+520	0844	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IIniSettings h96xSI0E9KHnHmdTCaQZ::U5k0glFpPpO(class h96xSI0E9KHnHmdTCaQZ)
+521	0849	ldsfld	class ONjcAZxN2YagfUHJ3OD6 ONjcAZxN2YagfUHJ3OD6::NPexNMvsOTt
+522	084E	call	valuetype [mscorlib]System.Guid ONjcAZxN2YagfUHJ3OD6::U5k0glFpPpO(object, class ONjcAZxN2YagfUHJ3OD6)
+523	0853	ldsfld	class q8yw4wxZJdS3YT42pFjU q8yw4wxZJdS3YT42pFjU::TvSxZfG10le
+524	0858	call	void q8yw4wxZJdS3YT42pFjU::U5k0glFpPpO(valuetype [mscorlib]System.Guid, class q8yw4wxZJdS3YT42pFjU)
+525	085D	newobj	instance void [ValentinSoftware.Infrastructure.IoC]EnergySoftware.PV.IoC.IoCFactoryConfiguration::.ctor()
+526	0862	dup
+527	0863	ldsfld	class GZ43gZ0VQGIF4VHDNPSh GZ43gZ0VQGIF4VHDNPSh::y3J0VNvFbxh
+528	0868	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramPaths GZ43gZ0VQGIF4VHDNPSh::U5k0glFpPpO(class GZ43gZ0VQGIF4VHDNPSh)
+529	086D	ldsfld	class tESC9UxN9AootY9ToaQ7 tESC9UxN9AootY9ToaQ7::B85xNonwLUL
+530	0872	call	string tESC9UxN9AootY9ToaQ7::U5k0glFpPpO(object, class tESC9UxN9AootY9ToaQ7)
+531	0877	ldsfld	class eAWNDvxNLegvHl9yhHDh eAWNDvxNLegvHl9yhHDh::qQaxNlTrEZf
+532	087C	call	void eAWNDvxNLegvHl9yhHDh::U5k0glFpPpO(object, string, class eAWNDvxNLegvHl9yhHDh)
+533	0881	dup
+534	0882	ldsfld	class bLhVHo0OvTgrOn564V7g bLhVHo0OvTgrOn564V7g::YYg0Ok3Moho
+535	0887	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramInfo bLhVHo0OvTgrOn564V7g::U5k0glFpPpO(class bLhVHo0OvTgrOn564V7g)
+536	088C	ldsfld	class d9IHVZxNRmtsVNhrYyMc d9IHVZxNRmtsVNhrYyMc::MYVxNu6uK4f
+537	0891	call	string d9IHVZxNRmtsVNhrYyMc::U5k0glFpPpO(object, class d9IHVZxNRmtsVNhrYyMc)
+538	0896	ldsfld	class ybHMsp0m9oWgZKIf4Cdf ybHMsp0m9oWgZKIf4Cdf::VRX0moZJw6Q
+539	089B	call	string ybHMsp0m9oWgZKIf4Cdf::U5k0glFpPpO(string, class ybHMsp0m9oWgZKIf4Cdf)
+540	08A0	ldsfld	class sxJ1hQxNOIOiUOPmjZcp sxJ1hQxNOIOiUOPmjZcp::dDXxNpnXH5o
+541	08A5	call	void sxJ1hQxNOIOiUOPmjZcp::U5k0glFpPpO(object, string, class sxJ1hQxNOIOiUOPmjZcp)
+542	08AA	dup
+543	08AB	ldsfld	class GZ43gZ0VQGIF4VHDNPSh GZ43gZ0VQGIF4VHDNPSh::y3J0VNvFbxh
+544	08B0	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramPaths GZ43gZ0VQGIF4VHDNPSh::U5k0glFpPpO(class GZ43gZ0VQGIF4VHDNPSh)
+545	08B5	ldsfld	class hyGUerxNveIP239cNYUS hyGUerxNveIP239cNYUS::jnAxNkakHcx
+546	08BA	call	string hyGUerxNveIP239cNYUS::U5k0glFpPpO(object, class hyGUerxNveIP239cNYUS)
+547	08BF	ldsfld	class MmFrLSxNrf49iCmK3KOd MmFrLSxNrf49iCmK3KOd::LLIxNCXCU6F
+548	08C4	call	void MmFrLSxNrf49iCmK3KOd::U5k0glFpPpO(object, string, class MmFrLSxNrf49iCmK3KOd)
+549	08C9	ldsfld	class bLhVHo0OvTgrOn564V7g bLhVHo0OvTgrOn564V7g::YYg0Ok3Moho
+550	08CE	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramInfo bLhVHo0OvTgrOn564V7g::U5k0glFpPpO(class bLhVHo0OvTgrOn564V7g)
+551	08D3	ldsfld	class z5fQvhxNJeilZBikLOBb z5fQvhxNJeilZBikLOBb::H69xNfifC3v
+552	08D8	call	string z5fQvhxNJeilZBikLOBb::U5k0glFpPpO(object, class z5fQvhxNJeilZBikLOBb)
+553	08DD	ldsfld	class XgIfYDxNbkR95aWLn6X9 XgIfYDxNbkR95aWLn6X9::dBYxNiIbq7v
+554	08E2	call	void XgIfYDxNbkR95aWLn6X9::U5k0glFpPpO(class [ValentinSoftware.Infrastructure.IoC]EnergySoftware.PV.IoC.IoCFactoryConfiguration, string, class XgIfYDxNbkR95aWLn6X9)
+555	08E7	ldloc.0
+556	08E8	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.Splash tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::lP8eRI5QmuI
+557	08ED	ldsfld	class cxec4hxNwVoEWjrRgGwh cxec4hxNwVoEWjrRgGwh::OpyxN4VcFDA
+558	08F2	call	string cxec4hxNwVoEWjrRgGwh::U5k0glFpPpO(class cxec4hxNwVoEWjrRgGwh)
+559	08F7	ldc.i4	-0x3E16E64A
+560	08FC	ldc.i4	-0x38BAF41A
+561	0901	xor
+562	0902	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+563	0907	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_f86e86eb490a4be6a9d971f234ef366f
+564	090C	xor
+565	090D	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+566	0912	ldsfld	class E6WiAO0n9TIJAatkcQnV E6WiAO0n9TIJAatkcQnV::Uus0noj2iqv
+567	0917	call	string E6WiAO0n9TIJAatkcQnV::U5k0glFpPpO(string, string, class E6WiAO0n9TIJAatkcQnV)
+568	091C	ldsfld	class N50fxlxNBQ0CRf8adWO3 N50fxlxNBQ0CRf8adWO3::spLxNScoXcF
+569	0921	call	void N50fxlxNBQ0CRf8adWO3::U5k0glFpPpO(object, string, class N50fxlxNBQ0CRf8adWO3)
+570	0926	ldsfld	class KdA7tQ0wn3JWpYMBXji0 KdA7tQ0wn3JWpYMBXji0::ckG0wdUGKkC
+571	092B	call	string KdA7tQ0wn3JWpYMBXji0::U5k0glFpPpO(class KdA7tQ0wn3JWpYMBXji0)
+572	0930	newobj	instance void ValentinSoftware.PV.Desktop.WinForms.FormPleaseWait::.ctor(string)
+573	0935	ldsfld	class sbIpMyxN3aBCWVS5XaHD sbIpMyxN3aBCWVS5XaHD::RW4xN5aVJTa
+574	093A	call	void sbIpMyxN3aBCWVS5XaHD::U5k0glFpPpO(class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Interfaces.IUIBackgroundWorkerProgressWindow, class sbIpMyxN3aBCWVS5XaHD)
+575	093F	newobj	instance void ValentinSoftware.PV.Desktop.WinForms.ViewLoader.PVDBViewLoader::.ctor()
+576	0944	stloc.s	V_7 (7)
+577	0946	ldloc.0
+578	0947	ldloc.s	V_7 (7)
+579	0949	ldloc.0
+580	094A	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.Splash tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::lP8eRI5QmuI
+581	094F	ldsfld	class JZkdAPxN85xHa6l0bdy3 JZkdAPxN85xHa6l0bdy3::WQExNWYdQ6i
+582	0954	call	class [System.Windows.Forms]System.Windows.Forms.IWin32Window JZkdAPxN85xHa6l0bdy3::U5k0glFpPpO(object, class JZkdAPxN85xHa6l0bdy3)
+583	0959	callvirt	instance void tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::xrFeRFZ802r(class ValentinSoftware.PV.Desktop.WinForms.ViewLoader.PVDBViewLoader, class [System.Windows.Forms]System.Windows.Forms.IWin32Window)
+584	095E	ldloc.s	V_7 (7)
+585	0960	ldloc.0
+586	0961	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.Splash tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::lP8eRI5QmuI
+587	0966	ldsfld	class JZkdAPxN85xHa6l0bdy3 JZkdAPxN85xHa6l0bdy3::WQExNWYdQ6i
+588	096B	call	class [System.Windows.Forms]System.Windows.Forms.IWin32Window JZkdAPxN85xHa6l0bdy3::U5k0glFpPpO(object, class JZkdAPxN85xHa6l0bdy3)
+589	0970	call	void tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ::LBQM6FDbga(class ValentinSoftware.PV.Desktop.WinForms.ViewLoader.PVDBViewLoader, class [System.Windows.Forms]System.Windows.Forms.IWin32Window)
+590	0975	ldsfld	class h96xSI0E9KHnHmdTCaQZ h96xSI0E9KHnHmdTCaQZ::Qjd0Eo3feyG
+591	097A	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IIniSettings h96xSI0E9KHnHmdTCaQZ::U5k0glFpPpO(class h96xSI0E9KHnHmdTCaQZ)
+592	097F	ldsfld	class lhl2cbxNY1hPYT3WJ5d9 lhl2cbxNY1hPYT3WJ5d9::FArxNzgcuky
+593	0984	call	void lhl2cbxNY1hPYT3WJ5d9::U5k0glFpPpO(object, class lhl2cbxNY1hPYT3WJ5d9)
+594	0989	ldsfld	class h96xSI0E9KHnHmdTCaQZ h96xSI0E9KHnHmdTCaQZ::Qjd0Eo3feyG
+595	098E	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IIniSettings h96xSI0E9KHnHmdTCaQZ::U5k0glFpPpO(class h96xSI0E9KHnHmdTCaQZ)
+596	0993	ldsfld	class shQKK8x0QPmjOQ2DKNcn shQKK8x0QPmjOQ2DKNcn::UXkx0NpABJX
+597	0998	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IUpdateConfig shQKK8x0QPmjOQ2DKNcn::U5k0glFpPpO(object, class shQKK8x0QPmjOQ2DKNcn)
+598	099D	stloc.s	V_8 (8)
+599	099F	ldloc.s	V_8 (8)
+600	09A1	ldsfld	class FaP19Dx0AwbWP1F7ct13 FaP19Dx0AwbWP1F7ct13::uhux0jcgmnJ
+601	09A6	call	bool FaP19Dx0AwbWP1F7ct13::U5k0glFpPpO(object, class FaP19Dx0AwbWP1F7ct13)
+602	09AB	brfalse	641 (0A47) ldloc.0 
+603	09B0	ldsfld	class rZ6Si90FnjXH56SpEE3H rZ6Si90FnjXH56SpEE3H::WN90Fd6HhII
+604	09B5	call	valuetype [mscorlib]System.DateTime rZ6Si90FnjXH56SpEE3H::U5k0glFpPpO(class rZ6Si90FnjXH56SpEE3H)
+605	09BA	stloc.s	V_12 (12)
+606	09BC	ldloca.s	V_12 (12)
+607	09BE	ldloc.s	V_8 (8)
+608	09C0	ldsfld	class svXiuGxAgqe7JMGLST3h svXiuGxAgqe7JMGLST3h::lxKxAeF7Zxy
+609	09C5	call	valuetype [mscorlib]System.DateTime svXiuGxAgqe7JMGLST3h::U5k0glFpPpO(object, class svXiuGxAgqe7JMGLST3h)
+610	09CA	ldsfld	class RnH1sZxAykKm0cmTRy8S RnH1sZxAykKm0cmTRy8S::M7lxA0fwCGs
+611	09CF	call	bool RnH1sZxAykKm0cmTRy8S::U5k0glFpPpO(valuetype [mscorlib]System.DateTime&, valuetype [mscorlib]System.DateTime, class RnH1sZxAykKm0cmTRy8S)
+612	09D4	brtrue	641 (0A47) ldloc.0 
+613	09D9	ldloc.0
+614	09DA	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.Splash tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::lP8eRI5QmuI
+615	09DF	ldsfld	class CJvGgT0vY8ZbwOuNrbA5 CJvGgT0vY8ZbwOuNrbA5::QLc0vzxHCBq
+616	09E4	call	string CJvGgT0vY8ZbwOuNrbA5::U5k0glFpPpO(class CJvGgT0vY8ZbwOuNrbA5)
+617	09E9	ldc.i4	0x28128746
+618	09EE	not
+619	09EF	ldc.i4	-0x3AAAD239
+620	09F4	xor
+621	09F5	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+622	09FA	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_14855347b76148c28ef474e8c0d5e23d
+623	09FF	xor
+624	0A00	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+625	0A05	ldsfld	class E6WiAO0n9TIJAatkcQnV E6WiAO0n9TIJAatkcQnV::Uus0noj2iqv
+626	0A0A	call	string E6WiAO0n9TIJAatkcQnV::U5k0glFpPpO(string, string, class E6WiAO0n9TIJAatkcQnV)
+627	0A0F	ldsfld	class N50fxlxNBQ0CRf8adWO3 N50fxlxNBQ0CRf8adWO3::spLxNScoXcF
+628	0A14	call	void N50fxlxNBQ0CRf8adWO3::U5k0glFpPpO(object, string, class N50fxlxNBQ0CRf8adWO3)
+629	0A19	ldloc.s	V_7 (7)
+630	0A1B	ldc.i4.1
+631	0A1C	ldloc.0
+632	0A1D	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.Splash tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::lP8eRI5QmuI
+633	0A22	ldsfld	class JZkdAPxN85xHa6l0bdy3 JZkdAPxN85xHa6l0bdy3::WQExNWYdQ6i
+634	0A27	call	class [System.Windows.Forms]System.Windows.Forms.IWin32Window JZkdAPxN85xHa6l0bdy3::U5k0glFpPpO(object, class JZkdAPxN85xHa6l0bdy3)
+635	0A2C	callvirt	instance void ValentinSoftware.PV.Desktop.WinForms.ViewLoader.PVDBViewLoader::UpdateProgram(bool, class [System.Windows.Forms]System.Windows.Forms.IWin32Window)
+636	0A31	ldloc.s	V_8 (8)
+637	0A33	ldsfld	class rZ6Si90FnjXH56SpEE3H rZ6Si90FnjXH56SpEE3H::WN90Fd6HhII
+638	0A38	call	valuetype [mscorlib]System.DateTime rZ6Si90FnjXH56SpEE3H::U5k0glFpPpO(class rZ6Si90FnjXH56SpEE3H)
+639	0A3D	ldsfld	class k7nIhRxAxmbmeJP1ARp9 k7nIhRxAxmbmeJP1ARp9::txXxAEcuMwY
+640	0A42	call	void k7nIhRxAxmbmeJP1ARp9::U5k0glFpPpO(object, valuetype [mscorlib]System.DateTime, class k7nIhRxAxmbmeJP1ARp9)
+641	0A47	ldloc.0
+642	0A48	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.Splash tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::lP8eRI5QmuI
+643	0A4D	ldsfld	class DYybMkxAZAfdZn0x3dTl DYybMkxAZAfdZn0x3dTl::ldBxAhidXSo
+644	0A52	call	string DYybMkxAZAfdZn0x3dTl::U5k0glFpPpO(class DYybMkxAZAfdZn0x3dTl)
+645	0A57	ldc.i4	-0x57481869
+646	0A5C	ldc.i4	-0x5ED6EAD2
+647	0A61	xor
+648	0A62	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+649	0A67	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_820d24365e74458688ea5811ecc686db
+650	0A6C	xor
+651	0A6D	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+652	0A72	ldsfld	class E6WiAO0n9TIJAatkcQnV E6WiAO0n9TIJAatkcQnV::Uus0noj2iqv
+653	0A77	call	string E6WiAO0n9TIJAatkcQnV::U5k0glFpPpO(string, string, class E6WiAO0n9TIJAatkcQnV)
+654	0A7C	ldsfld	class N50fxlxNBQ0CRf8adWO3 N50fxlxNBQ0CRf8adWO3::spLxNScoXcF
+655	0A81	call	void N50fxlxNBQ0CRf8adWO3::U5k0glFpPpO(object, string, class N50fxlxNBQ0CRf8adWO3)
+656	0A86	ldsfld	class p0DPIdxAnb8pNCr7fL92 p0DPIdxAnb8pNCr7fL92::sCKxAdpr48J
+657	0A8B	call	void p0DPIdxAnb8pNCr7fL92::U5k0glFpPpO(class p0DPIdxAnb8pNCr7fL92)
+658	0A90	ldsfld	class GZ43gZ0VQGIF4VHDNPSh GZ43gZ0VQGIF4VHDNPSh::y3J0VNvFbxh
+659	0A95	call	class [ValentinSoftware.PV.Main]ValentinSoftware.PV.Main.ProgramManagement.Interfaces.IProgramPaths GZ43gZ0VQGIF4VHDNPSh::U5k0glFpPpO(class GZ43gZ0VQGIF4VHDNPSh)
+660	0A9A	ldsfld	class g1YmSSxAVRvL3UsLVKKF g1YmSSxAVRvL3UsLVKKF::TedxAP359eM
+661	0A9F	call	string g1YmSSxAVRvL3UsLVKKF::U5k0glFpPpO(object, class g1YmSSxAVRvL3UsLVKKF)
+662	0AA4	ldsfld	class wvAfEfxA1FnvgRoWF3em wvAfEfxA1FnvgRoWF3em::mb5xAmIcEmY
+663	0AA9	call	void wvAfEfxA1FnvgRoWF3em::U5k0glFpPpO(string, class wvAfEfxA1FnvgRoWF3em)
+664	0AAE	ldloc.0
+665	0AAF	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.Splash tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::lP8eRI5QmuI
+666	0AB4	ldsfld	class a2avP2xAc1fHkXNr2CEO a2avP2xAc1fHkXNr2CEO::aA5xA68k4uE
+667	0AB9	call	string a2avP2xAc1fHkXNr2CEO::U5k0glFpPpO(class a2avP2xAc1fHkXNr2CEO)
+668	0ABE	ldc.i4	0x5AE8A94D
+669	0AC3	ldc.i4	0x7BF4AD88
+670	0AC8	xor
+671	0AC9	ldsfld	class '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}' '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_883a017eaf2d46218d88e2e4193d0feb
+672	0ACE	ldfld	int32 '<Module>{05dca7d1-56e0-4657-a08e-72e9801309a7}'::m_e29358a211644e2e83467f7bfce8d955
+673	0AD3	xor
+674	0AD4	call	string tcluRCmJ2u79OhTbGG.fXUU4jykVT4coaAMg9aB::CqkykQBo6r0(int32)
+675	0AD9	ldsfld	class E6WiAO0n9TIJAatkcQnV E6WiAO0n9TIJAatkcQnV::Uus0noj2iqv
+676	0ADE	call	string E6WiAO0n9TIJAatkcQnV::U5k0glFpPpO(string, string, class E6WiAO0n9TIJAatkcQnV)
+677	0AE3	ldsfld	class N50fxlxNBQ0CRf8adWO3 N50fxlxNBQ0CRf8adWO3::spLxNScoXcF
+678	0AE8	call	void N50fxlxNBQ0CRf8adWO3::U5k0glFpPpO(object, string, class N50fxlxNBQ0CRf8adWO3)
+679	0AED	newobj	instance void ValentinSoftware.PV.Desktop.WinForms.FormMain::.ctor()
+680	0AF2	dup
+681	0AF3	ldloc.1
+682	0AF4	callvirt	instance void ValentinSoftware.PV.Desktop.WinForms.FormMain::Init(bool)
+683	0AF9	ldloc.0
+684	0AFA	ldfld	class [ValentinSoftware.Infrastructure.Common]ValentinSoftware.Infrastructure.Common.Forms.Splash tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::lP8eRI5QmuI
+685	0AFF	ldsfld	class fEV2ODxABMV5W18eJIw2 fEV2ODxABMV5W18eJIw2::gCTxASn2NZ5
+686	0B04	call	void fEV2ODxABMV5W18eJIw2::U5k0glFpPpO(object, class fEV2ODxABMV5W18eJIw2)
+687	0B09	dup
+688	0B0A	ldnull
+689	0B0B	ldftn	void tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ::MtsMc6g0gi(object, class [mscorlib]System.EventArgs)
+690	0B11	newobj	instance void [mscorlib]System.EventHandler::.ctor(object, native int)
+691	0B16	ldsfld	class VZTlVIxAqLQxvOJ0SYDX VZTlVIxAqLQxvOJ0SYDX::qRYxAtjXFPP
+692	0B1B	call	void VZTlVIxAqLQxvOJ0SYDX::U5k0glFpPpO(object, class [mscorlib]System.EventHandler, class VZTlVIxAqLQxvOJ0SYDX)
+693	0B20	dup
+694	0B21	ldloc.0
+695	0B22	ldftn	instance void tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ/'<>c__DisplayClass5_0'::umGeRD4cTWq(object, class [System.Windows.Forms]System.Windows.Forms.FormClosedEventArgs)
+696	0B28	newobj	instance void [System.Windows.Forms]System.Windows.Forms.FormClosedEventHandler::.ctor(object, native int)
+697	0B2D	ldsfld	class oe22GhxAaqR88D7L0N6F oe22GhxAaqR88D7L0N6F::O7kxAsg52nQ
+698	0B32	call	void oe22GhxAaqR88D7L0N6F::U5k0glFpPpO(object, class [System.Windows.Forms]System.Windows.Forms.FormClosedEventHandler, class oe22GhxAaqR88D7L0N6F)
+699	0B37	ldsfld	class dYqdH9xATJWC9ksQUohu dYqdH9xATJWC9ksQUohu::AsmxA7q8xP0
+700	0B3C	call	void dYqdH9xATJWC9ksQUohu::U5k0glFpPpO(class [System.Windows.Forms]System.Windows.Forms.Form, class dYqdH9xATJWC9ksQUohu)
+701	0B41	ret

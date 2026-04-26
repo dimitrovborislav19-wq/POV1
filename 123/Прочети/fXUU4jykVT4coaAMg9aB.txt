@@ -1,0 +1,2305 @@
+Imports System
+Imports System.Collections
+Imports System.Collections.Generic
+Imports System.Diagnostics
+Imports System.IO
+Imports System.Reflection
+Imports System.Reflection.Emit
+Imports System.Runtime.CompilerServices
+Imports System.Runtime.InteropServices
+Imports System.Security.Cryptography
+Imports System.Text
+
+Namespace tcluRCmJ2u79OhTbGG
+	' Token: 0x02000463 RID: 1123
+	Friend Class fXUU4jykVT4coaAMg9aB
+		' Token: 0x060024AB RID: 9387 RVA: 0x001FBAF0 File Offset: 0x001F9CF0
+		Shared Sub New()
+			fXUU4jykVT4coaAMg9aB.GHayreYsl4t = False
+			fXUU4jykVT4coaAMg9aB.o4fyryHwH6U = False
+			fXUU4jykVT4coaAMg9aB.vYVyr0RJsye = Nothing
+			fXUU4jykVT4coaAMg9aB.Tgryrx3o9fg = Nothing
+			fXUU4jykVT4coaAMg9aB.IHvyrENwdfI = New Object()
+			fXUU4jykVT4coaAMg9aB.EWayrZVfYy5 = 0
+			fXUU4jykVT4coaAMg9aB.vblyrh09ovx = New Object()
+			fXUU4jykVT4coaAMg9aB.x1fyrnSiO4M = Nothing
+			fXUU4jykVT4coaAMg9aB.NQIyrdgriFV = Nothing
+			fXUU4jykVT4coaAMg9aB.GuiyrVW19Wk = New Byte(-1) {}
+			fXUU4jykVT4coaAMg9aB.E0CyrP3KKrx = New Byte(-1) {}
+			fXUU4jykVT4coaAMg9aB.lm0yr1pGKy1 = IntPtr.Zero
+			fXUU4jykVT4coaAMg9aB.GqlyrmLOSiI = IntPtr.Zero
+			fXUU4jykVT4coaAMg9aB.epgyrc0AGTv = New String(-1) {}
+			fXUU4jykVT4coaAMg9aB.ka0yr6CNjVR = New Integer(-1) {}
+			fXUU4jykVT4coaAMg9aB.g71yrBvfJ1S = 1
+			fXUU4jykVT4coaAMg9aB.XZNyrSPBCCc = False
+			fXUU4jykVT4coaAMg9aB.EHIyrqLJlTw = New SortedList()
+			fXUU4jykVT4coaAMg9aB.Wvayrtv195f = 0
+			fXUU4jykVT4coaAMg9aB.jDsyratn24l = 0L
+			fXUU4jykVT4coaAMg9aB.WEZyrs60xlY = Nothing
+			fXUU4jykVT4coaAMg9aB.gToyrTycHrW = Nothing
+			fXUU4jykVT4coaAMg9aB.jjhyr76PgOy = 0L
+			fXUU4jykVT4coaAMg9aB.hwayrDKQHmj = 0
+			fXUU4jykVT4coaAMg9aB.Ck9yrFL1brn = False
+			fXUU4jykVT4coaAMg9aB.Hk1yrUISyNc = False
+			fXUU4jykVT4coaAMg9aB.pL0yrIp7I3V = 0
+			fXUU4jykVT4coaAMg9aB.HnDyrKAnmvC = IntPtr.Zero
+			fXUU4jykVT4coaAMg9aB.cJMyrXKvIfb = False
+			fXUU4jykVT4coaAMg9aB.sJkyrGlZI4k = New Hashtable()
+			fXUU4jykVT4coaAMg9aB.tcsyrHa5C9Y = Nothing
+			fXUU4jykVT4coaAMg9aB.W4GyrQt7yvR = Nothing
+			fXUU4jykVT4coaAMg9aB.CknyrN6V87t = Nothing
+			fXUU4jykVT4coaAMg9aB.tt4yrADbJMU = Nothing
+			fXUU4jykVT4coaAMg9aB.xLtyrj0mwu7 = Nothing
+			fXUU4jykVT4coaAMg9aB.Sl8yr2sInQC = Nothing
+			fXUU4jykVT4coaAMg9aB.ybdyrMviB19 = IntPtr.Zero
+			Try
+				RSACryptoServiceProvider.UseMachineKeyStore = True
+			Catch
+			End Try
+		End Sub
+
+		' Token: 0x060024AC RID: 9388 RVA: 0x001FBC68 File Offset: 0x001F9E68
+		Private Sub wSuZz62DayC()
+		End Sub
+
+		' Token: 0x060024AD RID: 9389 RVA: 0x001FBC6C File Offset: 0x001F9E6C
+		Friend Shared Function ctsykPcOHLn(\u0020 As Byte()) As Byte()
+			Dim array As UInteger() = New UInteger(15) {}
+			Dim num As UInteger = CUInt(((448 - \u0020.Length * 8 Mod 512 + 512) Mod 512))
+			If num = 0UI Then
+				num = 512UI
+			End If
+			Dim num2 As UInteger = CUInt((CLng(\u0020.Length) + CLng(CULng((num / 8UI))) + 8L))
+			Dim num3 As ULong = CULng((CLng(\u0020.Length) * 8L))
+			Dim array2 As Byte() = New Byte(num2 - 1) {}
+			For i As Integer = 0 To \u0020.Length - 1
+				array2(i) = \u0020(i)
+			Next
+			Dim array3 As Byte() = array2
+			Dim num4 As Integer = \u0020.Length
+			array3(num4) = array3(num4) Or 128
+			For j As Integer = 8 To 0 + 1 Step -1
+				' The following expression was wrapped in a checked-expression
+				' The following expression was wrapped in a unchecked-expression
+				array2(CInt((CType((CULng(num2) - CULng(CLng(j))), IntPtr)))) = CByte((num3 >> (8 - j) * 8 And 255UL))
+			Next
+			Dim num5 As UInteger = CUInt((array2.Length * 8 / 32))
+			Dim num6 As UInteger = 1732584193UI
+			Dim num7 As UInteger = 4023233417UI
+			Dim num8 As UInteger = 2562383102UI
+			Dim num9 As UInteger = 271733878UI
+			For num10 As UInteger = 0UI To num5 / 16UI - 1
+				Dim num11 As UInteger = num10 << 6
+				For num12 As UInteger = 0UI To 61UI - 1 Step 4UI
+					array(CInt((num12 >> 2))) = CUInt((CInt(array2(CInt((num11 + (num12 + 3UI))))) << 24 Or CInt(array2(CInt((num11 + (num12 + 2UI))))) << 16 Or CInt(array2(CInt((num11 + (num12 + 1UI))))) << 8 Or CInt(array2(CInt((num11 + num12))))))
+				Next
+				Dim num13 As UInteger = num6
+				Dim num14 As UInteger = num7
+				Dim num15 As UInteger = num8
+				Dim num16 As UInteger = num9
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num6, num7, num8, num9, 0UI, 7US, 1UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num9, num6, num7, num8, 1UI, 12US, 2UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num8, num9, num6, num7, 2UI, 17US, 3UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num7, num8, num9, num6, 3UI, 22US, 4UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num6, num7, num8, num9, 4UI, 7US, 5UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num9, num6, num7, num8, 5UI, 12US, 6UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num8, num9, num6, num7, 6UI, 17US, 7UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num7, num8, num9, num6, 7UI, 22US, 8UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num6, num7, num8, num9, 8UI, 7US, 9UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num9, num6, num7, num8, 9UI, 12US, 10UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num8, num9, num6, num7, 10UI, 17US, 11UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num7, num8, num9, num6, 11UI, 22US, 12UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num6, num7, num8, num9, 12UI, 7US, 13UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num9, num6, num7, num8, 13UI, 12US, 14UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num8, num9, num6, num7, 14UI, 17US, 15UI, array)
+				fXUU4jykVT4coaAMg9aB.UnFyk194B45(num7, num8, num9, num6, 15UI, 22US, 16UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num6, num7, num8, num9, 1UI, 5US, 17UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num9, num6, num7, num8, 6UI, 9US, 18UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num8, num9, num6, num7, 11UI, 14US, 19UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num7, num8, num9, num6, 0UI, 20US, 20UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num6, num7, num8, num9, 5UI, 5US, 21UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num9, num6, num7, num8, 10UI, 9US, 22UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num8, num9, num6, num7, 15UI, 14US, 23UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num7, num8, num9, num6, 4UI, 20US, 24UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num6, num7, num8, num9, 9UI, 5US, 25UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num9, num6, num7, num8, 14UI, 9US, 26UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num8, num9, num6, num7, 3UI, 14US, 27UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num7, num8, num9, num6, 8UI, 20US, 28UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num6, num7, num8, num9, 13UI, 5US, 29UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num9, num6, num7, num8, 2UI, 9US, 30UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num8, num9, num6, num7, 7UI, 14US, 31UI, array)
+				fXUU4jykVT4coaAMg9aB.igAykmemvxC(num7, num8, num9, num6, 12UI, 20US, 32UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num6, num7, num8, num9, 5UI, 4US, 33UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num9, num6, num7, num8, 8UI, 11US, 34UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num8, num9, num6, num7, 11UI, 16US, 35UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num7, num8, num9, num6, 14UI, 23US, 36UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num6, num7, num8, num9, 1UI, 4US, 37UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num9, num6, num7, num8, 4UI, 11US, 38UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num8, num9, num6, num7, 7UI, 16US, 39UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num7, num8, num9, num6, 10UI, 23US, 40UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num6, num7, num8, num9, 13UI, 4US, 41UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num9, num6, num7, num8, 0UI, 11US, 42UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num8, num9, num6, num7, 3UI, 16US, 43UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num7, num8, num9, num6, 6UI, 23US, 44UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num6, num7, num8, num9, 9UI, 4US, 45UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num9, num6, num7, num8, 12UI, 11US, 46UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num8, num9, num6, num7, 15UI, 16US, 47UI, array)
+				fXUU4jykVT4coaAMg9aB.CHPykcJ6ttM(num7, num8, num9, num6, 2UI, 23US, 48UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num6, num7, num8, num9, 0UI, 6US, 49UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num9, num6, num7, num8, 7UI, 10US, 50UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num8, num9, num6, num7, 14UI, 15US, 51UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num7, num8, num9, num6, 5UI, 21US, 52UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num6, num7, num8, num9, 12UI, 6US, 53UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num9, num6, num7, num8, 3UI, 10US, 54UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num8, num9, num6, num7, 10UI, 15US, 55UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num7, num8, num9, num6, 1UI, 21US, 56UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num6, num7, num8, num9, 8UI, 6US, 57UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num9, num6, num7, num8, 15UI, 10US, 58UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num8, num9, num6, num7, 6UI, 15US, 59UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num7, num8, num9, num6, 13UI, 21US, 60UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num6, num7, num8, num9, 4UI, 6US, 61UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num9, num6, num7, num8, 11UI, 10US, 62UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num8, num9, num6, num7, 2UI, 15US, 63UI, array)
+				fXUU4jykVT4coaAMg9aB.LO6yk6Rtbm1(num7, num8, num9, num6, 9UI, 21US, 64UI, array)
+				num6 += num13
+				num7 += num14
+				num8 += num15
+				num9 += num16
+			Next
+			Dim array4 As Byte() = New Byte(15) {}
+			Array.Copy(BitConverter.GetBytes(num6), 0, array4, 0, 4)
+			Array.Copy(BitConverter.GetBytes(num7), 0, array4, 4, 4)
+			Array.Copy(BitConverter.GetBytes(num8), 0, array4, 8, 4)
+			Array.Copy(BitConverter.GetBytes(num9), 0, array4, 12, 4)
+			Return array4
+		End Function
+
+		' Token: 0x060024AE RID: 9390 RVA: 0x001FC2D0 File Offset: 0x001FA4D0
+		Private Shared Sub UnFyk194B45(ByRef \u0020 As UInteger, \u0020 As UInteger, \u0020 As UInteger, \u0020 As UInteger, \u0020 As UInteger, \u0020 As UShort, \u0020 As UInteger, \u0020 As UInteger())
+			\u0020 += fXUU4jykVT4coaAMg9aB.CvgykBF8HsO(\u0020 + ((\u0020 And \u0020) Or (Not \u0020 And \u0020)) + \u0020(CInt(\u0020)) + fXUU4jykVT4coaAMg9aB.KvyyrgEAupP(CInt((\u0020 - 1UI))), \u0020)
+		End Sub
+
+		' Token: 0x060024AF RID: 9391 RVA: 0x001FC2FC File Offset: 0x001FA4FC
+		Private Shared Sub igAykmemvxC(ByRef \u0020 As UInteger, \u0020 As UInteger, \u0020 As UInteger, \u0020 As UInteger, \u0020 As UInteger, \u0020 As UShort, \u0020 As UInteger, \u0020 As UInteger())
+			\u0020 += fXUU4jykVT4coaAMg9aB.CvgykBF8HsO(\u0020 + ((\u0020 And \u0020) Or (\u0020 And Not \u0020)) + \u0020(CInt(\u0020)) + fXUU4jykVT4coaAMg9aB.KvyyrgEAupP(CInt((\u0020 - 1UI))), \u0020)
+		End Sub
+
+		' Token: 0x060024B0 RID: 9392 RVA: 0x001FC328 File Offset: 0x001FA528
+		Private Shared Sub CHPykcJ6ttM(ByRef \u0020 As UInteger, \u0020 As UInteger, \u0020 As UInteger, \u0020 As UInteger, \u0020 As UInteger, \u0020 As UShort, \u0020 As UInteger, \u0020 As UInteger())
+			\u0020 += fXUU4jykVT4coaAMg9aB.CvgykBF8HsO(\u0020 + (\u0020 Xor \u0020 Xor \u0020) + \u0020(CInt(\u0020)) + fXUU4jykVT4coaAMg9aB.KvyyrgEAupP(CInt((\u0020 - 1UI))), \u0020)
+		End Sub
+
+		' Token: 0x060024B1 RID: 9393 RVA: 0x001FC350 File Offset: 0x001FA550
+		Private Shared Sub LO6yk6Rtbm1(ByRef \u0020 As UInteger, \u0020 As UInteger, \u0020 As UInteger, \u0020 As UInteger, \u0020 As UInteger, \u0020 As UShort, \u0020 As UInteger, \u0020 As UInteger())
+			\u0020 += fXUU4jykVT4coaAMg9aB.CvgykBF8HsO(\u0020 + (\u0020 Xor (\u0020 Or Not \u0020)) + \u0020(CInt(\u0020)) + fXUU4jykVT4coaAMg9aB.KvyyrgEAupP(CInt((\u0020 - 1UI))), \u0020)
+		End Sub
+
+		' Token: 0x060024B2 RID: 9394 RVA: 0x001FC378 File Offset: 0x001FA578
+		Private Shared Function CvgykBF8HsO(\u0020 As UInteger, \u0020 As UShort) As UInteger
+			Return \u0020 >> CInt((32US - \u0020)) Or \u0020 << CInt(\u0020)
+		End Function
+
+		' Token: 0x060024B3 RID: 9395 RVA: 0x001FC38C File Offset: 0x001FA58C
+		Friend Shared Function AKbykSi8osb() As Boolean
+			If Not fXUU4jykVT4coaAMg9aB.GHayreYsl4t Then
+				fXUU4jykVT4coaAMg9aB.TjKykawT3IS()
+				fXUU4jykVT4coaAMg9aB.GHayreYsl4t = True
+			End If
+			Return fXUU4jykVT4coaAMg9aB.o4fyryHwH6U
+		End Function
+
+		' Token: 0x060024B4 RID: 9396 RVA: 0x001FC3A8 File Offset: 0x001FA5A8
+		Friend Sub New()
+		End Sub
+
+		' Token: 0x060024B5 RID: 9397 RVA: 0x001FC3B0 File Offset: 0x001FA5B0
+		Private Sub UFBykqj6Sga(\u0020 As Byte(), \u0020 As Byte(), \u0020 As Byte())
+			Dim num As Integer = \u0020.Length Mod 4
+			Dim num2 As Integer = \u0020.Length / 4
+			Dim array As Byte() = New Byte(\u0020.Length - 1) {}
+			Dim num3 As Integer = \u0020.Length / 4
+			Dim num4 As UInteger = 0UI
+			If num > 0 Then
+				num2 += 1
+			End If
+			For i As Integer = 0 To num2 - 1
+				Dim num5 As Integer = i Mod num3
+				Dim num6 As Integer = i * 4
+				Dim num7 As UInteger = CUInt((num5 * 4))
+				Dim num8 As UInteger = CUInt((CInt(\u0020(CInt((num7 + 3UI)))) << 24 Or CInt(\u0020(CInt((num7 + 2UI)))) << 16 Or CInt(\u0020(CInt((num7 + 1UI)))) << 8 Or CInt(\u0020(CInt(num7)))))
+				Dim num9 As UInteger = 255UI
+				Dim num10 As Integer = 0
+				Dim num11 As UInteger
+				If i = num2 - 1 AndAlso num > 0 Then
+					num11 = 0UI
+					num4 += num8
+					For j As Integer = 0 To num - 1
+						If j > 0 Then
+							num11 <<= 8
+						End If
+						num11 = num11 Or CUInt(\u0020(\u0020.Length - (1 + j)))
+					Next
+				Else
+					num4 += num8
+					num7 = CUInt(num6)
+					num11 = CUInt((CInt(\u0020(CInt((num7 + 3UI)))) << 24 Or CInt(\u0020(CInt((num7 + 2UI)))) << 16 Or CInt(\u0020(CInt((num7 + 1UI)))) << 8 Or CInt(\u0020(CInt(num7)))))
+				End If
+				Dim num12 As UInteger = num4
+				Dim num13 As UInteger = 302860217UI
+				Dim num14 As UInteger = num12
+				Dim num15 As UInteger = 52031872UI
+				Dim num16 As UInteger = 230226771UI
+				Dim num17 As UInteger = 250082095UI
+				num15 = 3600878UI * (num15 And 511UI) + (num15 >> 9)
+				num16 = 4605600UI * (num16 And 511UI) - (num16 >> 9)
+				num14 = 39432UI * num14 - num13
+				Dim num18 As UInteger = num13 And 252645135UI
+				Dim num19 As UInteger = num13 And 4042322160UI
+				num18 = (num18 >> 4 Or num19 << 4) + num14
+				num13 = (num13 << 10 Or num13 >> 22)
+				num18 = ((num14 >> 7 Or num14 << 25) Xor num16)
+				num19 = (num18 And 252645135UI)
+				num18 = num18 And 4042322160UI
+				num14 = (num18 >> 4 Or num19 << 4)
+				num18 = (num15 And 16711935UI)
+				num19 = (num15 And 4278255360UI)
+				num18 = ((num18 >> 8 Or num19 << 8) Xor num16)
+				num15 = (num15 >> 15 Or num15 << 17)
+				If num17 = 0UI Then
+					num17 -= 1UI
+				End If
+				Dim num20 As UInteger = num16 / num17 + num17
+				num17 = (num16 - num16 Xor num20) + num16
+				num14 = num14 Xor num14 << 2
+				num14 += num14
+				num14 = num14 Xor num14 << 15
+				num14 += num15
+				num14 = num14 Xor num14 >> 9
+				num14 += num17
+				num14 = ((num13 << 20) + num16 Xor num14) - num14
+				num4 = num12 + CUInt(num14)
+				If i = num2 - 1 AndAlso num > 0 Then
+					Dim num21 As UInteger = num4 Xor num11
+					For k As Integer = 0 To num - 1
+						If k > 0 Then
+							num9 <<= 8
+							num10 += 8
+						End If
+						array(num6 + k) = CByte(((num21 And num9) >> num10))
+					Next
+				Else
+					Dim num22 As UInteger = num4 Xor num11
+					array(num6) = CByte((num22 And 255UI))
+					array(num6 + 1) = CByte(((num22 And 65280UI) >> 8))
+					array(num6 + 2) = CByte(((num22 And 16711680UI) >> 16))
+					array(num6 + 3) = CByte(((num22 And 4278190080UI) >> 24))
+				End If
+			Next
+			fXUU4jykVT4coaAMg9aB.GuiyrVW19Wk = array
+		End Sub
+
+		' Token: 0x060024B6 RID: 9398 RVA: 0x001FC7AC File Offset: 0x001FA9AC
+		Friend Shared Function rahyktVpH1A() As SymmetricAlgorithm
+			Dim result As SymmetricAlgorithm = Nothing
+			If fXUU4jykVT4coaAMg9aB.AKbykSi8osb() Then
+				result = New AesCryptoServiceProvider()
+			Else
+				Try
+					result = New RijndaelManaged()
+				Catch
+					Try
+						result = CType(Activator.CreateInstance("System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089", "System.Security.Cryptography.AesCryptoServiceProvider").Unwrap(), SymmetricAlgorithm)
+					Catch
+						result = CType(Activator.CreateInstance("System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089", "System.Security.Cryptography.AesCryptoServiceProvider").Unwrap(), SymmetricAlgorithm)
+					End Try
+				End Try
+			End If
+			Return result
+		End Function
+
+		' Token: 0x060024B7 RID: 9399 RVA: 0x001FC840 File Offset: 0x001FAA40
+		Friend Shared Sub TjKykawT3IS()
+			Try
+				New MD5CryptoServiceProvider()
+			Catch
+				fXUU4jykVT4coaAMg9aB.o4fyryHwH6U = True
+				Return
+			End Try
+			Try
+				fXUU4jykVT4coaAMg9aB.o4fyryHwH6U = CryptoConfig.AllowOnlyFipsAlgorithms
+			Catch
+			End Try
+		End Sub
+
+		' Token: 0x060024B8 RID: 9400 RVA: 0x001FC898 File Offset: 0x001FAA98
+		Friend Shared Function mKKyks4V4b8(\u0020 As Byte()) As Byte()
+			If Not fXUU4jykVT4coaAMg9aB.AKbykSi8osb() Then
+				Return New MD5CryptoServiceProvider().ComputeHash(\u0020)
+			End If
+			Return fXUU4jykVT4coaAMg9aB.ctsykPcOHLn(\u0020)
+		End Function
+
+		' Token: 0x060024B9 RID: 9401 RVA: 0x001FC8B8 File Offset: 0x001FAAB8
+		Friend Shared Sub XcEykT8r53y(\u0020 As HashAlgorithm, \u0020 As Stream, \u0020 As UInteger, \u0020 As Byte())
+			While \u0020 > 0UI
+				Dim num As Integer = If((\u0020 > CUInt(\u0020.Length)), \u0020.Length, CInt(\u0020))
+				\u0020.Read(\u0020, 0, num)
+				fXUU4jykVT4coaAMg9aB.Sigyk7mc6Vo(\u0020, \u0020, 0, num)
+				\u0020 -= CUInt(num)
+			End While
+		End Sub
+
+		' Token: 0x060024BA RID: 9402 RVA: 0x001FC8FC File Offset: 0x001FAAFC
+		Friend Shared Sub Sigyk7mc6Vo(\u0020 As HashAlgorithm, \u0020 As Byte(), \u0020 As Integer, \u0020 As Integer)
+			\u0020.TransformBlock(\u0020, \u0020, \u0020, \u0020, \u0020)
+		End Sub
+
+		' Token: 0x060024BB RID: 9403 RVA: 0x001FC90C File Offset: 0x001FAB0C
+		Friend Shared Function GoIykDSQpcX(\u0020 As UInteger, \u0020 As Integer, \u0020 As Long, \u0020 As BinaryReader) As UInteger
+			For i As Integer = 0 To \u0020 - 1
+				\u0020.BaseStream.Position = \u0020 + CLng((i * 40 + 8))
+				Dim num As UInteger = \u0020.ReadUInt32()
+				Dim num2 As UInteger = \u0020.ReadUInt32()
+				\u0020.ReadUInt32()
+				Dim num3 As UInteger = \u0020.ReadUInt32()
+				If num2 <= \u0020 AndAlso \u0020 < num2 + num Then
+					Return num3 + \u0020 - num2
+				End If
+			Next
+			Return 0UI
+		End Function
+
+		' Token: 0x060024BC RID: 9404 RVA: 0x001FC974 File Offset: 0x001FAB74
+		Friend Shared Sub gRpykFhmKaB()
+			Dim num As Integer = 9
+			While True
+				Dim num2 As Integer = num
+				While True
+					Dim text2 As String
+					Dim binaryReader As BinaryReader
+					Dim flag As Boolean
+					Select Case num2
+						Case 0
+							GoTo IL_310
+						Case 1
+							GoTo IL_20F3
+						Case 2
+							GoTo IL_2102
+						Case 3
+							GoTo IL_A42
+						Case 4
+							GoTo IL_B5
+						Case 5
+							GoTo IL_A02
+						Case 6
+							Dim hashAlgorithm As HashAlgorithm = Nothing
+							num2 = 17
+							Continue For
+						Case 7
+						Case 8
+							GoTo IL_20D4
+						Case 9
+							If fXUU4jykVT4coaAMg9aB.vYVyr0RJsye Is Nothing Then
+								GoTo IL_20F3
+							End If
+							num2 = 8
+							If Not fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+								num2 = 5
+								Continue For
+							End If
+							Continue For
+						Case 10
+							GoTo IL_A1
+						Case 11
+							Try
+								Dim hashAlgorithm As HashAlgorithm = fXUU4jykVT4coaAMg9aB.Vc84EE0gxnPUIr8ImbCd()
+								Dim num3 As Integer = 1
+								If fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+									num3 = 1
+								End If
+								While True
+									Select Case num3
+										Case 1
+											Dim text As String = fXUU4jykVT4coaAMg9aB.HwYnUv0gEoqtrOixffiA("SHA1")
+											num3 = 2
+											Continue For
+										Case 2
+											If Not fXUU4jykVT4coaAMg9aB.VfbtvE0gZhHojWYGyQKA(text2) Then
+												num3 = 3
+												If fXUU4jykVT4coaAMg9aB.zlQsi4yzYTrSZ0sQ3tUg() IsNot Nothing Then
+													num3 = 2
+													Continue For
+												End If
+												Continue For
+											End If
+										Case 3
+											GoTo IL_1B1
+									End Select
+									Exit For
+								End While
+								Exit Try
+								IL_1B1:
+								Return
+								Exit Try
+							Catch
+								Dim num4 As Integer = 0
+								If Not fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+									num4 = 0
+								End If
+								Select Case num4
+									Case Else
+										Return
+								End Select
+							End Try
+							GoTo IL_24D
+						Case 12
+							GoTo IL_A18
+						Case 13
+							GoTo IL_20C0
+						Case 14
+							GoTo IL_2D1
+						Case 15
+							GoTo IL_A42
+						Case 16
+							text2 = fXUU4jykVT4coaAMg9aB.h1dupo0gySBU4cJUPeHK(fXUU4jykVT4coaAMg9aB.EsEc2p0ge03dc16Sj0qp(GetType(fXUU4jykVT4coaAMg9aB).TypeHandle).Assembly)
+							num2 = 19
+							Continue For
+						Case 17
+							Dim text As String = Nothing
+							num2 = 11
+							Continue For
+						Case 18
+							Try
+								If binaryReader IsNot Nothing Then
+									Dim num5 As Integer = 1
+									If fXUU4jykVT4coaAMg9aB.zlQsi4yzYTrSZ0sQ3tUg() IsNot Nothing Then
+										num5 = 0
+									End If
+									While True
+										Select Case num5
+											Case 1
+												fXUU4jykVT4coaAMg9aB.p7g6M40gMJYG8Hl6kMW9(binaryReader)
+												num5 = 0
+												If fXUU4jykVT4coaAMg9aB.zlQsi4yzYTrSZ0sQ3tUg() Is Nothing Then
+													num5 = 0
+													Continue For
+												End If
+												Continue For
+										End Select
+										Exit For
+									End While
+								End If
+								GoTo IL_A42
+							Catch
+								Dim num6 As Integer = 0
+								If fXUU4jykVT4coaAMg9aB.zlQsi4yzYTrSZ0sQ3tUg() Is Nothing Then
+									num6 = 0
+								End If
+								Select Case num6
+									Case Else
+										GoTo IL_A42
+								End Select
+							End Try
+						Case 19
+							GoTo IL_24D
+						Case 20
+							Return
+						Case 21
+							Try
+								Dim qHnNuwyrCI5TggHSimjJ As fXUU4jykVT4coaAMg9aB.qHnNuwyrCI5TggHSimjJ = New fXUU4jykVT4coaAMg9aB.qHnNuwyrCI5TggHSimjJ(fXUU4jykVT4coaAMg9aB.XsqIvE0ghstVnobwreeo(fXUU4jykVT4coaAMg9aB.oU6ykzWLIeb, "C3O8T4EIGuN4LD0Ldh.mDbniDZDuyhqyFR7iT"))
+								fXUU4jykVT4coaAMg9aB.ExJOb90gdwqZ6i3GX3dh(fXUU4jykVT4coaAMg9aB.qydneV0gn0XlFoFZgViJ(qHnNuwyrCI5TggHSimjJ), 0L)
+								Dim array As Byte() = fXUU4jykVT4coaAMg9aB.IIIbbq0gP56RuoBCFBYi(qHnNuwyrCI5TggHSimjJ, CInt(fXUU4jykVT4coaAMg9aB.tMeGJ50gV33ScgaJpxSS(fXUU4jykVT4coaAMg9aB.qydneV0gn0XlFoFZgViJ(qHnNuwyrCI5TggHSimjJ))))
+								Dim array2 As Byte() = New Byte(31) {}
+								array2(0) = 230 - 76
+								array2(0) = 149 - 49
+								Dim num7 As Integer = 78 + 65
+								array2(0) = CByte(num7)
+								Dim num8 As Integer = 228 - 76
+								array2(0) = CByte(num8)
+								array2(0) = 67 + 88
+								num7 = 4 + 20
+								array2(1) = CByte(num7)
+								num8 = 28 + 121
+								array2(1) = CByte(num8)
+								array2(1) = 108 + 119
+								num7 = 251 - 83
+								array2(1) = CByte(num7)
+								num7 = 124 + 26
+								array2(1) = CByte(num7)
+								array2(2) = 39 + 106
+								array2(2) = 84 + 77
+								array2(2) = 204 - 68
+								num8 = 119 + 99
+								array2(2) = CByte(num8)
+								num7 = 193 - 64
+								array2(3) = CByte(num7)
+								num8 = 210 - 70
+								array2(3) = CByte(num8)
+								num7 = 124 + 53
+								array2(3) = CByte(num7)
+								num8 = 16 + 7
+								array2(3) = CByte(num8)
+								array2(3) = 136 - 45
+								array2(3) = 166 - 52
+								array2(4) = 149 - 49
+								array2(4) = 234 - 78
+								array2(4) = 133 - 44
+								array2(4) = 128 - 42
+								array2(4) = 77 + 81
+								num7 = 102 - 93
+								array2(4) = CByte(num7)
+								num7 = 229 - 76
+								array2(5) = CByte(num7)
+								array2(5) = 161 - 53
+								array2(5) = 216 - 72
+								array2(5) = 196 - 65
+								array2(5) = 191 + 60
+								array2(6) = 226 - 75
+								num8 = 130 - 43
+								array2(6) = CByte(num8)
+								array2(6) = 158 - 52
+								num8 = 49 + 6
+								array2(6) = CByte(num8)
+								array2(6) = 69 + 82
+								array2(7) = 88 + 121
+								array2(7) = 8 + 17
+								num8 = 56 + 96
+								array2(7) = CByte(num8)
+								num7 = 118 + 119
+								array2(7) = CByte(num7)
+								num7 = 54 + 79
+								array2(8) = CByte(num7)
+								num8 = 160 - 53
+								array2(8) = CByte(num8)
+								num7 = 94 + 106
+								array2(8) = CByte(num7)
+								array2(8) = 170 - 56
+								num7 = 104 + 13
+								array2(9) = CByte(num7)
+								num8 = 14 + 14
+								array2(9) = CByte(num8)
+								array2(9) = 82 + 82
+								num7 = 66 + 114
+								array2(9) = CByte(num7)
+								array2(9) = 195 - 65
+								array2(9) = 191 - 101
+								array2(10) = 203 - 67
+								num7 = 126 - 42
+								array2(10) = CByte(num7)
+								array2(10) = 214 - 71
+								num7 = 227 - 75
+								array2(10) = CByte(num7)
+								num8 = 178 + 71
+								array2(10) = CByte(num8)
+								array2(11) = 203 - 67
+								array2(11) = 151 - 50
+								array2(11) = 173 - 113
+								num7 = 152 - 50
+								array2(12) = CByte(num7)
+								num8 = 75 + 61
+								array2(12) = CByte(num8)
+								num7 = 182 + 26
+								array2(12) = CByte(num7)
+								num7 = 149 - 49
+								array2(13) = CByte(num7)
+								array2(13) = 64 + 116
+								array2(13) = 123 + 89
+								array2(14) = 228 - 76
+								num8 = 137 - 45
+								array2(14) = CByte(num8)
+								array2(14) = 181 - 60
+								num7 = 57 + 107
+								array2(14) = CByte(num7)
+								array2(14) = 80 - 55
+								array2(15) = 149 - 49
+								array2(15) = 23 + 5
+								array2(15) = 159 + 45
+								num8 = 144 - 48
+								array2(16) = CByte(num8)
+								array2(16) = 128 - 42
+								array2(16) = 242 - 80
+								array2(16) = 6 + 88
+								array2(16) = 135 + 33
+								num8 = 124 + 95
+								array2(17) = CByte(num8)
+								num7 = 206 - 68
+								array2(17) = CByte(num7)
+								num8 = 86 + 32
+								array2(17) = CByte(num8)
+								array2(17) = 184 - 61
+								array2(17) = 215 - 71
+								array2(17) = 228 + 19
+								array2(18) = 10 + 102
+								array2(18) = 4 + 36
+								num7 = 64 + 75
+								array2(18) = CByte(num7)
+								num7 = 198 - 66
+								array2(18) = CByte(num7)
+								num7 = 81 + 34
+								array2(18) = CByte(num7)
+								num8 = 114 + 42
+								array2(18) = CByte(num8)
+								array2(19) = 99 + 124
+								num7 = 254 - 84
+								array2(19) = CByte(num7)
+								array2(19) = 169 - 56
+								num8 = 60 + 76
+								array2(19) = CByte(num8)
+								array2(20) = 217 - 72
+								array2(20) = 131 - 43
+								array2(20) = 118 + 40
+								num7 = 46 - 34
+								array2(20) = CByte(num7)
+								num7 = 132 - 44
+								array2(21) = CByte(num7)
+								array2(21) = 149 - 49
+								array2(21) = 101 + 28
+								num8 = 122 + 12
+								array2(21) = CByte(num8)
+								array2(22) = 8 + 31
+								array2(22) = 209 - 69
+								array2(22) = 244 - 81
+								array2(22) = 66 + 63
+								num7 = 218 - 72
+								array2(22) = CByte(num7)
+								num8 = 160 + 80
+								array2(22) = CByte(num8)
+								num7 = 244 - 81
+								array2(23) = CByte(num7)
+								array2(23) = 204 - 68
+								num7 = 165 - 55
+								array2(23) = CByte(num7)
+								num8 = 153 - 51
+								array2(23) = CByte(num8)
+								array2(23) = 31 + 29
+								num8 = 91 - 7
+								array2(23) = CByte(num8)
+								num7 = 80 + 53
+								array2(24) = CByte(num7)
+								array2(24) = 20 + 81
+								num7 = 221 - 73
+								array2(24) = CByte(num7)
+								num8 = 92 + 63
+								array2(24) = CByte(num8)
+								array2(24) = 167 - 55
+								num8 = 70 - 10
+								array2(24) = CByte(num8)
+								array2(25) = 15 + 45
+								array2(25) = 67 + 56
+								num8 = 175 - 58
+								array2(25) = CByte(num8)
+								num8 = 130 - 63
+								array2(25) = CByte(num8)
+								array2(26) = 230 - 76
+								num7 = 252 - 84
+								array2(26) = CByte(num7)
+								array2(26) = 118 + 79
+								num7 = 160 - 86
+								array2(26) = CByte(num7)
+								array2(27) = 42 + 87
+								array2(27) = 225 - 75
+								num8 = 177 - 59
+								array2(27) = CByte(num8)
+								num7 = 157 - 52
+								array2(27) = CByte(num7)
+								num7 = 104 + 94
+								array2(27) = CByte(num7)
+								num8 = 79 + 32
+								array2(28) = CByte(num8)
+								array2(28) = 69 + 8
+								array2(28) = 53 + 54
+								num8 = 17 + 96
+								array2(28) = CByte(num8)
+								array2(28) = 61 + 98
+								num7 = 92 - 76
+								array2(28) = CByte(num7)
+								num8 = 27 + 118
+								array2(29) = CByte(num8)
+								num7 = 75 + 69
+								array2(29) = CByte(num7)
+								array2(29) = 200 - 92
+								num7 = 150 - 50
+								array2(30) = CByte(num7)
+								array2(30) = 165 - 55
+								num7 = 114 + 76
+								array2(30) = CByte(num7)
+								array2(30) = 107 + 119
+								array2(30) = 141 + 51
+								array2(31) = 44 + 16
+								array2(31) = 224 - 74
+								num7 = 107 + 78
+								array2(31) = CByte(num7)
+								Dim array3 As Byte() = array2
+								Dim array4 As Byte() = New Byte(15) {}
+								Dim num9 As Integer = 140 - 46
+								array4(0) = CByte(num9)
+								array4(0) = 29 + 120
+								array4(0) = 90 - 87
+								num9 = 203 - 67
+								array4(1) = CByte(num9)
+								num9 = 209 - 69
+								array4(1) = CByte(num9)
+								array4(1) = 153 - 83
+								num9 = 225 - 75
+								array4(2) = CByte(num9)
+								array4(2) = 3 + 60
+								array4(2) = 178 - 59
+								num9 = 40 + 97
+								array4(2) = CByte(num9)
+								array4(2) = 187 - 62
+								num9 = 123 - 34
+								array4(2) = CByte(num9)
+								array4(3) = 75 + 109
+								num9 = 120 + 98
+								array4(3) = CByte(num9)
+								array4(3) = 157 + 35
+								num9 = 101 + 29
+								array4(4) = CByte(num9)
+								array4(4) = 244 - 81
+								num9 = 42 + 121
+								array4(4) = CByte(num9)
+								num9 = 176 - 58
+								array4(4) = CByte(num9)
+								array4(4) = 66 + 88
+								array4(5) = 190 - 63
+								num9 = 55 + 102
+								array4(5) = CByte(num9)
+								num9 = 213 - 71
+								array4(5) = CByte(num9)
+								array4(5) = 204 + 50
+								array4(6) = 16 + 60
+								array4(6) = 28 + 45
+								num9 = 59 + 75
+								array4(6) = CByte(num9)
+								num9 = 110 - 59
+								array4(6) = CByte(num9)
+								num9 = 73 + 40
+								array4(7) = CByte(num9)
+								num9 = 118 + 26
+								array4(7) = CByte(num9)
+								num9 = 214 - 71
+								array4(7) = CByte(num9)
+								num9 = 213 - 71
+								array4(7) = CByte(num9)
+								num9 = 158 - 52
+								array4(7) = CByte(num9)
+								num9 = 111 + 21
+								array4(7) = CByte(num9)
+								num9 = 66 + 104
+								array4(8) = CByte(num9)
+								num9 = 228 - 76
+								array4(8) = CByte(num9)
+								array4(8) = 86 + 90
+								num9 = 136 - 45
+								array4(8) = CByte(num9)
+								num9 = 186 - 62
+								array4(8) = CByte(num9)
+								num9 = 24 + 35
+								array4(9) = CByte(num9)
+								num9 = 113 + 122
+								array4(9) = CByte(num9)
+								array4(9) = 117 + 25
+								array4(9) = 63 + 27
+								num9 = 188 - 62
+								array4(9) = CByte(num9)
+								array4(9) = 130 - 69
+								num9 = 107 + 51
+								array4(10) = CByte(num9)
+								array4(10) = 147 - 49
+								num9 = 124 + 123
+								array4(10) = CByte(num9)
+								num9 = 150 - 50
+								array4(11) = CByte(num9)
+								array4(11) = 44 + 118
+								num9 = 129 - 43
+								array4(11) = CByte(num9)
+								num9 = 167 - 116
+								array4(11) = CByte(num9)
+								array4(12) = 214 - 71
+								array4(12) = 32 + 83
+								num9 = 128 - 42
+								array4(12) = CByte(num9)
+								array4(12) = 180 - 71
+								num9 = 78 + 94
+								array4(13) = CByte(num9)
+								num9 = 213 - 71
+								array4(13) = CByte(num9)
+								num9 = 98 + 95
+								array4(13) = CByte(num9)
+								array4(14) = 61 + 35
+								num9 = 45 + 57
+								array4(14) = CByte(num9)
+								num9 = 156 - 56
+								array4(14) = CByte(num9)
+								num9 = 230 - 76
+								array4(15) = CByte(num9)
+								num9 = 30 + 93
+								array4(15) = CByte(num9)
+								num9 = 38 + 124
+								array4(15) = CByte(num9)
+								Dim array5 As Byte() = array4
+								Dim obj As Object = fXUU4jykVT4coaAMg9aB.Sk636o0g1ZMeqyaFoyRx()
+								fXUU4jykVT4coaAMg9aB.NMVpN20gmbDYWBoySGpO(obj, 1)
+								Dim cryptoTransform As ICryptoTransform = fXUU4jykVT4coaAMg9aB.Cx0ytq0gcDeKPsEsy9sO(obj, array3, array5)
+								Dim stream As Stream = fXUU4jykVT4coaAMg9aB.FL2vto0g63kfxK0apwLp()
+								Dim cryptoStream As CryptoStream = New CryptoStream(stream, cryptoTransform, 1)
+								fXUU4jykVT4coaAMg9aB.tRCP5S0gBJwKJWkMO7B1(cryptoStream, array, 0, array.Length)
+								fXUU4jykVT4coaAMg9aB.aNhSTO0gSMxWsYJMMcbJ(cryptoStream)
+								fXUU4jykVT4coaAMg9aB.OgA11W0gsrRtXeKsegHa(fXUU4jykVT4coaAMg9aB.vYVyr0RJsye, fXUU4jykVT4coaAMg9aB.OoQMEF0ga6E3MGs85WpO(fXUU4jykVT4coaAMg9aB.h9xCuC0gq5e8558EM0VH(), fXUU4jykVT4coaAMg9aB.RU323b0gtcOlV7nCBEN8(stream)))
+								fXUU4jykVT4coaAMg9aB.DHJgXt0gTOquQkurRCB7(stream)
+								fXUU4jykVT4coaAMg9aB.DHJgXt0gTOquQkurRCB7(cryptoStream)
+								fXUU4jykVT4coaAMg9aB.gP0BV00g7aycpg0W19TF(qHnNuwyrCI5TggHSimjJ)
+								Dim num10 As Integer = 0
+								If Not fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+									num10 = 0
+								End If
+								Select Case num10
+									Case Else
+										GoTo IL_B5
+								End Select
+							Catch
+								Dim num11 As Integer = 0
+								If fXUU4jykVT4coaAMg9aB.zlQsi4yzYTrSZ0sQ3tUg() Is Nothing Then
+									num11 = 1
+								End If
+								While True
+									Select Case num11
+										Case 1
+											flag = True
+											num11 = 0
+											If Not fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+												num11 = 0
+												Continue For
+											End If
+											Continue For
+									End Select
+									Exit For
+								End While
+								GoTo IL_B5
+							End Try
+							GoTo IL_20C0
+						Case 22
+							GoTo IL_28B
+						Case 23
+							Return
+						Case Else
+							GoTo IL_310
+					End Select
+					flag = False
+					num2 = 21
+					Continue For
+					IL_24D:
+					If text2 Is Nothing Then
+						num2 = 14
+						Continue For
+					End If
+					GoTo IL_A02
+					IL_A42:
+					If flag Then
+						num2 = 22
+						If Not fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+							num2 = 8
+							Continue For
+						End If
+						Continue For
+					Else
+						flag = False
+						num2 = 20
+						If fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+							num2 = 20
+							Continue For
+						End If
+						Continue For
+					End If
+					IL_A02:
+					If fXUU4jykVT4coaAMg9aB.pylNkK0g0ADNot5C73Vn(text2) <> 0 Then
+						num2 = 6
+						Continue For
+					End If
+					Return
+					IL_310:
+					Try
+						Dim fileStream As FileStream = New FileStream(text2, FileMode.Open, FileAccess.Read, FileShare.Read)
+						Dim num12 As Integer = 24
+						While True
+							Dim hashAlgorithm As HashAlgorithm
+							Dim num15 As Integer
+							Dim num16 As Long
+							Dim num14 As Long
+							Dim num17 As Long
+							Dim num18 As UInteger
+							Dim num19 As UInteger
+							Dim num22 As UInteger
+							Dim array7 As Byte()
+							Dim num23 As Integer
+							Dim num25 As Long
+							Dim num27 As Integer
+							Select Case num12
+								Case 0
+									GoTo IL_405
+								Case 1
+									Dim u As UInteger = fXUU4jykVT4coaAMg9aB.sH43XK0gX19o9hglRAEP(binaryReader)
+									Dim num13 As UInteger = fXUU4jykVT4coaAMg9aB.sH43XK0gX19o9hglRAEP(binaryReader)
+									num14 = CLng(CULng(fXUU4jykVT4coaAMg9aB.sarVMa0gGPSuqQea8OMG(u, num15, num16, binaryReader)))
+									num12 = 41
+									If Not fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+										num12 = 20
+										Continue For
+									End If
+									Continue For
+								Case 2
+									fXUU4jykVT4coaAMg9aB.ExJOb90gdwqZ6i3GX3dh(fileStream, num14)
+									num12 = 7
+									If fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+										num12 = 34
+										Continue For
+									End If
+									Continue For
+								Case 3
+									If num14 <= num17 Then
+										num12 = 35
+										Continue For
+									End If
+									GoTo IL_710
+								Case 4
+									num18 -= num19
+									num12 = 13
+									Continue For
+								Case 5
+									GoTo IL_990
+								Case 6
+									GoTo IL_4C5
+								Case 7
+									Dim num20 As UInteger
+									num18 -= num20
+									num12 = 31
+									If Not fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+										num12 = 14
+										Continue For
+									End If
+									Continue For
+								Case 8
+									GoTo IL_442
+								Case 9
+									GoTo IL_462
+								Case 10
+									GoTo IL_475
+								Case 11
+									GoTo IL_59C
+								Case 12
+									Dim num21 As Long
+									fXUU4jykVT4coaAMg9aB.ExJOb90gdwqZ6i3GX3dh(fileStream, num21)
+									num12 = 42
+									Continue For
+								Case 13
+									GoTo IL_475
+								Case 14
+									fXUU4jykVT4coaAMg9aB.ExJOb90gdwqZ6i3GX3dh(fileStream, CLng(CULng((num22 + 32UI))))
+									num12 = 0
+									If fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+										num12 = 1
+										Continue For
+									End If
+									Continue For
+								Case 15
+									Dim array6 As Byte()
+									fXUU4jykVT4coaAMg9aB.FPJyrb0gAPa0PoD8NI3P(array6)
+									num12 = 26
+									Continue For
+								Case 16
+									fXUU4jykVT4coaAMg9aB.FvvnC60gDEWe5gk2TSfH(hashAlgorithm, fileStream, 152UI, array7)
+									num12 = 39
+									Continue For
+								Case 17
+									num18 = fXUU4jykVT4coaAMg9aB.sH43XK0gX19o9hglRAEP(binaryReader)
+									num12 = 37
+									Continue For
+								Case 18
+									GoTo IL_475
+								Case 19
+									GoTo IL_7AF
+								Case 20
+									fXUU4jykVT4coaAMg9aB.ExJOb90gdwqZ6i3GX3dh(fileStream, 360L)
+									num12 = 30
+									Continue For
+								Case 21
+									GoTo IL_581
+								Case 22
+									fXUU4jykVT4coaAMg9aB.FvvnC60gDEWe5gk2TSfH(hashAlgorithm, fileStream, num19, array7)
+									num23 = 4
+								Case 23
+									Dim num24 As UInteger
+									fXUU4jykVT4coaAMg9aB.ExJOb90gdwqZ6i3GX3dh(fileStream, CLng(CULng(num24)))
+									num12 = 18
+									If Not fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+										num12 = 6
+										Continue For
+									End If
+									Continue For
+								Case 24
+									binaryReader = New BinaryReader(fileStream)
+									num23 = 25
+								Case 25
+									array7 = New Byte(65535) {}
+									num12 = 16
+									Continue For
+								Case 26
+									Dim text As String
+									Dim array6 As Byte()
+									flag = Not fXUU4jykVT4coaAMg9aB.tXUPM60g2XgyTaWdAB9R(fXUU4jykVT4coaAMg9aB.vYVyr0RJsye, fXUU4jykVT4coaAMg9aB.UEaeTm0gjYwefwXGxyFk(hashAlgorithm), text, array6)
+									num12 = 5
+									If Not fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+										num12 = 5
+										Continue For
+									End If
+									Continue For
+								Case 27
+									GoTo IL_462
+								Case 28
+									Dim num20 As UInteger = CUInt((num25 - num17))
+									num12 = 40
+									Continue For
+								Case 29
+									GoTo IL_710
+								Case 30
+									GoTo IL_7AF
+								Case 31
+									Dim fileStream2 As FileStream = fileStream
+									Dim num20 As UInteger
+									fXUU4jykVT4coaAMg9aB.ExJOb90gdwqZ6i3GX3dh(fileStream2, fXUU4jykVT4coaAMg9aB.mvXK640gKexHTbk5rXyW(fileStream2) + CLng(CULng(num20)))
+									num12 = 10
+									Continue For
+								Case 32
+									GoTo IL_442
+								Case 33
+									GoTo IL_418
+								Case 34
+									Dim num13 As UInteger
+									Dim array6 As Byte() = fXUU4jykVT4coaAMg9aB.rmT4IO0gNThgwAtctJQF(binaryReader, CInt(num13))
+									num12 = 8
+									If fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+										num12 = 15
+										Continue For
+									End If
+									Continue For
+								Case 35
+									If num17 >= num25 Then
+										GoTo IL_710
+									End If
+									num12 = 16
+									If fXUU4jykVT4coaAMg9aB.zlQsi4yzYTrSZ0sQ3tUg() Is Nothing Then
+										num12 = 28
+										Continue For
+									End If
+									Continue For
+								Case 36
+									GoTo IL_418
+								Case 37
+									Dim num24 As UInteger = fXUU4jykVT4coaAMg9aB.sH43XK0gX19o9hglRAEP(binaryReader)
+									num12 = 23
+									If Not fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+										num12 = 17
+										Continue For
+									End If
+									Continue For
+								Case 38
+									fXUU4jykVT4coaAMg9aB.A6oN4n0gQtBvyt5g0aij(hashAlgorithm, New Byte(-1) {}, 0, 0)
+									num12 = 2
+									Continue For
+								Case 39
+									Dim flag2 As Boolean = fXUU4jykVT4coaAMg9aB.PS7ogM0gF7GC8kF2dWwD(binaryReader) <> 523US
+									Dim num26 As Integer = If((Not flag2), 112, 96)
+									fXUU4jykVT4coaAMg9aB.ExJOb90gdwqZ6i3GX3dh(fileStream, 152L)
+									fXUU4jykVT4coaAMg9aB.jyPQ3E0gUTkMZ7PdNYwt(fileStream, array7, 0, num26)
+									array7(64) = 0
+									array7(65) = 0
+									array7(66) = 0
+									array7(67) = 0
+									fXUU4jykVT4coaAMg9aB.yU3Ffd0gII0VKXr9cxGi(hashAlgorithm, array7, 0, num26)
+									fXUU4jykVT4coaAMg9aB.jyPQ3E0gUTkMZ7PdNYwt(fileStream, array7, 0, 128)
+									array7(32) = 0
+									array7(33) = 0
+									array7(34) = 0
+									array7(35) = 0
+									array7(36) = 0
+									array7(37) = 0
+									array7(38) = 0
+									array7(39) = 0
+									fXUU4jykVT4coaAMg9aB.yU3Ffd0gII0VKXr9cxGi(hashAlgorithm, array7, 0, 128)
+									num16 = fXUU4jykVT4coaAMg9aB.mvXK640gKexHTbk5rXyW(fileStream)
+									fXUU4jykVT4coaAMg9aB.ExJOb90gdwqZ6i3GX3dh(fileStream, 134L)
+									num15 = CInt(fXUU4jykVT4coaAMg9aB.PS7ogM0gF7GC8kF2dWwD(binaryReader))
+									fXUU4jykVT4coaAMg9aB.ExJOb90gdwqZ6i3GX3dh(fileStream, num16)
+									fXUU4jykVT4coaAMg9aB.FvvnC60gDEWe5gk2TSfH(hashAlgorithm, fileStream, CUInt((num15 * 40)), array7)
+									Dim num21 As Long = fXUU4jykVT4coaAMg9aB.mvXK640gKexHTbk5rXyW(fileStream)
+									If Not flag2 Then
+										GoTo IL_581
+									End If
+									num23 = 20
+								Case 40
+									Dim num20 As UInteger
+									If num20 < num18 Then
+										num12 = 7
+										Continue For
+									End If
+									GoTo IL_442
+								Case 41
+									Dim num13 As UInteger
+									num25 = num14 + CLng(CULng(num13))
+									num12 = 12
+									If fXUU4jykVT4coaAMg9aB.zlQsi4yzYTrSZ0sQ3tUg() IsNot Nothing Then
+										num12 = 8
+										Continue For
+									End If
+									Continue For
+								Case 42
+									num27 = 0
+									num12 = 0
+									If Not fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+										num12 = 0
+										Continue For
+									End If
+									Continue For
+								Case 43
+									GoTo IL_497
+								Case Else
+									GoTo IL_405
+							End Select
+							IL_327:
+							num12 = num23
+							Continue For
+							IL_581:
+							fXUU4jykVT4coaAMg9aB.ExJOb90gdwqZ6i3GX3dh(fileStream, 376L)
+							num23 = 19
+							GoTo IL_327
+							IL_418:
+							num19 = CUInt(fXUU4jykVT4coaAMg9aB.yDevKK0gH0kHOTI1rpaC(num14 - num17, CLng(CULng(num18))))
+							num12 = 21
+							If fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+								num12 = 22
+								Continue For
+							End If
+							Continue For
+							IL_442:
+							num27 += 1
+							num12 = 5
+							If fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+								num12 = 11
+								Continue For
+							End If
+							Continue For
+							IL_475:
+							If num18 <= 0UI Then
+								GoTo IL_442
+							End If
+							num12 = 9
+							If fXUU4jykVT4coaAMg9aB.zlQsi4yzYTrSZ0sQ3tUg() IsNot Nothing Then
+								num12 = 9
+								Continue For
+							End If
+							Continue For
+							IL_462:
+							num17 = fXUU4jykVT4coaAMg9aB.mvXK640gKexHTbk5rXyW(fileStream)
+							num12 = 3
+							Continue For
+							IL_497:
+							fXUU4jykVT4coaAMg9aB.ExJOb90gdwqZ6i3GX3dh(fileStream, num16 + CLng((num27 * 40)) + 16L)
+							num12 = 16
+							If fXUU4jykVT4coaAMg9aB.zlQsi4yzYTrSZ0sQ3tUg() Is Nothing Then
+								num12 = 17
+								Continue For
+							End If
+							Continue For
+							IL_59C:
+							If num27 >= num15 Then
+								num12 = 38
+								Continue For
+							End If
+							GoTo IL_497
+							IL_405:
+							GoTo IL_59C
+							IL_4C5:
+							fXUU4jykVT4coaAMg9aB.FvvnC60gDEWe5gk2TSfH(hashAlgorithm, fileStream, num18, array7)
+							num12 = 8
+							Continue For
+							IL_710:
+							If num17 < num25 Then
+								num12 = 36
+								Continue For
+							End If
+							GoTo IL_4C5
+							IL_7AF:
+							num22 = fXUU4jykVT4coaAMg9aB.sarVMa0gGPSuqQea8OMG(fXUU4jykVT4coaAMg9aB.sH43XK0gX19o9hglRAEP(binaryReader), num15, num16, binaryReader)
+							num12 = 4
+							If fXUU4jykVT4coaAMg9aB.zlQsi4yzYTrSZ0sQ3tUg() Is Nothing Then
+								num12 = 14
+							End If
+						End While
+						IL_990:
+						GoTo IL_2102
+					Catch
+						Dim num28 As Integer = 0
+						If fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+							num28 = 1
+						End If
+						While True
+							Select Case num28
+								Case 1
+									flag = True
+									num28 = 0
+									If Not fXUU4jykVT4coaAMg9aB.CGEUWMyzWDhnBqbvSliI() Then
+										num28 = 0
+										Continue For
+									End If
+									Continue For
+							End Select
+							Exit For
+						End While
+						GoTo IL_2102
+					End Try
+					GoTo IL_A02
+					IL_A18:
+					binaryReader = Nothing
+					num2 = 0
+					If fXUU4jykVT4coaAMg9aB.zlQsi4yzYTrSZ0sQ3tUg() Is Nothing Then
+						num2 = 0
+						Continue For
+					End If
+					Continue For
+					IL_B5:
+					If flag Then
+						GoTo Block_4
+					End If
+					GoTo IL_A18
+					IL_20C0:
+					fXUU4jykVT4coaAMg9aB.vYVyr0RJsye = New RSACryptoServiceProvider()
+					num2 = 16
+					Continue For
+					IL_20F3:
+					fXUU4jykVT4coaAMg9aB.MRvW1SyzzRhN0DeVR4Cp()
+					num2 = 10
+					Continue For
+					IL_2102:
+					num2 = 9
+					If fXUU4jykVT4coaAMg9aB.zlQsi4yzYTrSZ0sQ3tUg() Is Nothing Then
+						num2 = 18
+					End If
+				End While
+				IL_A1:
+				fXUU4jykVT4coaAMg9aB.kliwGI0ggeqZa37pKoEr(True)
+				num = 13
+				Continue For
+				Block_4:
+				num = 3
+			End While
+			Return
+			IL_28B:
+			Throw New Exception(fXUU4jykVT4coaAMg9aB.igbnTD0gL0LdlZrqVHoC(fXUU4jykVT4coaAMg9aB.yrgyha0gopCVThauOeMe(fXUU4jykVT4coaAMg9aB.OId82S0g9I8opXHSMy8X(fXUU4jykVT4coaAMg9aB.EsEc2p0ge03dc16Sj0qp(GetType(fXUU4jykVT4coaAMg9aB).TypeHandle).Assembly)), " is tampered."))
+			IL_2D1:
+			Return
+			IL_20D4:
+		End Sub
+
+		' Token: 0x060024BD RID: 9405 RVA: 0x001FEB20 File Offset: 0x001FCD20
+		Public Shared Sub uIVykUXnwOT(\u0020 As RuntimeTypeHandle)
+			Try
+				Dim typeFromHandle As Type = Type.GetTypeFromHandle(\u0020)
+				If fXUU4jykVT4coaAMg9aB.Tgryrx3o9fg Is Nothing Then
+					Dim ihvyrENwdfI As Object = fXUU4jykVT4coaAMg9aB.IHvyrENwdfI
+					SyncLock ihvyrENwdfI
+						Dim dictionary As Dictionary(Of Integer, Integer) = New Dictionary(Of Integer, Integer)()
+						Dim binaryReader As BinaryReader = New BinaryReader(Type.GetTypeFromHandle(DHTn0nyCyFhNYP4g0j4y.pE3ZzSbxOVu(33555555)).Assembly.GetManifestResourceStream("n7oga1P19tjF3317tU.7rHBTk1ytVHPM39bpU"))
+						binaryReader.BaseStream.Position = 0L
+						Dim array As Byte() = binaryReader.ReadBytes(CInt(binaryReader.BaseStream.Length))
+						binaryReader.Close()
+						If array.Length <> 0 Then
+							Dim num As Integer = array.Length Mod 4
+							Dim num2 As Integer = array.Length / 4
+							Dim array2 As Byte() = New Byte(array.Length - 1) {}
+							Dim num3 As UInteger = 0UI
+							If num > 0 Then
+								num2 += 1
+							End If
+							For i As Integer = 0 To num2 - 1
+								Dim num4 As Integer = i * 4
+								Dim num5 As UInteger = 255UI
+								Dim num6 As Integer = 0
+								Dim num7 As UInteger
+								If i = num2 - 1 AndAlso num > 0 Then
+									num7 = 0UI
+									For j As Integer = 0 To num - 1
+										If j > 0 Then
+											num7 <<= 8
+										End If
+										num7 = num7 Or CUInt(array(array.Length - (1 + j)))
+									Next
+								Else
+									Dim num8 As UInteger = CUInt(num4)
+									num7 = CUInt((CInt(array(CInt((num8 + 3UI)))) << 24 Or CInt(array(CInt((num8 + 2UI)))) << 16 Or CInt(array(CInt((num8 + 1UI)))) << 8 Or CInt(array(CInt(num8)))))
+								End If
+								num3 = num3
+								Dim num9 As UInteger = num3
+								Dim num10 As UInteger = num3
+								Dim num11 As UInteger = 302860217UI
+								Dim num12 As UInteger = num10
+								Dim num13 As UInteger = 52031872UI
+								Dim num14 As UInteger = 230226771UI
+								Dim num15 As UInteger = 250082095UI
+								num13 = 3600878UI * (num13 And 511UI) + (num13 >> 9)
+								num14 = 4605600UI * (num14 And 511UI) - (num14 >> 9)
+								num12 = 39432UI * num12 - num11
+								Dim num16 As UInteger = num11 And 252645135UI
+								Dim num17 As UInteger = num11 And 4042322160UI
+								num16 = (num16 >> 4 Or num17 << 4) + num12
+								num11 = (num11 << 10 Or num11 >> 22)
+								num16 = ((num12 >> 7 Or num12 << 25) Xor num14)
+								num17 = (num16 And 252645135UI)
+								num16 = num16 And 4042322160UI
+								num12 = (num16 >> 4 Or num17 << 4)
+								num16 = (num13 And 16711935UI)
+								num17 = (num13 And 4278255360UI)
+								num16 = ((num16 >> 8 Or num17 << 8) Xor num14)
+								num13 = (num13 >> 15 Or num13 << 17)
+								If num15 = 0UI Then
+									num15 -= 1UI
+								End If
+								Dim num18 As UInteger = num14 / num15 + num15
+								num15 = (num14 - num14 Xor num18) + num14
+								num12 = num12 Xor num12 << 2
+								num12 += num12
+								num12 = num12 Xor num12 << 15
+								num12 += num13
+								num12 = num12 Xor num12 >> 9
+								num12 += num15
+								num12 = ((num11 << 20) + num14 Xor num12) - num12
+								num3 = num9 + CUInt(num12)
+								If i = num2 - 1 AndAlso num > 0 Then
+									Dim num19 As UInteger = num3 Xor num7
+									For k As Integer = 0 To num - 1
+										If k > 0 Then
+											num5 <<= 8
+											num6 += 8
+										End If
+										array2(num4 + k) = CByte(((num19 And num5) >> num6))
+									Next
+								Else
+									Dim num20 As UInteger = num3 Xor num7
+									array2(num4) = CByte((num20 And 255UI))
+									array2(num4 + 1) = CByte(((num20 And 65280UI) >> 8))
+									array2(num4 + 2) = CByte(((num20 And 16711680UI) >> 16))
+									array2(num4 + 3) = CByte(((num20 And 4278190080UI) >> 24))
+								End If
+							Next
+							array = array2
+							Dim num21 As Integer = array.Length / 8
+							Dim qHnNuwyrCI5TggHSimjJ As fXUU4jykVT4coaAMg9aB.qHnNuwyrCI5TggHSimjJ = New fXUU4jykVT4coaAMg9aB.qHnNuwyrCI5TggHSimjJ(New MemoryStream(array))
+							For l As Integer = 0 To num21 - 1
+								Dim key As Integer = qHnNuwyrCI5TggHSimjJ.yuByrbaUJ2m()
+								Dim value As Integer = qHnNuwyrCI5TggHSimjJ.yuByrbaUJ2m()
+								dictionary.Add(key, value)
+							Next
+							qHnNuwyrCI5TggHSimjJ.ycOyrie7x1r()
+						End If
+						fXUU4jykVT4coaAMg9aB.Tgryrx3o9fg = dictionary
+					End SyncLock
+				End If
+				Dim fields As FieldInfo() = typeFromHandle.GetFields(BindingFlags.[Static] Or BindingFlags.NonPublic Or BindingFlags.GetField)
+				For m As Integer = 0 To fields.Length - 1
+					Try
+						Dim fieldInfo As FieldInfo = fields(m)
+						Dim metadataToken As Integer = fieldInfo.MetadataToken
+						Dim num22 As Integer = fXUU4jykVT4coaAMg9aB.Tgryrx3o9fg(metadataToken)
+						Dim flag2 As Boolean = (num22 And 1073741824) > 0
+						num22 = num22 And 1073741823
+						Dim methodInfo As MethodInfo = CType(Type.GetTypeFromHandle(DHTn0nyCyFhNYP4g0j4y.pE3ZzSbxOVu(33555555)).[Module].ResolveMethod(num22, typeFromHandle.GetGenericArguments(), New Type(-1) {}), MethodInfo)
+						If methodInfo.IsStatic Then
+							fieldInfo.SetValue(Nothing, [Delegate].CreateDelegate(fieldInfo.FieldType, methodInfo))
+						Else
+							Dim parameters As ParameterInfo() = methodInfo.GetParameters()
+							Dim num23 As Integer = parameters.Length + 1
+							Dim array3 As Type() = New Type(num23 - 1) {}
+							If methodInfo.DeclaringType.IsValueType Then
+								array3(0) = methodInfo.DeclaringType.MakeByRefType()
+							Else
+								array3(0) = Type.GetTypeFromHandle(DHTn0nyCyFhNYP4g0j4y.pE3ZzSbxOVu(16777245))
+							End If
+							For n As Integer = 0 To parameters.Length - 1
+								array3(n + 1) = parameters(n).ParameterType
+							Next
+							Dim dynamicMethod As DynamicMethod = New DynamicMethod(String.Empty, methodInfo.ReturnType, array3, typeFromHandle, True)
+							Dim ilgenerator As ILGenerator = dynamicMethod.GetILGenerator()
+							For num24 As Integer = 0 To num23 - 1
+								Select Case num24
+									Case 0
+										ilgenerator.Emit(OpCodes.Ldarg_0)
+									Case 1
+										ilgenerator.Emit(OpCodes.Ldarg_1)
+									Case 2
+										ilgenerator.Emit(OpCodes.Ldarg_2)
+									Case 3
+										ilgenerator.Emit(OpCodes.Ldarg_3)
+									Case Else
+										ilgenerator.Emit(OpCodes.Ldarg_S, num24)
+								End Select
+							Next
+							ilgenerator.Emit(OpCodes.Tailcall)
+							ilgenerator.Emit(If(flag2, OpCodes.Callvirt, OpCodes.[Call]), methodInfo)
+							ilgenerator.Emit(OpCodes.Ret)
+							fieldInfo.SetValue(Nothing, dynamicMethod.CreateDelegate(typeFromHandle))
+						End If
+					Catch ex As Exception
+					End Try
+				Next
+			Catch ex2 As Exception
+			End Try
+		End Sub
+
+		' Token: 0x060024BE RID: 9406 RVA: 0x001FF250 File Offset: 0x001FD450
+		Private Shared Function s4qykK8nsp5(\u0020 As UInteger) As UInteger
+			Return CUInt("{11111-22222-10009-11112}".Length)
+		End Function
+
+		' Token: 0x060024BF RID: 9407 RVA: 0x001FF25C File Offset: 0x001FD45C
+		Friend Shared Sub O73ykGjbHBD()
+			If Debugger.IsAttached Then
+				Throw New Exception("Debugger Detected")
+			End If
+		End Sub
+
+		' Token: 0x060024C0 RID: 9408 RVA: 0x001FF274 File Offset: 0x001FD474
+		<MethodImpl(MethodImplOptions.NoInlining)>
+		Private Shared Sub TLEykHLJbwe(\u0020 As Stream, \u0020 As Integer)
+			EpkPbayCU7YvCOI36TbN.JtwyCGLsdfE(0, New Object() { \u0020, \u0020 }, Nothing)
+		End Sub
+
+		' Token: 0x060024C1 RID: 9409 RVA: 0x001FF2B4 File Offset: 0x001FD4B4
+		<MethodImpl(MethodImplOptions.NoInlining)>
+		Friend Shared Function CqkykQBo6r0(\u0020 As Integer) As String
+			If fXUU4jykVT4coaAMg9aB.GuiyrVW19Wk.Length = 0 Then
+				fXUU4jykVT4coaAMg9aB.x1fyrnSiO4M = New List(Of String)()
+				fXUU4jykVT4coaAMg9aB.NQIyrdgriFV = New List(Of Integer)()
+				fXUU4jykVT4coaAMg9aB.TLEykHLJbwe(fXUU4jykVT4coaAMg9aB.oU6ykzWLIeb.GetManifestResourceStream("uNs7Wte18A4oyf6jm5.SPbLiIyKtHBSsv8DfR"), \u0020)
+			End If
+			If fXUU4jykVT4coaAMg9aB.EWayrZVfYy5 < 75 Then
+				Dim method As MethodBase = New StackFrame(1).GetMethod()
+				If fXUU4jykVT4coaAMg9aB.oU6ykzWLIeb IsNot method.DeclaringType.Assembly Then
+					Dim flag As Boolean = False
+					Dim name As String = method.DeclaringType.Assembly.GetName().Name
+					For Each assemblyName As AssemblyName In fXUU4jykVT4coaAMg9aB.oU6ykzWLIeb.GetReferencedAssemblies()
+						If name = assemblyName.Name Then
+							flag = True
+							Exit For
+						End If
+					Next
+					If Not flag Then
+						Throw New Exception()
+					End If
+				End If
+				fXUU4jykVT4coaAMg9aB.EWayrZVfYy5 += 1
+			End If
+			Dim obj As Object = fXUU4jykVT4coaAMg9aB.vblyrh09ovx
+			SyncLock obj
+				Dim num As Integer = BitConverter.ToInt32(fXUU4jykVT4coaAMg9aB.GuiyrVW19Wk, \u0020)
+				If num < fXUU4jykVT4coaAMg9aB.NQIyrdgriFV.Count AndAlso fXUU4jykVT4coaAMg9aB.NQIyrdgriFV(num) = \u0020 Then
+					Return fXUU4jykVT4coaAMg9aB.x1fyrnSiO4M(num)
+				End If
+				Try
+					zpXS6PyCgduBtel37AmL.awKZzBfLDKu()
+					Dim array As Byte() = New Byte(num - 1) {}
+					Array.Copy(fXUU4jykVT4coaAMg9aB.GuiyrVW19Wk, \u0020 + 4, array, 0, num)
+					Dim [string] As String = Encoding.Unicode.GetString(array, 0, array.Length)
+					fXUU4jykVT4coaAMg9aB.x1fyrnSiO4M.Add([string])
+					fXUU4jykVT4coaAMg9aB.NQIyrdgriFV.Add(\u0020)
+					Array.Copy(BitConverter.GetBytes(fXUU4jykVT4coaAMg9aB.x1fyrnSiO4M.Count - 1), 0, fXUU4jykVT4coaAMg9aB.GuiyrVW19Wk, \u0020, 4)
+					Return [string]
+				Catch
+				End Try
+			End SyncLock
+			Return ""
+		End Function
+
+		' Token: 0x060024C2 RID: 9410 RVA: 0x001FF49C File Offset: 0x001FD69C
+		Friend Shared Function BajykNna93w(\u0020 As String) As String
+			"{11111-22222-50001-00000}".Trim()
+			Dim array As Byte() = Convert.FromBase64String(\u0020)
+			Return Encoding.Unicode.GetString(array, 0, array.Length)
+		End Function
+
+		' Token: 0x060024C3 RID: 9411 RVA: 0x001FF4CC File Offset: 0x001FD6CC
+		Private Shared Function jHBykA7TPDg() As Integer
+			Return 5
+		End Function
+
+		' Token: 0x060024C4 RID: 9412 RVA: 0x001FF4D0 File Offset: 0x001FD6D0
+		Private Shared Sub TIZykj9dQkJ()
+			Try
+				RSACryptoServiceProvider.UseMachineKeyStore = True
+			Catch
+			End Try
+		End Sub
+
+		' Token: 0x060024C5 RID: 9413 RVA: 0x001FF500 File Offset: 0x001FD700
+		Private Shared Function Vr6yk23CerR(\u0020 As IntPtr, \u0020 As Type) As [Delegate]
+			Return CType(Type.GetTypeFromHandle(DHTn0nyCyFhNYP4g0j4y.pE3ZzSbxOVu(16778294)).GetMethod("GetDelegateForFunctionPointer", New Type() { Type.GetTypeFromHandle(DHTn0nyCyFhNYP4g0j4y.pE3ZzSbxOVu(16777301)), Type.GetTypeFromHandle(DHTn0nyCyFhNYP4g0j4y.pE3ZzSbxOVu(16777430)) }).Invoke(Nothing, New Object() { \u0020, \u0020 }), [Delegate])
+		End Function
+
+		' Token: 0x060024C6 RID: 9414 RVA: 0x001FF570 File Offset: 0x001FD770
+		Friend Shared Function eTdykMRZdjx(\u0020 As Object) As Object
+			Try
+				If File.Exists(CType(\u0020, Assembly).Location) Then
+					Return CType(\u0020, Assembly).Location
+				End If
+			Catch
+			End Try
+			Try
+				If File.Exists(CType(\u0020, Assembly).GetName().CodeBase.ToString().Replace("file:///", "")) Then
+					Return CType(\u0020, Assembly).GetName().CodeBase.ToString().Replace("file:///", "")
+				End If
+			Catch
+			End Try
+			Try
+				If File.Exists(\u0020.[GetType]().GetProperty("Location").GetValue(\u0020, New Object(-1) {}).ToString()) Then
+					Return \u0020.[GetType]().GetProperty("Location").GetValue(\u0020, New Object(-1) {}).ToString()
+				End If
+			Catch
+			End Try
+			Return ""
+		End Function
+
+		' Token: 0x060024C7 RID: 9415
+		Public Declare Function XKRyk9tg5sq Lib "kernel32" Alias "LoadLibrary" (\u0020 As String) As IntPtr
+
+		' Token: 0x060024C8 RID: 9416
+		Public Declare Ansi Function JlmykoMaCpc Lib "kernel32" Alias "GetProcAddress" (\u0020 As IntPtr, \u0020 As String) As IntPtr
+
+		' Token: 0x060024C9 RID: 9417 RVA: 0x001FF6A0 File Offset: 0x001FD8A0
+		Private Shared Function jL8ykLgNdJY(\u0020 As IntPtr, \u0020 As String, \u0020 As UInteger) As IntPtr
+			If fXUU4jykVT4coaAMg9aB.tcsyrHa5C9Y Is Nothing Then
+				fXUU4jykVT4coaAMg9aB.tcsyrHa5C9Y = CType(Marshal.GetDelegateForFunctionPointer(fXUU4jykVT4coaAMg9aB.JlmykoMaCpc(fXUU4jykVT4coaAMg9aB.GQitAJFJE(), "Find ".Trim() + "ResourceA"), Type.GetTypeFromHandle(DHTn0nyCyFhNYP4g0j4y.pE3ZzSbxOVu(33555564))), fXUU4jykVT4coaAMg9aB.YctJdLyr4o86wGMEcjbp)
+			End If
+			Return fXUU4jykVT4coaAMg9aB.tcsyrHa5C9Y(\u0020, \u0020, \u0020)
+		End Function
+
+		' Token: 0x060024CA RID: 9418 RVA: 0x001FF700 File Offset: 0x001FD900
+		Private Shared Function Xk1yklEuXvb(\u0020 As IntPtr, \u0020 As UInteger, \u0020 As UInteger, \u0020 As UInteger) As IntPtr
+			If fXUU4jykVT4coaAMg9aB.W4GyrQt7yvR Is Nothing Then
+				fXUU4jykVT4coaAMg9aB.W4GyrQt7yvR = CType(Marshal.GetDelegateForFunctionPointer(fXUU4jykVT4coaAMg9aB.JlmykoMaCpc(fXUU4jykVT4coaAMg9aB.GQitAJFJE(), "Virtual ".Trim() + "Alloc"), Type.GetTypeFromHandle(DHTn0nyCyFhNYP4g0j4y.pE3ZzSbxOVu(33555565))), fXUU4jykVT4coaAMg9aB.e9CbcHyr38Cv3Vrjexs8)
+			End If
+			Return fXUU4jykVT4coaAMg9aB.W4GyrQt7yvR(\u0020, \u0020, \u0020, \u0020)
+		End Function
+
+		' Token: 0x060024CB RID: 9419 RVA: 0x001FF764 File Offset: 0x001FD964
+		Private Shared Function JdTykR7NBAx(\u0020 As IntPtr, \u0020 As IntPtr, <[In]()> <Out()> \u0020 As Byte(), \u0020 As UInteger, <System.Runtime.InteropServices.OutAttribute()> ByRef \u0020 As IntPtr) As Integer
+			If fXUU4jykVT4coaAMg9aB.CknyrN6V87t Is Nothing Then
+				fXUU4jykVT4coaAMg9aB.CknyrN6V87t = CType(Marshal.GetDelegateForFunctionPointer(fXUU4jykVT4coaAMg9aB.JlmykoMaCpc(fXUU4jykVT4coaAMg9aB.GQitAJFJE(), "Write ".Trim() + "Process ".Trim() + "Memory"), Type.GetTypeFromHandle(DHTn0nyCyFhNYP4g0j4y.pE3ZzSbxOVu(33555566))), fXUU4jykVT4coaAMg9aB.grtAKpyr5sU8c4sStukI)
+			End If
+			Return fXUU4jykVT4coaAMg9aB.CknyrN6V87t(\u0020, \u0020, \u0020, \u0020, \u0020)
+		End Function
+
+		' Token: 0x060024CC RID: 9420 RVA: 0x001FF7D4 File Offset: 0x001FD9D4
+		Private Shared Function V1pyku9fYB8(\u0020 As IntPtr, \u0020 As Integer, \u0020 As Integer, ByRef \u0020 As Integer) As Integer
+			If fXUU4jykVT4coaAMg9aB.tt4yrADbJMU Is Nothing Then
+				fXUU4jykVT4coaAMg9aB.tt4yrADbJMU = CType(Marshal.GetDelegateForFunctionPointer(fXUU4jykVT4coaAMg9aB.JlmykoMaCpc(fXUU4jykVT4coaAMg9aB.GQitAJFJE(), "Virtual ".Trim() + "Protect"), Type.GetTypeFromHandle(DHTn0nyCyFhNYP4g0j4y.pE3ZzSbxOVu(33555567))), fXUU4jykVT4coaAMg9aB.HpCN1fyr8stehrfdwnNK)
+			End If
+			Return fXUU4jykVT4coaAMg9aB.tt4yrADbJMU(\u0020, \u0020, \u0020, \u0020)
+		End Function
+
+		' Token: 0x060024CD RID: 9421 RVA: 0x001FF838 File Offset: 0x001FDA38
+		Private Shared Function JHgykOhyTB4(\u0020 As UInteger, \u0020 As Integer, \u0020 As UInteger) As IntPtr
+			If fXUU4jykVT4coaAMg9aB.xLtyrj0mwu7 Is Nothing Then
+				fXUU4jykVT4coaAMg9aB.xLtyrj0mwu7 = CType(Marshal.GetDelegateForFunctionPointer(fXUU4jykVT4coaAMg9aB.JlmykoMaCpc(fXUU4jykVT4coaAMg9aB.GQitAJFJE(), "Open ".Trim() + "Process"), Type.GetTypeFromHandle(DHTn0nyCyFhNYP4g0j4y.pE3ZzSbxOVu(33555568))), fXUU4jykVT4coaAMg9aB.IZdnsbyrWbO1mUvAGKvq)
+			End If
+			Return fXUU4jykVT4coaAMg9aB.xLtyrj0mwu7(\u0020, \u0020, \u0020)
+		End Function
+
+		' Token: 0x060024CE RID: 9422 RVA: 0x001FF898 File Offset: 0x001FDA98
+		Private Shared Function nwDykp2lxwC(\u0020 As IntPtr) As Integer
+			If fXUU4jykVT4coaAMg9aB.Sl8yr2sInQC Is Nothing Then
+				fXUU4jykVT4coaAMg9aB.Sl8yr2sInQC = CType(Marshal.GetDelegateForFunctionPointer(fXUU4jykVT4coaAMg9aB.JlmykoMaCpc(fXUU4jykVT4coaAMg9aB.GQitAJFJE(), "Close ".Trim() + "Handle"), Type.GetTypeFromHandle(DHTn0nyCyFhNYP4g0j4y.pE3ZzSbxOVu(33555569))), fXUU4jykVT4coaAMg9aB.SJMoVayrYu4SAvCeiWux)
+			End If
+			Return fXUU4jykVT4coaAMg9aB.Sl8yr2sInQC(\u0020)
+		End Function
+
+		' Token: 0x060024CF RID: 9423 RVA: 0x001FF8F8 File Offset: 0x001FDAF8
+		Private Shared Function GQitAJFJE() As IntPtr
+			If fXUU4jykVT4coaAMg9aB.ybdyrMviB19 = IntPtr.Zero Then
+				fXUU4jykVT4coaAMg9aB.ybdyrMviB19 = fXUU4jykVT4coaAMg9aB.XKRyk9tg5sq("kernel ".Trim() + "32.dll")
+			End If
+			Return fXUU4jykVT4coaAMg9aB.ybdyrMviB19
+		End Function
+
+		' Token: 0x060024D0 RID: 9424 RVA: 0x001FF934 File Offset: 0x001FDB34
+		Private Shared Function MuMykva929e(\u0020 As String) As Byte()
+			Dim array As Byte()
+			Using fileStream As FileStream = New FileStream(\u0020, FileMode.Open, FileAccess.Read, FileShare.Read)
+				Dim num As Integer = 0
+				Dim i As Integer = CInt(fileStream.Length)
+				array = New Byte(i - 1) {}
+				While i > 0
+					Dim num2 As Integer = fileStream.Read(array, num, i)
+					num += num2
+					i -= num2
+				End While
+			End Using
+			Return array
+		End Function
+
+		' Token: 0x060024D1 RID: 9425 RVA: 0x001FF9A0 File Offset: 0x001FDBA0
+		Friend Shared Function XhZykkPxwlO() As Stream
+			Return New MemoryStream()
+		End Function
+
+		' Token: 0x060024D2 RID: 9426 RVA: 0x001FF9A8 File Offset: 0x001FDBA8
+		Friend Shared Function FpZykrWWJyN(\u0020 As Stream) As Byte()
+			Return CType(\u0020, MemoryStream).ToArray()
+		End Function
+
+		' Token: 0x060024D3 RID: 9427 RVA: 0x001FF9B8 File Offset: 0x001FDBB8
+		Private Shared Function l3AykCwlCV9(\u0020 As Byte()) As Byte()
+			Dim stream As Stream = fXUU4jykVT4coaAMg9aB.XhZykkPxwlO()
+			Dim symmetricAlgorithm As SymmetricAlgorithm = fXUU4jykVT4coaAMg9aB.rahyktVpH1A()
+			symmetricAlgorithm.Key = New Byte() { 112, 10, 44, 206, 230, 239, 36, 65, 5, 59, 72, 250, 154, 170, 141, 203, 240, 84, 152, 12, 87, 177, 236, 11, 86, 134, 246, 98, 215, 242, 100, 155 }
+			symmetricAlgorithm.IV = New Byte() { 129, 159, 204, 71, 192, 36, 79, 134, 19, 250, 90, 120, 99, 46, 53, 13 }
+			Dim cryptoStream As CryptoStream = New CryptoStream(stream, symmetricAlgorithm.CreateDecryptor(), 1)
+			cryptoStream.Write(\u0020, 0, \u0020.Length)
+			cryptoStream.Close()
+			Dim result As Byte() = fXUU4jykVT4coaAMg9aB.FpZykrWWJyN(stream)
+			zpXS6PyCgduBtel37AmL.awKZzBfLDKu()
+			Return result
+		End Function
+
+		' Token: 0x060024D4 RID: 9428 RVA: 0x001FFA2C File Offset: 0x001FDC2C
+		Private Function nJoykJhcO8K() As Byte()
+			Return Nothing
+		End Function
+
+		' Token: 0x060024D5 RID: 9429 RVA: 0x001FFA3C File Offset: 0x001FDC3C
+		Private Function e4fykfKu1hZ() As Byte()
+			Return Nothing
+		End Function
+
+		' Token: 0x060024D6 RID: 9430 RVA: 0x001FFA4C File Offset: 0x001FDC4C
+		Private Function gtcykb1oc0u() As Byte()
+			Return Nothing
+		End Function
+
+		' Token: 0x060024D7 RID: 9431 RVA: 0x001FFA5C File Offset: 0x001FDC5C
+		Private Function Qk8yki4Qx6l() As Byte()
+			Return Nothing
+		End Function
+
+		' Token: 0x060024D8 RID: 9432 RVA: 0x001FFA6C File Offset: 0x001FDC6C
+		Private Function ymdykwNsBKV() As Byte()
+			Dim length As Integer = "{11111-22222-30001-00001}".Length
+			Return New Byte() { 1, 2 }
+		End Function
+
+		' Token: 0x060024D9 RID: 9433 RVA: 0x001FFA8C File Offset: 0x001FDC8C
+		Private Function DALyk4cv1vI() As Byte()
+			Dim length As Integer = "{11111-22222-30001-00002}".Length
+			Return New Byte() { 1, 2 }
+		End Function
+
+		' Token: 0x060024DA RID: 9434 RVA: 0x001FFAAC File Offset: 0x001FDCAC
+		Friend Function DBTyk325DK4() As Byte()
+			Dim length As Integer = "{11111-22222-40001-00001}".Length
+			Return New Byte() { 1, 2 }
+		End Function
+
+		' Token: 0x060024DB RID: 9435 RVA: 0x001FFACC File Offset: 0x001FDCCC
+		Friend Function t4Oyk5RFtDn() As Byte()
+			Dim length As Integer = "{11111-22222-40001-00002}".Length
+			Return New Byte() { 1, 2 }
+		End Function
+
+		' Token: 0x060024DC RID: 9436 RVA: 0x001FFAEC File Offset: 0x001FDCEC
+		Friend Function my0yk8ss8Jq() As Byte()
+			Dim length As Integer = "{11111-22222-50001-00001}".Length
+			Return New Byte() { 1, 2 }
+		End Function
+
+		' Token: 0x060024DD RID: 9437 RVA: 0x001FFB0C File Offset: 0x001FDD0C
+		Friend Function S9JykWYfL84() As Byte()
+			Dim length As Integer = "{11111-22222-50001-00002}".Length
+			Return New Byte() { 1, 2 }
+		End Function
+
+		' Token: 0x060024DE RID: 9438 RVA: 0x001FFB2C File Offset: 0x001FDD2C
+		Friend Shared Function jbZYWPyzlXhCGEwwrAPH(A_0 As Object) As Object
+			Return A_0.g38PJ8K3c0()
+		End Function
+
+		' Token: 0x060024DF RID: 9439 RVA: 0x001FFB38 File Offset: 0x001FDD38
+		Friend Shared Sub QNp19FyzRAJGUBqDISHo(A_0 As Object, A_1 As Long)
+			A_0.Position = A_1
+		End Sub
+
+		' Token: 0x060024E0 RID: 9440 RVA: 0x001FFB48 File Offset: 0x001FDD48
+		Friend Shared Function qQRShlyzuA06JruA4H4P(A_0 As Object) As Long
+			Return A_0.Length
+		End Function
+
+		' Token: 0x060024E1 RID: 9441 RVA: 0x001FFB54 File Offset: 0x001FDD54
+		Friend Shared Function esU1TXyzOxyax1uQFTwP(A_0 As Object, \u0020 As Integer) As Object
+			Return A_0.HvLyrJUXP8I(\u0020)
+		End Function
+
+		' Token: 0x060024E2 RID: 9442 RVA: 0x001FFB64 File Offset: 0x001FDD64
+		Friend Shared Sub BmG8gpyzpk0S2gRqkoqC(A_0 As Object)
+			A_0.ycOyrie7x1r()
+		End Sub
+
+		' Token: 0x060024E3 RID: 9443 RVA: 0x001FFB70 File Offset: 0x001FDD70
+		Friend Shared Sub mpm6ZkyzvPsjwTVWVnab(A_0 As Object)
+			Array.Reverse(A_0)
+		End Sub
+
+		' Token: 0x060024E4 RID: 9444 RVA: 0x001FFB7C File Offset: 0x001FDD7C
+		Friend Shared Function KxVA9xyzkBHxVSXwQxxH(A_0 As Object) As Object
+			Return A_0.GetName()
+		End Function
+
+		' Token: 0x060024E5 RID: 9445 RVA: 0x001FFB88 File Offset: 0x001FDD88
+		Friend Shared Function pM83VVyzrecNaPEavfde(A_0 As Object) As Object
+			Return A_0.GetPublicKeyToken()
+		End Function
+
+		' Token: 0x060024E6 RID: 9446 RVA: 0x001FFB94 File Offset: 0x001FDD94
+		Friend Shared Function pUCKDnyzCM3Tk0xvI8le() As Object
+			Return fXUU4jykVT4coaAMg9aB.rahyktVpH1A()
+		End Function
+
+		' Token: 0x060024E7 RID: 9447 RVA: 0x001FFB9C File Offset: 0x001FDD9C
+		Friend Shared Sub LCSiyZyzJoQJdPshD4qT(A_0 As Object, A_1 As CipherMode)
+			A_0.Mode = A_1
+		End Sub
+
+		' Token: 0x060024E8 RID: 9448 RVA: 0x001FFBAC File Offset: 0x001FDDAC
+		Friend Shared Function VXSOityzfRimmDnMy2rE(A_0 As Object, A_1 As Object, A_2 As Object) As Object
+			Return A_0.CreateDecryptor(A_1, A_2)
+		End Function
+
+		' Token: 0x060024E9 RID: 9449 RVA: 0x001FFBC0 File Offset: 0x001FDDC0
+		Friend Shared Function G4xpMEyzbylIwfau5uOg() As Object
+			Return fXUU4jykVT4coaAMg9aB.XhZykkPxwlO()
+		End Function
+
+		' Token: 0x060024EA RID: 9450 RVA: 0x001FFBC8 File Offset: 0x001FDDC8
+		Friend Shared Sub Xh4kGmyzinsIeE4ATmrq(A_0 As Object, A_1 As Object, A_2 As Integer, A_3 As Integer)
+			A_0.Write(A_1, A_2, A_3)
+		End Sub
+
+		' Token: 0x060024EB RID: 9451 RVA: 0x001FFBE0 File Offset: 0x001FDDE0
+		Friend Shared Sub Hp9nGKyzwRKJfF6jJfgq(A_0 As Object)
+			A_0.FlushFinalBlock()
+		End Sub
+
+		' Token: 0x060024EC RID: 9452 RVA: 0x001FFBEC File Offset: 0x001FDDEC
+		Friend Shared Function DEE9yOyz4WRxs2iFwOdU(A_0 As Object) As Object
+			Return fXUU4jykVT4coaAMg9aB.FpZykrWWJyN(A_0)
+		End Function
+
+		' Token: 0x060024ED RID: 9453 RVA: 0x001FFBF8 File Offset: 0x001FDDF8
+		Friend Shared Sub KfaUJoyz3jIPKGsOTwqC(A_0 As Object)
+			A_0.Close()
+		End Sub
+
+		' Token: 0x060024EE RID: 9454 RVA: 0x001FFC04 File Offset: 0x001FDE04
+		Friend Shared Function OK2BUUyz5hXF27vMpIlA(A_0 As Object) As Object
+			Return A_0.EntryPoint
+		End Function
+
+		' Token: 0x060024EF RID: 9455 RVA: 0x001FFC10 File Offset: 0x001FDE10
+		Friend Shared Function p4hAIHyz8OvXilVZHAWK(A_0 As Object, A_1 As Object) As Boolean
+			Return A_0 Is A_1
+		End Function
+
+		' Token: 0x060024F0 RID: 9456 RVA: 0x001FFC20 File Offset: 0x001FDE20
+		Friend Shared Function ehET8QyzoF9p8aEiGCYT() As Boolean
+			Return Nothing Is Nothing
+		End Function
+
+		' Token: 0x060024F1 RID: 9457 RVA: 0x001FFC28 File Offset: 0x001FDE28
+		Friend Shared Function rlY5liyzL0csZDm6YJhy() As Object
+			Return Nothing
+		End Function
+
+		' Token: 0x060024F2 RID: 9458 RVA: 0x001FFC2C File Offset: 0x001FDE2C
+		Friend Shared Sub MRvW1SyzzRhN0DeVR4Cp()
+			zpXS6PyCgduBtel37AmL.awKZzBfLDKu()
+		End Sub
+
+		' Token: 0x060024F3 RID: 9459 RVA: 0x001FFC34 File Offset: 0x001FDE34
+		Friend Shared Sub kliwGI0ggeqZa37pKoEr(A_0 As Boolean)
+			RSACryptoServiceProvider.UseMachineKeyStore = A_0
+		End Sub
+
+		' Token: 0x060024F4 RID: 9460 RVA: 0x001FFC40 File Offset: 0x001FDE40
+		Friend Shared Function EsEc2p0ge03dc16Sj0qp(A_0 As RuntimeTypeHandle) As Type
+			Return Type.GetTypeFromHandle(A_0)
+		End Function
+
+		' Token: 0x060024F5 RID: 9461 RVA: 0x001FFC4C File Offset: 0x001FDE4C
+		Friend Shared Function h1dupo0gySBU4cJUPeHK(A_0 As Object) As Object
+			Return A_0.Location
+		End Function
+
+		' Token: 0x060024F6 RID: 9462 RVA: 0x001FFC58 File Offset: 0x001FDE58
+		Friend Shared Function pylNkK0g0ADNot5C73Vn(A_0 As Object) As Integer
+			Return A_0.Length
+		End Function
+
+		' Token: 0x060024F7 RID: 9463 RVA: 0x001FFC64 File Offset: 0x001FDE64
+		Friend Shared Function Vc84EE0gxnPUIr8ImbCd() As Object
+			Return SHA1.Create()
+		End Function
+
+		' Token: 0x060024F8 RID: 9464 RVA: 0x001FFC6C File Offset: 0x001FDE6C
+		Friend Shared Function HwYnUv0gEoqtrOixffiA(A_0 As Object) As Object
+			Return CryptoConfig.MapNameToOID(A_0)
+		End Function
+
+		' Token: 0x060024F9 RID: 9465 RVA: 0x001FFC78 File Offset: 0x001FDE78
+		Friend Shared Function VfbtvE0gZhHojWYGyQKA(A_0 As Object) As Boolean
+			Return File.Exists(A_0)
+		End Function
+
+		' Token: 0x060024FA RID: 9466 RVA: 0x001FFC84 File Offset: 0x001FDE84
+		Friend Shared Function XsqIvE0ghstVnobwreeo(A_0 As Object, A_1 As Object) As Object
+			Return A_0.GetManifestResourceStream(A_1)
+		End Function
+
+		' Token: 0x060024FB RID: 9467 RVA: 0x001FFC94 File Offset: 0x001FDE94
+		Friend Shared Function qydneV0gn0XlFoFZgViJ(A_0 As Object) As Object
+			Return A_0.g38PJ8K3c0()
+		End Function
+
+		' Token: 0x060024FC RID: 9468 RVA: 0x001FFCA0 File Offset: 0x001FDEA0
+		Friend Shared Sub ExJOb90gdwqZ6i3GX3dh(A_0 As Object, A_1 As Long)
+			A_0.Position = A_1
+		End Sub
+
+		' Token: 0x060024FD RID: 9469 RVA: 0x001FFCB0 File Offset: 0x001FDEB0
+		Friend Shared Function tMeGJ50gV33ScgaJpxSS(A_0 As Object) As Long
+			Return A_0.Length
+		End Function
+
+		' Token: 0x060024FE RID: 9470 RVA: 0x001FFCBC File Offset: 0x001FDEBC
+		Friend Shared Function IIIbbq0gP56RuoBCFBYi(A_0 As Object, \u0020 As Integer) As Object
+			Return A_0.HvLyrJUXP8I(\u0020)
+		End Function
+
+		' Token: 0x060024FF RID: 9471 RVA: 0x001FFCCC File Offset: 0x001FDECC
+		Friend Shared Function Sk636o0g1ZMeqyaFoyRx() As Object
+			Return fXUU4jykVT4coaAMg9aB.rahyktVpH1A()
+		End Function
+
+		' Token: 0x06002500 RID: 9472 RVA: 0x001FFCD4 File Offset: 0x001FDED4
+		Friend Shared Sub NMVpN20gmbDYWBoySGpO(A_0 As Object, A_1 As CipherMode)
+			A_0.Mode = A_1
+		End Sub
+
+		' Token: 0x06002501 RID: 9473 RVA: 0x001FFCE4 File Offset: 0x001FDEE4
+		Friend Shared Function Cx0ytq0gcDeKPsEsy9sO(A_0 As Object, A_1 As Object, A_2 As Object) As Object
+			Return A_0.CreateDecryptor(A_1, A_2)
+		End Function
+
+		' Token: 0x06002502 RID: 9474 RVA: 0x001FFCF8 File Offset: 0x001FDEF8
+		Friend Shared Function FL2vto0g63kfxK0apwLp() As Object
+			Return fXUU4jykVT4coaAMg9aB.XhZykkPxwlO()
+		End Function
+
+		' Token: 0x06002503 RID: 9475 RVA: 0x001FFD00 File Offset: 0x001FDF00
+		Friend Shared Sub tRCP5S0gBJwKJWkMO7B1(A_0 As Object, A_1 As Object, A_2 As Integer, A_3 As Integer)
+			A_0.Write(A_1, A_2, A_3)
+		End Sub
+
+		' Token: 0x06002504 RID: 9476 RVA: 0x001FFD18 File Offset: 0x001FDF18
+		Friend Shared Sub aNhSTO0gSMxWsYJMMcbJ(A_0 As Object)
+			A_0.FlushFinalBlock()
+		End Sub
+
+		' Token: 0x06002505 RID: 9477 RVA: 0x001FFD24 File Offset: 0x001FDF24
+		Friend Shared Function h9xCuC0gq5e8558EM0VH() As Object
+			Return Encoding.UTF8
+		End Function
+
+		' Token: 0x06002506 RID: 9478 RVA: 0x001FFD2C File Offset: 0x001FDF2C
+		Friend Shared Function RU323b0gtcOlV7nCBEN8(A_0 As Object) As Object
+			Return fXUU4jykVT4coaAMg9aB.FpZykrWWJyN(A_0)
+		End Function
+
+		' Token: 0x06002507 RID: 9479 RVA: 0x001FFD38 File Offset: 0x001FDF38
+		Friend Shared Function OoQMEF0ga6E3MGs85WpO(A_0 As Object, A_1 As Object) As Object
+			Return A_0.GetString(A_1)
+		End Function
+
+		' Token: 0x06002508 RID: 9480 RVA: 0x001FFD48 File Offset: 0x001FDF48
+		Friend Shared Sub OgA11W0gsrRtXeKsegHa(A_0 As Object, A_1 As Object)
+			A_0.FromXmlString(A_1)
+		End Sub
+
+		' Token: 0x06002509 RID: 9481 RVA: 0x001FFD58 File Offset: 0x001FDF58
+		Friend Shared Sub DHJgXt0gTOquQkurRCB7(A_0 As Object)
+			A_0.Close()
+		End Sub
+
+		' Token: 0x0600250A RID: 9482 RVA: 0x001FFD64 File Offset: 0x001FDF64
+		Friend Shared Sub gP0BV00g7aycpg0W19TF(A_0 As Object)
+			A_0.ycOyrie7x1r()
+		End Sub
+
+		' Token: 0x0600250B RID: 9483 RVA: 0x001FFD70 File Offset: 0x001FDF70
+		Friend Shared Sub FvvnC60gDEWe5gk2TSfH(A_0 As Object, A_1 As Object, \u0020 As UInteger, A_3 As Object)
+			fXUU4jykVT4coaAMg9aB.XcEykT8r53y(A_0, A_1, \u0020, A_3)
+		End Sub
+
+		' Token: 0x0600250C RID: 9484 RVA: 0x001FFD88 File Offset: 0x001FDF88
+		Friend Shared Function PS7ogM0gF7GC8kF2dWwD(A_0 As Object) As UShort
+			Return A_0.ReadUInt16()
+		End Function
+
+		' Token: 0x0600250D RID: 9485 RVA: 0x001FFD94 File Offset: 0x001FDF94
+		Friend Shared Function jyPQ3E0gUTkMZ7PdNYwt(A_0 As Object, A_1 As Object, A_2 As Integer, A_3 As Integer) As Integer
+			Return A_0.Read(A_1, A_2, A_3)
+		End Function
+
+		' Token: 0x0600250E RID: 9486 RVA: 0x001FFDAC File Offset: 0x001FDFAC
+		Friend Shared Sub yU3Ffd0gII0VKXr9cxGi(A_0 As Object, A_1 As Object, \u0020 As Integer, \u0020 As Integer)
+			fXUU4jykVT4coaAMg9aB.Sigyk7mc6Vo(A_0, A_1, \u0020, \u0020)
+		End Sub
+
+		' Token: 0x0600250F RID: 9487 RVA: 0x001FFDC4 File Offset: 0x001FDFC4
+		Friend Shared Function mvXK640gKexHTbk5rXyW(A_0 As Object) As Long
+			Return A_0.Position
+		End Function
+
+		' Token: 0x06002510 RID: 9488 RVA: 0x001FFDD0 File Offset: 0x001FDFD0
+		Friend Shared Function sH43XK0gX19o9hglRAEP(A_0 As Object) As UInteger
+			Return A_0.ReadUInt32()
+		End Function
+
+		' Token: 0x06002511 RID: 9489 RVA: 0x001FFDDC File Offset: 0x001FDFDC
+		Friend Shared Function sarVMa0gGPSuqQea8OMG(\u0020 As UInteger, \u0020 As Integer, \u0020 As Long, A_3 As Object) As UInteger
+			Return fXUU4jykVT4coaAMg9aB.GoIykDSQpcX(\u0020, \u0020, \u0020, A_3)
+		End Function
+
+		' Token: 0x06002512 RID: 9490 RVA: 0x001FFDF4 File Offset: 0x001FDFF4
+		Friend Shared Function yDevKK0gH0kHOTI1rpaC(A_0 As Long, A_1 As Long) As Long
+			Return Math.Min(A_0, A_1)
+		End Function
+
+		' Token: 0x06002513 RID: 9491 RVA: 0x001FFE04 File Offset: 0x001FE004
+		Friend Shared Function A6oN4n0gQtBvyt5g0aij(A_0 As Object, A_1 As Object, A_2 As Integer, A_3 As Integer) As Object
+			Return A_0.TransformFinalBlock(A_1, A_2, A_3)
+		End Function
+
+		' Token: 0x06002514 RID: 9492 RVA: 0x001FFE1C File Offset: 0x001FE01C
+		Friend Shared Function rmT4IO0gNThgwAtctJQF(A_0 As Object, A_1 As Integer) As Object
+			Return A_0.ReadBytes(A_1)
+		End Function
+
+		' Token: 0x06002515 RID: 9493 RVA: 0x001FFE2C File Offset: 0x001FE02C
+		Friend Shared Sub FPJyrb0gAPa0PoD8NI3P(A_0 As Object)
+			Array.Reverse(A_0)
+		End Sub
+
+		' Token: 0x06002516 RID: 9494 RVA: 0x001FFE38 File Offset: 0x001FE038
+		Friend Shared Function UEaeTm0gjYwefwXGxyFk(A_0 As Object) As Object
+			Return A_0.Hash
+		End Function
+
+		' Token: 0x06002517 RID: 9495 RVA: 0x001FFE44 File Offset: 0x001FE044
+		Friend Shared Function tXUPM60g2XgyTaWdAB9R(A_0 As Object, A_1 As Object, A_2 As Object, A_3 As Object) As Boolean
+			Return A_0.VerifyHash(A_1, A_2, A_3)
+		End Function
+
+		' Token: 0x06002518 RID: 9496 RVA: 0x001FFE5C File Offset: 0x001FE05C
+		Friend Shared Sub p7g6M40gMJYG8Hl6kMW9(A_0 As Object)
+			A_0.Close()
+		End Sub
+
+		' Token: 0x06002519 RID: 9497 RVA: 0x001FFE68 File Offset: 0x001FE068
+		Friend Shared Function OId82S0g9I8opXHSMy8X(A_0 As Object) As Object
+			Return A_0.GetName()
+		End Function
+
+		' Token: 0x0600251A RID: 9498 RVA: 0x001FFE74 File Offset: 0x001FE074
+		Friend Shared Function yrgyha0gopCVThauOeMe(A_0 As Object) As Object
+			Return A_0.Name
+		End Function
+
+		' Token: 0x0600251B RID: 9499 RVA: 0x001FFE80 File Offset: 0x001FE080
+		Friend Shared Function igbnTD0gL0LdlZrqVHoC(A_0 As Object, A_1 As Object) As Object
+			Return A_0 + A_1
+		End Function
+
+		' Token: 0x0600251C RID: 9500 RVA: 0x001FFE90 File Offset: 0x001FE090
+		Friend Shared Function CGEUWMyzWDhnBqbvSliI() As Boolean
+			Return Nothing Is Nothing
+		End Function
+
+		' Token: 0x0600251D RID: 9501 RVA: 0x001FFE98 File Offset: 0x001FE098
+		Friend Shared Function zlQsi4yzYTrSZ0sQ3tUg() As Object
+			Return Nothing
+		End Function
+
+		' Token: 0x04001BBE RID: 7102
+		Private Shared M3cykYqfYIv As Boolean = False
+
+		' Token: 0x04001BBF RID: 7103
+		Private Shared IHvyrENwdfI As Object
+
+		' Token: 0x04001BC0 RID: 7104
+		Private Shared vblyrh09ovx As Object
+
+		' Token: 0x04001BC1 RID: 7105
+		Private Shared x1fyrnSiO4M As List(Of String)
+
+		' Token: 0x04001BC2 RID: 7106
+		Private Shared E0CyrP3KKrx As Byte()
+
+		' Token: 0x04001BC3 RID: 7107
+		Private Shared ka0yr6CNjVR As Integer()
+
+		' Token: 0x04001BC4 RID: 7108
+		Private Shared W4GyrQt7yvR As fXUU4jykVT4coaAMg9aB.e9CbcHyr38Cv3Vrjexs8
+
+		' Token: 0x04001BC5 RID: 7109
+		Private Shared xLtyrj0mwu7 As fXUU4jykVT4coaAMg9aB.IZdnsbyrWbO1mUvAGKvq
+
+		' Token: 0x04001BC6 RID: 7110
+		Private Shared g71yrBvfJ1S As Integer
+
+		' Token: 0x04001BC7 RID: 7111
+		Friend Shared WEZyrs60xlY As fXUU4jykVT4coaAMg9aB.bcP9JYyrO6nhqbvk7FhC
+
+		' Token: 0x04001BC8 RID: 7112
+		Private Shared GqlyrmLOSiI As IntPtr
+
+		' Token: 0x04001BC9 RID: 7113
+		Private Shared lm0yr1pGKy1 As IntPtr
+
+		' Token: 0x04001BCA RID: 7114
+		Friend Shared gToyrTycHrW As fXUU4jykVT4coaAMg9aB.bcP9JYyrO6nhqbvk7FhC
+
+		' Token: 0x04001BCB RID: 7115
+		Private Shared NQIyrdgriFV As List(Of Integer)
+
+		' Token: 0x04001BCC RID: 7116
+		Friend Shared oU6ykzWLIeb As Assembly = Type.GetTypeFromHandle(DHTn0nyCyFhNYP4g0j4y.pE3ZzSbxOVu(33555555)).Assembly
+
+		' Token: 0x04001BCD RID: 7117
+		Private Shared pL0yrIp7I3V As Integer
+
+		' Token: 0x04001BCE RID: 7118
+		Private Shared XZNyrSPBCCc As Boolean
+
+		' Token: 0x04001BCF RID: 7119
+		Friend Shared vYVyr0RJsye As RSACryptoServiceProvider
+
+		' Token: 0x04001BD0 RID: 7120
+		Private Shared o4fyryHwH6U As Boolean
+
+		' Token: 0x04001BD1 RID: 7121
+		<fXUU4jykVT4coaAMg9aB.RmSOAUyrob3Y1k0hIwvc(GetType(fXUU4jykVT4coaAMg9aB.RmSOAUyrob3Y1k0hIwvc.N3AeTayrLSrqR13JOIyF(Of Object)()))>
+		Private Shared cJMyrXKvIfb As Boolean
+
+		' Token: 0x04001BD2 RID: 7122
+		Private Shared CknyrN6V87t As fXUU4jykVT4coaAMg9aB.grtAKpyr5sU8c4sStukI
+
+		' Token: 0x04001BD3 RID: 7123
+		Private Shared tt4yrADbJMU As fXUU4jykVT4coaAMg9aB.HpCN1fyr8stehrfdwnNK
+
+		' Token: 0x04001BD4 RID: 7124
+		Private Shared HnDyrKAnmvC As IntPtr
+
+		' Token: 0x04001BD5 RID: 7125
+		Private Shared tcsyrHa5C9Y As fXUU4jykVT4coaAMg9aB.YctJdLyr4o86wGMEcjbp
+
+		' Token: 0x04001BD6 RID: 7126
+		Private Shared hwayrDKQHmj As Integer
+
+		' Token: 0x04001BD7 RID: 7127
+		Private Shared Wvayrtv195f As Integer
+
+		' Token: 0x04001BD8 RID: 7128
+		Private Shared ybdyrMviB19 As IntPtr
+
+		' Token: 0x04001BD9 RID: 7129
+		Private Shared GuiyrVW19Wk As Byte()
+
+		' Token: 0x04001BDA RID: 7130
+		Private Shared Tgryrx3o9fg As Dictionary(Of Integer, Integer)
+
+		' Token: 0x04001BDB RID: 7131
+		Private Shared Sl8yr2sInQC As fXUU4jykVT4coaAMg9aB.SJMoVayrYu4SAvCeiWux
+
+		' Token: 0x04001BDC RID: 7132
+		Private Shared jjhyr76PgOy As Long
+
+		' Token: 0x04001BDD RID: 7133
+		Private Shared GHayreYsl4t As Boolean
+
+		' Token: 0x04001BDE RID: 7134
+		Private Shared EHIyrqLJlTw As SortedList
+
+		' Token: 0x04001BDF RID: 7135
+		Friend Shared sJkyrGlZI4k As Hashtable
+
+		' Token: 0x04001BE0 RID: 7136
+		Private Shared Hk1yrUISyNc As Boolean
+
+		' Token: 0x04001BE1 RID: 7137
+		Private Shared EWayrZVfYy5 As Integer
+
+		' Token: 0x04001BE2 RID: 7138
+		Private Shared KvyyrgEAupP As UInteger() = New UInteger() { 3614090360UI, 3905402710UI, 606105819UI, 3250441966UI, 4118548399UI, 1200080426UI, 2821735955UI, 4249261313UI, 1770035416UI, 2336552879UI, 4294925233UI, 2304563134UI, 1804603682UI, 4254626195UI, 2792965006UI, 1236535329UI, 4129170786UI, 3225465664UI, 643717713UI, 3921069994UI, 3593408605UI, 38016083UI, 3634488961UI, 3889429448UI, 568446438UI, 3275163606UI, 4107603335UI, 1163531501UI, 2850285829UI, 4243563512UI, 1735328473UI, 2368359562UI, 4294588738UI, 2272392833UI, 1839030562UI, 4259657740UI, 2763975236UI, 1272893353UI, 4139469664UI, 3200236656UI, 681279174UI, 3936430074UI, 3572445317UI, 76029189UI, 3654602809UI, 3873151461UI, 530742520UI, 3299628645UI, 4096336452UI, 1126891415UI, 2878612391UI, 4237533241UI, 1700485571UI, 2399980690UI, 4293915773UI, 2240044497UI, 1873313359UI, 4264355552UI, 2734768916UI, 1309151649UI, 4149444226UI, 3174756917UI, 718787259UI, 3951481745UI }
+
+		' Token: 0x04001BE3 RID: 7139
+		Private Shared epgyrc0AGTv As Object
+
+		' Token: 0x04001BE4 RID: 7140
+		Private Shared jDsyratn24l As Long
+
+		' Token: 0x04001BE5 RID: 7141
+		Private Shared Ck9yrFL1brn As Boolean
+
+		' Token: 0x02000464 RID: 1124
+		' (Invoke) Token: 0x0600251F RID: 9503
+		Private Delegate Sub IaMbCSyr9LBt8rMMDW8E(o As Object)
+
+		' Token: 0x02000465 RID: 1125
+		Friend Class RmSOAUyrob3Y1k0hIwvc
+			Inherits Attribute
+
+			' Token: 0x06002522 RID: 9506 RVA: 0x001FFE9C File Offset: 0x001FE09C
+			Public Sub New(\u0020 As Object)
+			End Sub
+
+			' Token: 0x02000466 RID: 1126
+			Friend Class N3AeTayrLSrqR13JOIyF(Of MBNlGOyrlawGOSqyvIY1)
+				' Token: 0x06002523 RID: 9507 RVA: 0x001FFEAC File Offset: 0x001FE0AC
+				Public Sub New()
+					fXUU4jykVT4coaAMg9aB.O73ykGjbHBD()
+					zpXS6PyCgduBtel37AmL.awKZzBfLDKu()
+					MyBase..ctor()
+				End Sub
+
+				' Token: 0x06002524 RID: 9508 RVA: 0x001FFEC8 File Offset: 0x001FE0C8
+				' Note: this type is marked as 'beforefieldinit'.
+				Shared Sub New()
+					fXUU4jykVT4coaAMg9aB.gRpykFhmKaB()
+				End Sub
+			End Class
+		End Class
+
+		' Token: 0x02000467 RID: 1127
+		Friend Class G2E88PyrRsRDFXnUKWZK
+			' Token: 0x06002525 RID: 9509 RVA: 0x001FFED8 File Offset: 0x001FE0D8
+			Friend Shared Function C8ryruMqyPA(\u0020 As String, \u0020 As String) As String
+				Dim bytes As Byte() = Encoding.Unicode.GetBytes(\u0020)
+				Dim key As Byte() = New Byte() { 82, 102, 104, 110, 32, 77, 24, 34, 118, 181, 51, 17, 18, 51, 12, 109, 10, 32, 77, 24, 34, 158, 161, 41, 97, 28, 118, 181, 5, 25, 1, 88 }
+				Dim iv As Byte() = fXUU4jykVT4coaAMg9aB.mKKyks4V4b8(Encoding.Unicode.GetBytes(\u0020))
+				Dim memoryStream As MemoryStream = New MemoryStream()
+				Dim symmetricAlgorithm As SymmetricAlgorithm = fXUU4jykVT4coaAMg9aB.rahyktVpH1A()
+				symmetricAlgorithm.Key = key
+				symmetricAlgorithm.IV = iv
+				Dim cryptoStream As CryptoStream = New CryptoStream(memoryStream, symmetricAlgorithm.CreateEncryptor(), 1)
+				cryptoStream.Write(bytes, 0, bytes.Length)
+				cryptoStream.Close()
+				Return Convert.ToBase64String(memoryStream.ToArray())
+			End Function
+		End Class
+
+		' Token: 0x02000468 RID: 1128
+		' (Invoke) Token: 0x06002528 RID: 9512
+		<UnmanagedFunctionPointer(CallingConvention.StdCall)>
+		Friend Delegate Function bcP9JYyrO6nhqbvk7FhC(classthis As IntPtr, comp As IntPtr, info As IntPtr, <MarshalAs(UnmanagedType.U4)> flags As UInteger, nativeEntry As IntPtr, ByRef nativeSizeOfCode As UInteger) As UInteger
+
+		' Token: 0x02000469 RID: 1129
+		' (Invoke) Token: 0x0600252C RID: 9516
+		<UnmanagedFunctionPointer(CallingConvention.StdCall)>
+		Private Delegate Function G6ZYD8yrpr9cNjRDi6Gx() As IntPtr
+
+		' Token: 0x0200046A RID: 1130
+		Friend Structure xHPnv4yrvuFyw1aMU0W4
+			' Token: 0x04001BE6 RID: 7142
+			Friend amSyrkEHCWS As Boolean
+
+			' Token: 0x04001BE7 RID: 7143
+			Friend SViyrr3eCTR As Byte()
+		End Structure
+
+		' Token: 0x0200046B RID: 1131
+		Friend Class qHnNuwyrCI5TggHSimjJ
+			' Token: 0x0600252F RID: 9519 RVA: 0x001FFF6C File Offset: 0x001FE16C
+			Public Sub New(\u0020 As Stream)
+				Me.ekJyrwYv7AX = New BinaryReader(\u0020)
+			End Sub
+
+			' Token: 0x06002530 RID: 9520 RVA: 0x001FFF88 File Offset: 0x001FE188
+			Friend Function g38PJ8K3c0() As Stream
+				Return Me.ekJyrwYv7AX.BaseStream
+			End Function
+
+			' Token: 0x06002531 RID: 9521 RVA: 0x001FFF9C File Offset: 0x001FE19C
+			Friend Function HvLyrJUXP8I(\u0020 As Integer) As Byte()
+				Return Me.ekJyrwYv7AX.ReadBytes(\u0020)
+			End Function
+
+			' Token: 0x06002532 RID: 9522 RVA: 0x001FFFB4 File Offset: 0x001FE1B4
+			Friend Function qGhyrfVsjWf(\u0020 As Byte(), \u0020 As Integer, \u0020 As Integer) As Integer
+				Return Me.ekJyrwYv7AX.Read(\u0020, \u0020, \u0020)
+			End Function
+
+			' Token: 0x06002533 RID: 9523 RVA: 0x001FFFCC File Offset: 0x001FE1CC
+			Friend Function yuByrbaUJ2m() As Integer
+				Return Me.ekJyrwYv7AX.ReadInt32()
+			End Function
+
+			' Token: 0x06002534 RID: 9524 RVA: 0x001FFFE0 File Offset: 0x001FE1E0
+			Friend Sub ycOyrie7x1r()
+				Me.ekJyrwYv7AX.Close()
+			End Sub
+
+			' Token: 0x04001BE8 RID: 7144
+			Private ekJyrwYv7AX As BinaryReader
+		End Class
+
+		' Token: 0x0200046C RID: 1132
+		' (Invoke) Token: 0x06002536 RID: 9526
+		<UnmanagedFunctionPointer(CallingConvention.StdCall, CharSet := CharSet.Ansi)>
+		Private Delegate Function YctJdLyr4o86wGMEcjbp(hModule As IntPtr, lpName As String, lpType As UInteger) As IntPtr
+
+		' Token: 0x0200046D RID: 1133
+		' (Invoke) Token: 0x0600253A RID: 9530
+		<UnmanagedFunctionPointer(CallingConvention.StdCall)>
+		Private Delegate Function e9CbcHyr38Cv3Vrjexs8(lpAddress As IntPtr, dwSize As UInteger, flAllocationType As UInteger, flProtect As UInteger) As IntPtr
+
+		' Token: 0x0200046E RID: 1134
+		' (Invoke) Token: 0x0600253E RID: 9534
+		<UnmanagedFunctionPointer(CallingConvention.StdCall)>
+		Private Delegate Function grtAKpyr5sU8c4sStukI(hProcess As IntPtr, lpBaseAddress As IntPtr, <[In]()> <Out()> buffer As Byte(), size As UInteger, <System.Runtime.InteropServices.OutAttribute()> ByRef lpNumberOfBytesWritten As IntPtr) As Integer
+
+		' Token: 0x0200046F RID: 1135
+		' (Invoke) Token: 0x06002542 RID: 9538
+		<UnmanagedFunctionPointer(CallingConvention.StdCall)>
+		Private Delegate Function HpCN1fyr8stehrfdwnNK(lpAddress As IntPtr, dwSize As Integer, flNewProtect As Integer, ByRef lpflOldProtect As Integer) As Integer
+
+		' Token: 0x02000470 RID: 1136
+		' (Invoke) Token: 0x06002546 RID: 9542
+		<UnmanagedFunctionPointer(CallingConvention.StdCall)>
+		Private Delegate Function IZdnsbyrWbO1mUvAGKvq(dwDesiredAccess As UInteger, bInheritHandle As Integer, dwProcessId As UInteger) As IntPtr
+
+		' Token: 0x02000471 RID: 1137
+		' (Invoke) Token: 0x0600254A RID: 9546
+		<UnmanagedFunctionPointer(CallingConvention.StdCall)>
+		Private Delegate Function SJMoVayrYu4SAvCeiWux(ptr As IntPtr) As Integer
+
+		' Token: 0x02000472 RID: 1138
+		<Flags()>
+		Private Enum a03FS4yrzlURTbpcuqk8
+		End Enum
+	End Class
+End Namespace
