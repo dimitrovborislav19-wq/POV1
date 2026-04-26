@@ -1,0 +1,305 @@
+PATCH FLOW ANALYSIS
+Startup-first execution map for the current patched-file crash case
+1. Purpose of this document
+This file is not a task prompt.
+It is a reference analysis document for the coding agent to read before working on the patch.
+The goal is to explain how the patched executable appears to move through the application startup/protection flow, which layers are reached, and why the crash should be analyzed from the beginning of execution rather than from the last attempted patch.
+The agent should use this file as background context when later receiving a specific task prompt.
+2. Main conclusion
+The patched file should not be understood as failing at one isolated method.
+The current evidence suggests that the executable passes through multiple startup/protection stages before crashing. Some parts of the code are important because they show that an earlier stage is reached or passed. Other parts are important because they show where the execution later fails.
+Therefore, the patch flow must be analyzed from the beginning:
+application load;
+module initializer;
+early anti-tamper/integrity logic;
+managed entry point;
+protected string/resource bootstrap;
+protected dispatcher / VM-style runtime;
+normal application startup;
+normal licensing/runtime flow.
+The previous patch attempt is only one data point. It should not be treated as the natural starting point for the next patch.
+3. Expected execution path
+The current working model of the startup/protection path is:
+```text
+Application load
+    ↓
+<Module>.cctor()
+    ↓
+fXUU4jykVT4coaAMg9aB.gRpykFhmKaB()
+    ↓
+module-level anti-tamper / integrity check
+    ↓
+managed entry point:
+tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ.XLYMmU0Q55(String[])
+    ↓
+early startup/orchestration logic
+    ↓
+protected string/resource bootstrap:
+fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(Int32)
+    ↓
+embedded protected resource:
+uNs7Wte18A4oyf6jm5.SPbLiIyKtHBSsv8DfR
+    ↓
+TLEykHLJbwe(Stream, Int32)
+    ↓
+EpkPbayCU7YvCOI36TbN dispatcher / VM-style layer
+    ↓
+normal startup / runtime setup
+    ↓
+normal licensing architecture
+    ↓
+runtime state + UI consumers
+```
+This flow matters because a patch can appear to pass one layer while still breaking a required side effect for the next layer.
+4. Why the first stage matters
+The first important stage is the module-level startup/protection layer.
+Observed failure form:
+```text
+<Module>.cctor()
+  -> fXUU4jykVT4coaAMg9aB.gRpykFhmKaB()
+  -> System.Exception: PVSOLpremium is tampered.
+```
+This indicates an early integrity/tamper gate.
+If a modified executable no longer crashes here, that does not automatically prove the patch is correct. It only proves that execution moved past the first visible failure point.
+The important question is whether the first stage still performed all required initialization side effects.
+A protection method can do more than return success/failure. It can also prepare internal state that later protected code depends on.
+Possible side effects include:
+initialization of internal tables;
+setting runtime flags;
+preparing indexes or keys;
+validating module state;
+preparing dispatcher context;
+initializing protected resource access state.
+If a patch skips the method body or reduces it to a trivial return, the next layer may fail because expected state was never created.
+5. Why the entry point matters
+The managed entry point is:
+```text
+tcluRCmJ2u79OhTbGG.eaFoyOM1OuCiP0AkdmZ.XLYMmU0Q55(String[])
+```
+This method is important because it appears to orchestrate early runtime startup.
+The execution should be mapped from this entry point forward, not only from the last patched method.
+The entry point is expected to connect:
+early startup setup;
+UI/view loader initialization;
+exception behavior setup;
+runtime compatibility setup;
+mutex/process coordination;
+logger initialization;
+environment/runtime gates;
+transition into protected string/resource access;
+later transition into normal licensing/runtime logic.
+A patch that changes later licensing behavior may be irrelevant if the crash happens before the normal licensing manager becomes active.
+6. Protected string/resource bootstrap
+The next important layer is:
+```text
+fXUU4jykVT4coaAMg9aB.CqkykQBo6r0(Int32)
+```
+This method appears to be a protected string/resource access method, not a normal helper.
+Its observed responsibilities include:
+lazy initialization of a protected byte table;
+loading an embedded manifest resource;
+initializing string and index caches;
+decoding Unicode strings from protected byte data;
+caching decoded strings;
+rewriting the table with cache indexes;
+caller assembly validation;
+fail-closed behavior on invalid caller context.
+The target resource is:
+```text
+uNs7Wte18A4oyf6jm5.SPbLiIyKtHBSsv8DfR
+```
+Known observations:
+```text
+Resource count:
+114 resources observed
+
+Target resource:
+found
+
+Target resource length:
+263,168 bytes
+
+Target resource SHA256:
+b69aa599274d818416707a40e44d164690267d8f390bbfcf89b5872ced84dc9a
+```
+This means the crash is not currently explained by a missing protected resource.
+The agent should not assume:
+the resource is absent;
+the stream is null;
+the protected resource payload is different;
+the managed entry point is different.
+The more likely issue is that the runtime/bootstrap state around this resource access is not what the protected layer expects.
+7. Caller validation in the protected string layer
+The protected string/resource method also appears to validate the caller assembly.
+The observed pattern includes:
+```text
+StackFrame(1)
+  -> GetMethod()
+  -> DeclaringType
+  -> Assembly
+```
+The method compares the caller assembly against the expected protected assembly reference. If the caller is unexpected, it checks whether the caller assembly name exists among referenced assemblies. If validation fails, it throws a generic exception.
+This means that call path changes can matter.
+A patch, wrapper, loader, or changed control flow may affect the caller context even if the resource itself is present.
+When analyzing the patch flow, the agent should check whether the path into protected string access still comes from an expected caller context.
+8. TLEykHLJbwe is likely a bridge, not the real decryptor
+The method:
+```text
+fXUU4jykVT4coaAMg9aB.TLEykHLJbwe(Stream, Int32)
+```
+appears to wrap the resource stream and index into an object array and forward them into the protected dispatcher:
+```text
+EpkPbayCU7YvCOI36TbN.JtwyCGLsdfE(0, object[], null)
+```
+This suggests that the real protected logic is not inside TLEykHLJbwe itself.
+Instead, the real execution is hidden behind the dispatcher / VM-style layer.
+Therefore, a patch should not assume TLEykHLJbwe is the main logic simply because it appears in the stack.
+9. Dispatcher / VM-style layer
+The relevant dispatcher chain is:
+```text
+EpkPbayCU7YvCOI36TbN.JtwyCGLsdfE(...)
+  -> qD2yCK8vZdW(...)
+  -> nUmyfXrhiZy()
+  -> BLVvfHKtAbK(Boolean ByRef)
+  -> System.Exception
+```
+This layer appears to behave like a protected dispatcher, interpreter, or VM-style execution engine.
+The observed IL-like structure in BLVvfHKtAbK suggests:
+state indexes;
+handler lists;
+exception capture and transformation;
+internal dispatcher transitions;
+recursive or iterative movement through states;
+generic fail-closed exception behavior.
+A crash here should not be treated as a normal business exception.
+It is more likely a protected runtime failure caused by mismatched state, missing initialization, changed method body layout, metadata mismatch, or unexpected control flow.
+10. Difference between the two important code parts
+When the agent receives two or more code snippets, it should treat them as evidence from different locations in the flow.
+One code part may be important because it shows that the first stage is reached or passed.
+Another code part may be important because it shows that the execution later enters protected resource/bootstrap/dispatcher logic and crashes there.
+The agent should compare them by execution role:
+Which part belongs to the earliest protection layer?
+Which part belongs to protected string/resource bootstrap?
+Which part belongs to dispatcher/VM-style execution?
+Which part preserves initialization side effects?
+Which part may skip initialization side effects?
+Which part changes the crash from an explicit tamper failure to a generic dispatcher failure?
+Which part proves the patch moved forward but did not complete startup?
+The key distinction is:
+```text
+Passing the first visible check is not the same as preserving the complete startup/protection state.
+```
+11. How the patch flow should be reasoned about
+The patch flow should be analyzed as a sequence of boundaries:
+Boundary 1 — module initializer boundary
+Question:
+```text
+Does the executable pass <Module>.cctor() and the early anti-tamper method?
+```
+If no, the failure is at the first protection layer.
+If yes, continue.
+Boundary 2 — managed entry point boundary
+Question:
+```text
+Does execution reach XLYMmU0Q55(String[])?
+```
+If yes, the executable is no longer failing before the managed entry point.
+Continue mapping early startup.
+Boundary 3 — protected string/resource boundary
+Question:
+```text
+Does execution reach CqkykQBo6r0(Int32)?
+```
+If yes, then protected string/resource access is active.
+The next question is whether the resource bootstrap completes.
+Boundary 4 — resource bridge boundary
+Question:
+```text
+Does execution reach TLEykHLJbwe(Stream, Int32)?
+```
+If yes, the resource stream/index are being forwarded into the dispatcher layer.
+Boundary 5 — dispatcher boundary
+Question:
+```text
+Does execution reach EpkPbayCU7YvCOI36TbN / BLVvfHKtAbK?
+```
+If yes, the crash is likely inside the protected dispatcher/VM-style layer.
+At that point, the likely issue is no longer a missing resource but a mismatch in runtime/metadata/control-flow state.
+Boundary 6 — normal licensing boundary
+Question:
+```text
+Does execution reach the normal licensing manager flow?
+```
+If no, then patching normal licensing methods may be premature.
+12. Why the previous patch should not be the starting point
+The last attempted patch may have been applied to a method that is not the earliest relevant failure boundary.
+If that patch changes behavior too late, it may not affect the real crash.
+If that patch changes behavior too early but skips side effects, it may move the crash forward into the dispatcher.
+Therefore, the next work should not begin with:
+```text
+Continue from the previous final patch.
+```
+It should begin with:
+```text
+Map the startup flow from the beginning and identify the first layer whose behavior differs between the working and crashing cases.
+```
+The previous patch is evidence, not a foundation.
+13. What must be preserved by any diagnostic patch
+Any diagnostic or test-only patch should preserve:
+module initialization ordering;
+original side effects where possible;
+protected resource loading;
+caller context;
+dispatcher setup;
+runtime state expected by later layers;
+original control flow unless the diagnostic explicitly needs to isolate a boundary.
+A patch that only forces a return value can be misleading if the original method also prepares state.
+14. What the crash location likely means
+If the crash moves from:
+```text
+"PVSOLpremium is tampered."
+```
+to:
+```text
+generic System.Exception inside EpkPbayCU7YvCOI36TbN / BLVvfHKtAbK
+```
+then the patch may have moved execution past the first visible anti-tamper failure, but it did not satisfy the later protected runtime requirements.
+This does not prove success.
+It proves that the execution reached a later defensive layer.
+The later crash may be caused by:
+incomplete initialization;
+changed method body;
+changed metadata;
+dispatcher state mismatch;
+caller validation mismatch;
+skipped side effects;
+invalid protected runtime state.
+15. How the agent should use this document
+When receiving a later task, the agent should use this document only as background analysis.
+It should not edit this document unless explicitly instructed.
+It should use this document to keep the correct mental model:
+```text
+Start from startup.
+Track each protection boundary.
+Do not assume the last patch is the root cause.
+Distinguish “passed first layer” from “preserved required initialization.”
+Treat dispatcher crashes as protected runtime failures, not ordinary business exceptions.
+Ask for the exact code/method file needed if more context is required.
+```
+16. Minimal diagnostic mindset
+The safest next diagnostic direction is not to rewrite large protected methods.
+The safer approach is to identify the first boundary where behavior diverges:
+Does module initialization complete?
+Does entry point execute?
+Does protected resource access begin?
+Does resource loading complete?
+Does dispatcher initialization complete?
+Does normal startup begin?
+Does normal licensing flow begin?
+Only after this boundary is identified should a patch direction be proposed.
+17. Final summary
+The patch flow must be understood as a chain, not as a single method patch.
+A code section that passes the first step is important because it proves the patched executable can move beyond the first anti-tamper boundary.
+A later code section that crashes is important because it shows that the next protected layer still expects state or structure that was not preserved.
+The central issue is not only whether a check returns true or false.
+The central issue is whether the patch preserves the startup/protection state required by the next layer.
